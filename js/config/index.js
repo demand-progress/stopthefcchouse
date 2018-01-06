@@ -1,6 +1,6 @@
 const CONF = {
-    actionKitPageShortName: 'save-the-net-from-trump',
-    actionKitPageId: 2050
+    actionKitPageShortName: 'stop-fcc',
+    actionKitPageId: 2160
 };
 const URLS = {
     actionKit: 'https://act.demandprogress.org/act/',
