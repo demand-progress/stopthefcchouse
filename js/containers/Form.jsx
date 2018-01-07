@@ -46,23 +46,30 @@ class Form extends Component {
                 </button>
             </div>
             </div>
-            <div id="thanks" style={{ 'display' : this.state.submitted ? '' : 'none'}}>
-                <h4>Thanks for signing.</h4>
-                <p>
+            <div id="thanks" className="modal-wrapper-thanks modal-open-thanks" style={{ 'display' : this.state.submitted ? 'block' : 'none'}}>
+              <div className="modal-thanks">
+                <a className="close-thanks" href="#none" onClick={ this.closeModal.bind(this) }>×</a>
+                <header>
+                  <h2 id="modal-header-thanks">Thanks for signing!</h2>
+                </header>
+                <article>
+                  <p>
                     <strong style={{fontSize: '20px'}}>
-                        Now, one of the most impactful things you can do to help save net neutrality before Dec. 14th is to make phone calls to Congress.
+                      Now, one of the most impactful things you can do to help save net neutrality before Dec. 14th is to make phone calls to Congress.
                     </strong>
                     <br/><br/>
-                    If offices get more phone calls from constituents, we can persuade them to stop the catastrophic plan to repeal net neutrality.
-                </p>
-                <h4>Please Call: <a href="tel:4243634877">424-363-4877</a></h4>
-                <p>
+                    If offices get more phone calls from constituents, we can persuade them to stop the catastrophic plan to repeal net neutrality.  
+                  </p>
+                  <h4>Please Call: <a href="tel:4243634877">424-363-4877</a></h4>
+                  <p>
                     We will connect you to the offices of your lawmakers.
                     <br/><br/>
                     You can use this script when talking to them -- <strong>just introduce yourself, be polite, and say</strong>:
                     <br/><br/>
                     <i>"I support 'Title Two' net neutrality rules and I urge you to oppose the FCC's plan to repeal them. Specifically, I'd like you to contact the FCC Chairman and demand he abandon his current plan."</i>
-                </p>
+                  </p>
+                </article>
+              </div>
             </div>
         </form>);
     }
@@ -72,6 +79,11 @@ class Form extends Component {
             window.location.href = "https://battleforthenet.com";
         }
         this.setState( { countDown: this.state.countDown - 1 });
+    }
+    
+    closeModal(evt) {
+      evt.preventDefault();
+      this.setState({ submitted: false });
     }
 
     onSubmit(evt) {
