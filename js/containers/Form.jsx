@@ -48,25 +48,24 @@ class Form extends Component {
             </div>
             <div id="thanks" className="modal-wrapper-thanks modal-open-thanks" style={{ 'display' : this.state.submitted ? 'block' : 'none'}}>
               <div className="modal-thanks">
-                <a className="close-thanks" href="#none" onClick={ this.closeModal.bind(this) }>×</a>
+                <a className="close-thanks" href="#" onClick={ this.closeModal.bind(this) }>×</a>
                 <header>
-                  <h2 id="modal-header-thanks">Thanks for signing!</h2>
+                  <h2 id="modal-header-thanks">Thanks for signing.</h2>
                 </header>
                 <article>
                   <p>
-                    <strong style={{fontSize: '20px'}}>
-                      Now, one of the most impactful things you can do to help save net neutrality before Dec. 14th is to make phone calls to Congress.
-                    </strong>
-                    <br/><br/>
-                    If offices get more phone calls from constituents, we can persuade them to stop the catastrophic plan to repeal net neutrality.  
+                    <p style={{fontSize: '20px', fontWeight: 'bold'}}>
+                    Now, one of the most impactful things you can do to save net neutrality is to <strong>CALL CONGRESS</strong> and tell your lawmakers to support the ‘resolution of disapproval’ to overturn the FCC vote.
                   </p>
-                  <h4>Please Call: <a href="tel:4243634877">424-363-4877</a></h4>
+                  <strong>There's a narrow window to make this happen — please call your lawmakers now.</strong>
+                </p>
+                  <h4>Call: <a href="tel:0">___-___-____</a></h4>
                   <p>
                     We will connect you to the offices of your lawmakers.
                     <br/><br/>
-                    You can use this script when talking to them -- <strong>just introduce yourself, be polite, and say</strong>:
+                    You can use this script when talking to them —  just introduce yourself, be polite, and say:
                     <br/><br/>
-                    <i>"I support 'Title Two' net neutrality rules and I urge you to oppose the FCC's plan to repeal them. Specifically, I'd like you to contact the FCC Chairman and demand he abandon his current plan."</i>
+                    <i>"As your constituent, I urge you to cosponsor the Congressional Review Act ‘resolution of disapproval’ reversing the FCC's December vote repealing net neutrality. An open internet is vital for free expression and innvoation. Thank you.’</i>
                   </p>
                 </article>
               </div>
