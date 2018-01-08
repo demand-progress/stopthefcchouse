@@ -4905,53 +4905,72 @@
 	                ),
 	                _react2.default.createElement(
 	                    'div',
-	                    { id: 'thanks', style: { 'display': this.state.submitted ? '' : 'none' } },
+	                    { id: 'thanks', className: 'modal-wrapper-thanks modal-open-thanks', style: { 'display': this.state.submitted ? 'block' : 'none' } },
 	                    _react2.default.createElement(
-	                        'h4',
-	                        null,
-	                        'Thanks for signing.'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        _react2.default.createElement(
-	                            'strong',
-	                            { style: { fontSize: '20px' } },
-	                            'Now, one of the most impactful things you can do to help save net neutrality before Dec. 14th is to make phone calls to Congress.'
-	                        ),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null),
-	                        'If offices get more phone calls from constituents, we can persuade them to stop the catastrophic plan to repeal net neutrality.'
-	                    ),
-	                    _react2.default.createElement(
-	                        'h4',
-	                        null,
-	                        'Please Call: ',
+	                        'div',
+	                        { className: 'modal-thanks' },
 	                        _react2.default.createElement(
 	                            'a',
-	                            { href: 'tel:4243634877' },
-	                            '424-363-4877'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'We will connect you to the offices of your lawmakers.',
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null),
-	                        'You can use this script when talking to them -- ',
-	                        _react2.default.createElement(
-	                            'strong',
-	                            null,
-	                            'just introduce yourself, be polite, and say'
+	                            { className: 'close-thanks', href: '#', onClick: this.closeModal.bind(this) },
+	                            '\xD7'
 	                        ),
-	                        ':',
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
-	                            'i',
+	                            'header',
 	                            null,
-	                            '"I support \'Title Two\' net neutrality rules and I urge you to oppose the FCC\'s plan to repeal them. Specifically, I\'d like you to contact the FCC Chairman and demand he abandon his current plan."'
+	                            _react2.default.createElement(
+	                                'h2',
+	                                { id: 'modal-header-thanks' },
+	                                'Thanks for signing.'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'article',
+	                            null,
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    { style: { fontSize: '20px', fontWeight: 'bold' } },
+	                                    'Now, one of the most impactful things you can do to save net neutrality is to ',
+	                                    _react2.default.createElement(
+	                                        'strong',
+	                                        null,
+	                                        'CALL CONGRESS'
+	                                    ),
+	                                    ' and tell your lawmakers to support the \u2018resolution of disapproval\u2019 to overturn the FCC vote.'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'strong',
+	                                    null,
+	                                    'There\'s a narrow window to make this happen \u2014 please call your lawmakers now.'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'h4',
+	                                null,
+	                                'Call: ',
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: 'tel:0' },
+	                                    '___-___-____'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'We will connect you to the offices of your lawmakers.',
+	                                _react2.default.createElement('br', null),
+	                                _react2.default.createElement('br', null),
+	                                'You can use this script when talking to them \u2014  just introduce yourself, be polite, and say:',
+	                                _react2.default.createElement('br', null),
+	                                _react2.default.createElement('br', null),
+	                                _react2.default.createElement(
+	                                    'i',
+	                                    null,
+	                                    '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 reversing the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innvoation. Thank you.\u2019'
+	                                )
+	                            )
 	                        )
 	                    )
 	                )
@@ -4964,6 +4983,12 @@
 	                window.location.href = "https://battleforthenet.com";
 	            }
 	            this.setState({ countDown: this.state.countDown - 1 });
+	        }
+	    }, {
+	        key: 'closeModal',
+	        value: function closeModal(evt) {
+	            evt.preventDefault();
+	            this.setState({ submitted: false });
 	        }
 	    }, {
 	        key: 'onSubmit',
@@ -5071,8 +5096,8 @@
 	    value: true
 	});
 	var CONF = {
-	    actionKitPageShortName: 'save-the-net-from-trump',
-	    actionKitPageId: 2050
+	    actionKitPageShortName: 'stop-fcc',
+	    actionKitPageId: 2160
 	};
 	var URLS = {
 	    actionKit: 'https://act.demandprogress.org/act/',
