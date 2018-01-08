@@ -2069,22 +2069,82 @@ template {
     text-align: center;
 }
 
-#thanks {
+/* #thanks {
     top: 0;
     position: fixed;
     padding: 10px;
     background-color: #fff;
     border: 2px solid;
-    margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */
-    left: 0;
+    margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */ */
+    /* left: 0;
     right: 0;
     border-radius: 5px;
     z-index: 1000;
     max-width: 400px;
     bottom: 0;
     overflow-y: scroll;
+} */
+
+/* #thanks p {
+    color: #444;
+} */
+
+body.modal-open-thanks {
+  overflow: hidden;
 }
 
-#thanks p {
-    color: #444;
+.close-thanks {
+  position: absolute;
+  right: 6px;
+  top: -3px;
+  color: #fff;
+  font-size: 36px;
+  text-decoration: none;
+  text-shadow: 0 0 black;
+  font-weight: bold;
+
+}
+
+.modal-wrapper-thanks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  overflow: scroll;
+  z-index: 1;
+}
+
+.modal-thanks {
+  width: 700px;
+  margin: auto;
+  position: relative;
+}
+
+.modal-thanks header {
+  background-color: #ff2121;
+  padding: 20px 30px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+.modal-thanks header h2 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  -webkit-text-fill-color: unset;
+}
+
+.modal-thanks article {
+  background: #fff;
+  padding: 30px;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  color: #272F32;
+}
+
+.modal article p {
+  margin: -10px 0 25px;
+  color: #272F32;
 }
