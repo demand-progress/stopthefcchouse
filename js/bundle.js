@@ -164,7 +164,7 @@
 	                                '\u201CUnless it is stopped, the FCC\u2019s anti-net neutrality order will go down as a historically bad decision negatively impacting millions of Americans who rely on the internet for work, education, news, entertainment, and so much more. Now is the time to stand up against this plan to destroy net neutrality. Stand with your constituents, not Comcast.',
 	                                _react2.default.createElement('br', null),
 	                                _react2.default.createElement('br', null),
-	                                '"I urge you to cosponsor the CRA resolutions from Senator Ed Markey and Representative Mike Doyle to stop the repeal of net neutrality."'
+	                                '"Please cosponsor the CRA resolutions from Senator Ed Markey and Representative Mike Doyle to stop the repeal of net neutrality"'
 	                            )
 	                        ),
 	                        _react2.default.createElement('hr', null),
@@ -177,7 +177,7 @@
 	                            'We still have a chance to stop the FCC, though. Net neutrality champion Senator Ed Markey is leading the charge in the Senate with a resolution that will overrule the FCC. A companion resolution from Representative Mike Doyle will be introduced in the House.',
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
-	                            'As the oversight body for the FCC, Congress can overturn this massive giveaway to the telecom industry. Since the FCC voted to end net neutrality, over 40 senators have already pledged to reverse the FCC\'s order \u2014 ',
+	                            'As the oversight body for the FCC, Congress can overturn this massive and illegitimate giveaway to the telecom industry. Since the FCC voted to end net neutrality, over 40 senators have already pledged to reverse the FCC\'s order \u2014 ',
 	                            _react2.default.createElement(
 	                                'strong',
 	                                null,
@@ -4846,7 +4846,7 @@
 	                    _react2.default.createElement(
 	                        'strong',
 	                        null,
-	                        'Sign now:'
+	                        'SIGN NOW:'
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -4858,10 +4858,10 @@
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                    'div',
-	                    { style: { color: 'white' } },
+	                    { style: { color: 'white', lineHeight: 1.5 } },
 	                    _react2.default.createElement(
 	                        'strong',
-	                        { style: { fontSize: "30px" } },
+	                        { style: { fontSize: "25px" } },
 	                        'In December, the FCC ignored the will of the public and voted to gut net neutrality protections. The FCC\u2019s move kicks the door wide open for monopolistic internet providers like Comcast and Verizon to slow down and censor content online.'
 	                    ),
 	                    _react2.default.createElement('br', null),
@@ -4869,15 +4869,27 @@
 	                    _react2.default.createElement(
 	                        'strong',
 	                        null,
-	                        'However, the fight for net neutrality is far from over.'
+	                        'However, the fight for net neutrality is far from over. '
 	                    ),
-	                    'Right now, there\'s a resolution moving in Congress that could reverse the FCC\'s order. And it has a chance to pass \u2014 but we\u2019ll need all the grassroots support and energy we can generate.',
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        'Right now, there\'s a resolution moving in Congress that could reverse the FCC\'s order. And it has a chance to pass \u2014 but we\u2019ll need all the grassroots support and energy we can generate.'
+	                    ),
 	                    _react2.default.createElement('br', null),
 	                    _react2.default.createElement('br', null),
-	                    'Now\u2019s your opportunity to let your members of Congress know they must with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC\u2019s decision.',
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        'Now\u2019s your opportunity to let members of Congress know they must with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC\u2019s decision.'
+	                    ),
 	                    _react2.default.createElement('br', null),
 	                    _react2.default.createElement('br', null),
-	                    'Add your name to send a message (below) to Congress:'
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        'Add your name to send a message (below) to Congress:'
+	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'div',
@@ -5195,6 +5207,75 @@
 	                _react2.default.createElement(
 	                    "div",
 	                    { className: "logos-unit" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "built-by" },
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            _react2.default.createElement("br", null),
+	                            _react2.default.createElement("br", null),
+	                            "Built by:"
+	                        ),
+	                        " ",
+	                        _react2.default.createElement("img", { src: "images/demand-progress.png" }),
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            "In partnership with: "
+	                        ),
+	                        " ",
+	                        _react2.default.createElement("img", { src: "images/DailyKosLogo.png" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "logos" },
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "Center for Media Justice", src: "images/CMJ logo hi-res.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "Common Cause", src: "images/common_cause_logo.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "The Nation", src: "images/Nation.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "OpenMedia", src: "images/IMG_9304.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "People Demanding Action", src: "images/Logo-PeopleDemandingAction.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "People For the American Way", src: "images/PFAW.png" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "Progressive Congress Action Fund", src: "images/IMG_8465.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "Public Citizen", src: "images/PC logo-high resolution.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "RootsAction.org", src: "images/RootsAction.png" })
+	                        )
+	                    ),
 	                    _react2.default.createElement("div", { className: "spacer" }),
 	                    _react2.default.createElement(
 	                        "div",
@@ -5238,7 +5319,7 @@
 	                            { className: "social-media" },
 	                            _react2.default.createElement(
 	                                "a",
-	                                { className: "twitter", href: "https://twitter.com/intent/tweet?text=Call%20Congress!%20Time%27s%20running%20out%20before%20Trump%E2%80%99s%20FCC%20%26%20Big%20Cable%20destroy%20%23NetNeutrality%20%E2%80%94%20but%20we%20can%20still%20stop%20them%20https%3A%2F%2Fsavethenetfromtrump.com%2F", target: "_blank" },
+	                                { className: "twitter", href: "https://twitter.com/intent/tweet?text=Call%20Congress%21%20Tell%20them%20they%20must%20stop%20the%20FCC%E2%80%99s%20plan%20to%20destroy%20the%20open%20internet%20by%20supporting%20legislation%20to%20restore%20%23NetNeutrality%20https%3A%2F%2Fstopthefcc.net%2F", target: "_blank" },
 	                                _react2.default.createElement("img", { src: "images/twitter_white.svg" }),
 	                                _react2.default.createElement(
 	                                    "span",
