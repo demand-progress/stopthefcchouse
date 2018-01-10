@@ -24,7 +24,7 @@ class Main extends Component {
                         <br/><br/>
                         “Unless it is stopped, the FCC’s anti-net neutrality order will go down as a historically bad decision negatively impacting millions of Americans who rely on the internet for work, education, news, entertainment, and so much more. Now is the time to stand up against this plan to destroy net neutrality. Stand with your constituents, not Comcast.                      
                         <br/><br/>
-                        "I urge you to cosponsor the CRA resolutions from Senator Ed Markey and Representative Mike Doyle to stop the repeal of net neutrality."
+                        "Please cosponsor the CRA resolutions from Senator Ed Markey and Representative Mike Doyle to stop the repeal of net neutrality"
                       </i>
                     </p>
                     <hr/>
@@ -33,7 +33,7 @@ class Main extends Component {
                         <br/><br/>
                         We still have a chance to stop the FCC, though. Net neutrality champion Senator Ed Markey is leading the charge in the Senate with a resolution that will overrule the FCC. A companion resolution from Representative Mike Doyle will be introduced in the House.                        
                         <br/><br/>
-                        As the oversight body for the FCC, Congress can overturn this massive giveaway to the telecom industry. Since the FCC voted to end net neutrality, over 40 senators have already pledged to reverse the FCC's order — <strong>and 30 is the magic number needed to guarantee a floor vote. </strong>
+                        As the oversight body for the FCC, Congress can overturn this massive and illegitimate giveaway to the telecom industry. Since the FCC voted to end net neutrality, over 40 senators have already pledged to reverse the FCC's order — <strong>and 30 is the magic number needed to guarantee a floor vote. </strong>
                         <br/><br/>
                         When the resolution goes to the floor, we need a simple majority (51 senators) to pass it. With Senators Doug Jones—who was recently elected and is a net neutrality supporter—and Susan Collins—a Republican who has already expressed openness to supporting the resolution—we may need just one more Republican to get this passed in the Senate!
                         <br/><br/>
