@@ -32,20 +32,21 @@ class Form extends Component {
                 Add your name to send a message (below) to Congress:
             </div>
             <div id="signThePetition" style={{ 'display' : this.state.submitted ? 'none' : ''}}>
-            <div className="flex">
-                <input type="text" className="form-input" name="name" placeholder="Your Name" />
-                <input type="email" className="form-input" name="email" placeholder="Your Email" />
+              <div className="flex">
+                  <input type="text" className="form-input" name="name" placeholder="Your Name" />
+                  <input type="email" className="form-input" name="email" placeholder="Your Email" />
+              </div>
+              <div className="flex">
+                  <input type="text" className="form-input" name="street" placeholder="Street Address" />
+                  <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
+              </div>
+              <div className="flex">
+                  <button className="btn">
+                      <span>Submit</span>
+                  </button>
+              </div>
             </div>
-            <div className="flex">
-                <input type="text" className="form-input" name="street" placeholder="Street Address" />
-                <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
-            </div>
-            <div className="flex">
-                <button className="btn">
-                    <span>Submit</span>
-                </button>
-            </div>
-            </div>
+            <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
             <div id="thanks" className="modal-wrapper-thanks modal-open-thanks" style={{ 'display' : this.state.submitted ? 'block' : 'none'}}>
               <div className="modal-thanks">
                 <a className="close-thanks" href="#" onClick={ this.closeModal.bind(this) }>×</a>
