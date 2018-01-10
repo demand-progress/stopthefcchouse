@@ -177,10 +177,15 @@
 	                            'We still have a chance to stop the FCC, though. Net neutrality champion Senator Ed Markey is leading the charge in the Senate with a resolution that will overrule the FCC. A companion resolution from Representative Mike Doyle will be introduced in the House.',
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
-	                            'As the oversight body for the FCC, Congress can overturn this massive giveaway to the telecom industry. Since the FCC voted to end net neutrality, 29 senators have already pledged to reverse the FCC\'s order. We need just one more to get to 30, which is the number that will get the resolution to a vote on the Senate floor.',
+	                            'As the oversight body for the FCC, Congress can overturn this massive giveaway to the telecom industry. Since the FCC voted to end net neutrality, over 40 senators have already pledged to reverse the FCC\'s order \u2014 ',
+	                            _react2.default.createElement(
+	                                'strong',
+	                                null,
+	                                'and 30 is the magic number needed to guarantee a floor vote. '
+	                            ),
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
-	                            'Once the resolution reaches the floor, we need a simple majority to pass it. With Senators Doug Jones\u2014who was recently elected and is a net neutrality supporter\u2014and Susan Collins\u2014a Republican who has already expressed openness to supporting the resolution\u2014we may need just one more Republican to get this passed in the Senate!',
+	                            'When the resolution goes to the floor, we need a simple majority (51 senators) to pass it. With Senators Doug Jones\u2014who was recently elected and is a net neutrality supporter\u2014and Susan Collins\u2014a Republican who has already expressed openness to supporting the resolution\u2014we may need just one more Republican to get this passed in the Senate!',
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
 	                            'If we flood Congress with petitions and calls, we have a shot at stopping the FCC order. ',
@@ -4904,6 +4909,15 @@
 	                    )
 	                ),
 	                _react2.default.createElement(
+	                    'span',
+	                    null,
+	                    _react2.default.createElement(
+	                        'i',
+	                        null,
+	                        'One or more of the participating organizations (listed at bottom) may email you about their campaigns.'
+	                    )
+	                ),
+	                _react2.default.createElement(
 	                    'div',
 	                    { id: 'thanks', className: 'modal-wrapper-thanks modal-open-thanks', style: { 'display': this.state.submitted ? 'block' : 'none' } },
 	                    _react2.default.createElement(
@@ -4968,7 +4982,7 @@
 	                                _react2.default.createElement(
 	                                    'i',
 	                                    null,
-	                                    '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 reversing the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innvoation. Thank you.\u2019'
+	                                    '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 reversing the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innovation. Thank you.\u2019'
 	                                )
 	                            )
 	                        )
