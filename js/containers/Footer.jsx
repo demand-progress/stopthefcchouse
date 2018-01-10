@@ -6,83 +6,49 @@ class Footer extends Component {
         return (
             <div className="footer">
                 <div className="logos-unit">
-                    {/* <div className="built-by">
+                    <div className="built-by">
                         <p><br/><br/>Built by:</p> <img src="images/demand-progress.png" />
                         <p>In partnership with: </p> <img src="images/DailyKosLogo.png" />
                     </div>
                     <div className="logos">
+            
                         <a target="_blank">
-                            <img src="images/PasAFV.png" />
+                            <img alt="Center for Media Justice" src="images/CMJ logo hi-res.jpg" />
                         </a>
 
                         <a target="_blank">
-                            <img src="images/CMJ logo hi-res.jpg" />
+                            <img alt="Common Cause" src="images/common_cause_logo.jpg" />
+                        </a>
+                        
+                        <a target="_blank">
+                            <img alt="The Nation" src="images/Nation.jpg" />
                         </a>
 
                         <a target="_blank">
-                            <img src="images/CHV Logo2.jpg" />
+                            <img alt="OpenMedia" src="images/IMG_9304.jpg" />
                         </a>
 
                         <a target="_blank">
-                            <img src="images/common_cause_logo.jpg" />
+                            <img alt="People Demanding Action" src="images/Logo-PeopleDemandingAction.jpg" />
                         </a>
 
                         <a target="_blank">
-                            <img src="images/fp-actionfund.png" />
+                            <img alt="People For the American Way" src="images/PFAW.png" />
                         </a>
 
                         <a target="_blank">
-                            <img src="images/LoveArmy.png" />
+                            <img alt="Progressive Congress Action Fund" src="images/IMG_8465.jpg" />
                         </a>
 
                         <a target="_blank">
-                            <img src="images/Nation.jpg" />
+                            <img alt="Public Citizen" src="images/PC logo-high resolution.jpg" />
                         </a>
 
                         <a target="_blank">
-                            <img src="images/IMG_9304.jpg" />
+                            <img alt="RootsAction.org" src="images/RootsAction.png" />
                         </a>
-
-                        <a target="_blank">
-                            <img src="images/Logo-PeopleDemandingAction.jpg" />
-                        </a>
-
-                        <a target="_blank">
-                            <img src="images/Pen_Box_lrg (1).jpg" />
-                        </a>
-
-                        <a target="_blank">
-                            <img src="images/PFAW.png" />
-                        </a>
-
-                        <a target="_blank">
-                            <img src="images/PresenteAction2016.png" />
-                        </a>
-
-                        <a target="_blank">
-                            <img src="images/IMG_8465.jpg" />
-                        </a>
-
-                        <a target="_blank">
-                            <img src="images/PC logo-high resolution.jpg" />
-                        </a>
-
-                        <a target="_blank">
-                            <img src="images/pkname-large (4).png" />
-                        </a>
-
-                        <a target="_blank">
-                            <img src="images/RootsAction.png" />
-                        </a>
-
-                        <a target="_blank">
-                            <img src="images/SumOfUs_lg_color.png" />
-                        </a>
-
-                        <a target="_blank">
-                            <img src="images/TZH Logo.jpg" />
-                        </a>
-                    </div> */}
+                        
+                    </div>
                     <div className="spacer"></div>
                     <div>
                         <div className="press-inquiries">
@@ -97,7 +63,7 @@ class Footer extends Component {
                             </p>
                         </div>
                         <div className="social-media">
-                            <a className="twitter" href="https://twitter.com/intent/tweet?text=Call%20Congress!%20Time%27s%20running%20out%20before%20Trump%E2%80%99s%20FCC%20%26%20Big%20Cable%20destroy%20%23NetNeutrality%20%E2%80%94%20but%20we%20can%20still%20stop%20them%20https%3A%2F%2Fsavethenetfromtrump.com%2F" target="_blank">
+                            <a className="twitter" href="https://twitter.com/intent/tweet?text=Call%20Congress%21%20Tell%20them%20they%20must%20stop%20the%20FCC%E2%80%99s%20plan%20to%20destroy%20the%20open%20internet%20by%20supporting%20legislation%20to%20restore%20%23NetNeutrality%20https%3A%2F%2Fstopthefcc.net%2F" target="_blank">
                                 <img src="images/twitter_white.svg" />
                                 <span>Share on twitter</span>
                             </a>
