@@ -15,21 +15,21 @@ class Form extends Component {
     render() {
         return (<form className="bftn-form call-action-form" onSubmit={ this.onSubmit.bind(this) }>
 
-            <h4><strong>Sign now:</strong></h4>
+            <h4><strong>SIGN NOW:</strong></h4>
             <h3>Congress must stop the FCC’s plan to dismantle net neutrality</h3>
             <br/><br/>
-            <div style={{color: 'white'}}>
-              <strong style={{ fontSize: "30px" }}>
+            <div style={{color: 'white', lineHeight: 1.5}}>
+              <strong style={{ fontSize: "25px" }}>
                 In December, the FCC ignored the will of the public and voted to gut net neutrality protections. 
                 The FCC’s move kicks the door wide open for monopolistic internet providers like Comcast and Verizon to slow down and censor content online. 
               </strong>
                 <br/><br/>
-                <strong>However, the fight for net neutrality is far from over.</strong>
-                 Right now, there's a resolution moving in Congress that could reverse the FCC's order. And it has a chance to pass — but we’ll need all the grassroots support and energy we can generate.
+                <strong>However, the fight for net neutrality is far from over. </strong>
+                <div>Right now, there's a resolution moving in Congress that could reverse the FCC's order. And it has a chance to pass — but we’ll need all the grassroots support and energy we can generate.</div>
                 <br/><br/>
-                Now’s your opportunity to let your members of Congress know they must with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC’s decision.
+                <div>Now’s your opportunity to let members of Congress know they must with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC’s decision.</div>
                 <br/><br/>
-                Add your name to send a message (below) to Congress:
+                <div>Add your name to send a message (below) to Congress:</div>
             </div>
             <div id="signThePetition" style={{ 'display' : this.state.submitted ? 'none' : ''}}>
               <div className="flex">
