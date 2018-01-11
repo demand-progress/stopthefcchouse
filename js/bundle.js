@@ -185,7 +185,7 @@
 	                            ),
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
-	                            'When the resolution goes to the floor, we need a simple majority (51 senators) to pass it. With Senators Doug Jones\u2014who was recently elected and is a net neutrality supporter\u2014and Susan Collins\u2014a Republican who has already expressed openness to supporting the resolution\u2014we may need just one more Republican to get this passed in the Senate!',
+	                            'When the resolution goes to the floor, we need a simple majority (51 senators) to pass it. Republican Senator Susan Collins has already pledged her support for the resolution, and if a handful of remaining Democrats join, we\u2019ll need just one more Republican to get this passed in the Senate!',
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
 	                            'If we flood Congress with petitions and calls, we have a shot at stopping the FCC order. ',
@@ -4881,7 +4881,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        null,
-	                        'Now\u2019s your opportunity to let members of Congress know they must with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC\u2019s decision.'
+	                        'Now\u2019s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC\u2019s decision.'
 	                    ),
 	                    _react2.default.createElement('br', null),
 	                    _react2.default.createElement('br', null),
@@ -4978,8 +4978,8 @@
 	                                'Call: ',
 	                                _react2.default.createElement(
 	                                    'a',
-	                                    { href: 'tel:0' },
-	                                    '___-___-____'
+	                                    { href: 'tel:8582640403' },
+	                                    '858-264-0403'
 	                                )
 	                            ),
 	                            _react2.default.createElement(
