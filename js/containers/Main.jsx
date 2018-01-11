@@ -22,12 +22,11 @@ class Main extends Component {
                          <br/><br/>
                         "The FCC order allowing internet providers to slow down and block content at their choosing leaves the public without protections from corporate censorship, and leaves small businesses without the ability to compete with larger sites and services. The effects on free expression and innovation will be devastating.                       
                         <br/><br/>
-                        “Unless it is stopped, the FCC’s anti-net neutrality order will go down as a historically bad decision negatively impacting millions of Americans who rely on the internet for work, education, news, entertainment, and so much more. Now is the time to stand up against this plan to destroy net neutrality. Stand with your constituents, not Comcast.                      
-                        <br/><br/>
-                        "Please cosponsor the CRA resolutions from Senator Ed Markey and Representative Mike Doyle to stop the repeal of net neutrality"
+                        “Unless it is stopped, the FCC’s anti-net neutrality order will go down as a historically bad decision negatively impacting millions of Americans who rely on the internet for work, education, news, entertainment, and so much more. Now is the time to stand up against this plan to destroy net neutrality. Stand with your constituents, not Comcast.
                       </i>
                     </p>
                     <hr/>
+                    <h4 style={{color: 'white', textAlign: 'center'}}>More information:</h4>
                     <p style={{ textAlign: 'center' }}>
                         On December 14th, three FCC commissioners ignored the will of the public and voted to gut net neutrality protections — despite polling showing that 83% of Americans opposed the repeal.                       
                         <br/><br/>

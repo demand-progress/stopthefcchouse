@@ -16,7 +16,7 @@ class Form extends Component {
         return (<form className="bftn-form call-action-form" onSubmit={ this.onSubmit.bind(this) }>
 
             <h4><strong>SIGN NOW:</strong></h4>
-            <h3>Congress must stop the FCC’s plan to dismantle net neutrality</h3>
+            <h3>Congress must stop the FCC’s plan to destroy net neutrality</h3>
             <br/><br/>
             <div style={{color: 'white', lineHeight: 1.5}}>
               <strong style={{ fontSize: "25px" }}>
