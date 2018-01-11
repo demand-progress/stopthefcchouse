@@ -60,7 +60,7 @@ class Form extends Component {
                   </p>
                   <strong>There's a narrow window to make this happen — please call your lawmakers now.</strong>
                 </p>
-                  <h4>Call: <a href="tel:0">___-___-____</a></h4>
+                  <h4>Call: <a href="tel:8582640403">858-264-0403</a></h4>
                   <p>
                     We will connect you to the offices of your lawmakers.
                     <br/><br/>
