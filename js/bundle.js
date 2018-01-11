@@ -5233,6 +5233,11 @@
 	                        _react2.default.createElement(
 	                            "a",
 	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "American Family Voices (AFV)", src: "images/PasAFV.png" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
 	                            _react2.default.createElement("img", { alt: "Center for Media Justice", src: "images/CMJ logo hi-res.jpg" })
 	                        ),
 	                        _react2.default.createElement(
@@ -5243,12 +5248,22 @@
 	                        _react2.default.createElement(
 	                            "a",
 	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "LoveArmy", src: "images/LoveArmy.png" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
 	                            _react2.default.createElement("img", { alt: "The Nation", src: "images/Nation.jpg" })
 	                        ),
 	                        _react2.default.createElement(
 	                            "a",
 	                            { target: "_blank" },
 	                            _react2.default.createElement("img", { alt: "OpenMedia", src: "images/IMG_9304.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "PEN America", src: "images/Pen_Box_lrg (1).jpg" })
 	                        ),
 	                        _react2.default.createElement(
 	                            "a",
@@ -5274,6 +5289,11 @@
 	                            "a",
 	                            { target: "_blank" },
 	                            _react2.default.createElement("img", { alt: "RootsAction.org", src: "images/RootsAction.png" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "SumOfUs", src: "images/SumOfUs_lg_color.png" })
 	                        )
 	                    ),
 	                    _react2.default.createElement("div", { className: "spacer" }),
