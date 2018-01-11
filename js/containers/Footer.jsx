@@ -11,7 +11,10 @@ class Footer extends Component {
                         <p>In partnership with: </p> <img src="images/DailyKosLogo.png" />
                     </div>
                     <div className="logos">
-            
+                       <a target="_blank">
+                          <img alt="American Family Voices (AFV)" src="images/PasAFV.png" />
+                       </a>
+                      
                         <a target="_blank">
                             <img alt="Center for Media Justice" src="images/CMJ logo hi-res.jpg" />
                         </a>
@@ -21,13 +24,21 @@ class Footer extends Component {
                         </a>
                         
                         <a target="_blank">
+                            <img alt="LoveArmy" src="images/LoveArmy.png" />
+                        </a>
+                        
+                        <a target="_blank">
                             <img alt="The Nation" src="images/Nation.jpg" />
                         </a>
 
                         <a target="_blank">
                             <img alt="OpenMedia" src="images/IMG_9304.jpg" />
                         </a>
-
+                        
+                        <a target="_blank">
+                            <img alt="PEN America" src="images/Pen_Box_lrg (1).jpg" />
+                        </a>
+                        
                         <a target="_blank">
                             <img alt="People Demanding Action" src="images/Logo-PeopleDemandingAction.jpg" />
                         </a>
@@ -48,6 +59,10 @@ class Footer extends Component {
                             <img alt="RootsAction.org" src="images/RootsAction.png" />
                         </a>
                         
+                        <a target="_blank">
+                            <img alt="SumOfUs" src="images/SumOfUs_lg_color.png" />
+                        </a>      
+                          
                     </div>
                     <div className="spacer"></div>
                     <div>
