@@ -161,13 +161,15 @@
 	                                '"The FCC order allowing internet providers to slow down and block content at their choosing leaves the public without protections from corporate censorship, and leaves small businesses without the ability to compete with larger sites and services. The effects on free expression and innovation will be devastating.',
 	                                _react2.default.createElement('br', null),
 	                                _react2.default.createElement('br', null),
-	                                '\u201CUnless it is stopped, the FCC\u2019s anti-net neutrality order will go down as a historically bad decision negatively impacting millions of Americans who rely on the internet for work, education, news, entertainment, and so much more. Now is the time to stand up against this plan to destroy net neutrality. Stand with your constituents, not Comcast.',
-	                                _react2.default.createElement('br', null),
-	                                _react2.default.createElement('br', null),
-	                                '"Please cosponsor the CRA resolutions from Senator Ed Markey and Representative Mike Doyle to stop the repeal of net neutrality"'
+	                                '\u201CUnless it is stopped, the FCC\u2019s anti-net neutrality order will go down as a historically bad decision negatively impacting millions of Americans who rely on the internet for work, education, news, entertainment, and so much more. Now is the time to stand up against this plan to destroy net neutrality. Stand with your constituents, not Comcast.'
 	                            )
 	                        ),
 	                        _react2.default.createElement('hr', null),
+	                        _react2.default.createElement(
+	                            'h4',
+	                            { style: { color: 'white', textAlign: 'center' } },
+	                            'More information:'
+	                        ),
 	                        _react2.default.createElement(
 	                            'p',
 	                            { style: { textAlign: 'center' } },
@@ -4852,7 +4854,7 @@
 	                _react2.default.createElement(
 	                    'h3',
 	                    null,
-	                    'Congress must stop the FCC\u2019s plan to dismantle net neutrality'
+	                    'Congress must stop the FCC\u2019s plan to destroy net neutrality'
 	                ),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement('br', null),
