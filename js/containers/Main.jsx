@@ -35,7 +35,7 @@ class Main extends Component {
                         <br/><br/>
                         As the oversight body for the FCC, Congress can overturn this massive and illegitimate giveaway to the telecom industry. Since the FCC voted to end net neutrality, over 40 senators have already pledged to reverse the FCC's order — <strong>and 30 is the magic number needed to guarantee a floor vote. </strong>
                         <br/><br/>
-                        When the resolution goes to the floor, we need a simple majority (51 senators) to pass it. With Senators Doug Jones—who was recently elected and is a net neutrality supporter—and Susan Collins—a Republican who has already expressed openness to supporting the resolution—we may need just one more Republican to get this passed in the Senate!
+                        When the resolution goes to the floor, we need a simple majority (51 senators) to pass it. Republican Senator Susan Collins has already pledged her support for the resolution, and if a handful of remaining Democrats join, we’ll need just one more Republican to get this passed in the Senate!
                         <br/><br/>
                         If we flood Congress with petitions and calls, we have a shot at stopping the FCC order. <a className="back-to-form-link" href="#signThePetition">Sign the petition and call on Congress to pass the CRA resolution to stop the repeal of net neutrality.</a>
                         <br/><br/>

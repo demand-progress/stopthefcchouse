@@ -27,7 +27,7 @@ class Form extends Component {
                 <strong>However, the fight for net neutrality is far from over. </strong>
                 <div>Right now, there's a resolution moving in Congress that could reverse the FCC's order. And it has a chance to pass — but we’ll need all the grassroots support and energy we can generate.</div>
                 <br/><br/>
-                <div>Now’s your opportunity to let members of Congress know they must with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC’s decision.</div>
+                <div>Now’s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC’s decision.</div>
                 <br/><br/>
                 <div>Add your name to send a message (below) to Congress:</div>
             </div>
