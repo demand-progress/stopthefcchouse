@@ -2148,3 +2148,10 @@ body.modal-open-thanks {
   margin: -10px 0 25px;
   color: #272F32;
 }
+
+.logos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; 
+}
