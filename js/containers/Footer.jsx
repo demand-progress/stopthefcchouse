@@ -18,9 +18,21 @@ class Footer extends Component {
                         <a target="_blank">
                             <img alt="Center for Media Justice" src="images/CMJ logo hi-res.jpg" />
                         </a>
-
+                      
+                        <a target="_blank">
+                            <img alt="Climate Hawks Vote" src="images/CHV Logo2.jpg" />
+                        </a>
+                        
                         <a target="_blank">
                             <img alt="Common Cause" src="images/common_cause_logo.jpg" />
+                        </a>
+                        
+                        <a target="_blank">
+                            <img alt="Common Dreams" src="images/CD_stacked_white.jpg" />
+                        </a>
+                        
+                        <a target="_blank">
+                            <img alt="Free Press Action Fund" src="images/fp-actionfund.png" />
                         </a>
                         
                         <a target="_blank">
