@@ -5245,7 +5245,22 @@
 	                        _react2.default.createElement(
 	                            "a",
 	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "Climate Hawks Vote", src: "images/CHV Logo2.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
 	                            _react2.default.createElement("img", { alt: "Common Cause", src: "images/common_cause_logo.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "Common Dreams", src: "images/CD_stacked_white.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "Free Press Action Fund", src: "images/fp-actionfund.png" })
 	                        ),
 	                        _react2.default.createElement(
 	                            "a",
