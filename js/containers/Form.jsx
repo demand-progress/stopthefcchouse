@@ -64,7 +64,7 @@ class Form extends Component {
                     <br/><br/>
                     You can use this script when talking to them —  just introduce yourself, be polite, and say:
                     <br/><br/>
-                    <i>"As your constituent, I urge you to cosponsor the Congressional Review Act ‘resolution of disapproval’ reversing the FCC's December vote repealing net neutrality. An open internet is vital for free expression and innovation. Now Please Call Congress.’</i>
+                    <i>"As your constituent, I urge you to cosponsor the Congressional Review Act ‘resolution of disapproval’ to reverse the FCC's December vote repealing net neutrality. An open internet is vital for free expression and innovation. Now Please Call Congress.’</i>
                   </p>
                 </article>
               </div>
