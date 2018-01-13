@@ -16,35 +16,34 @@ class Form extends Component {
         return (<form className="bftn-form call-action-form" onSubmit={ this.onSubmit.bind(this) }>
 
             <h4><strong>SIGN NOW:</strong></h4>
+            <div id="signThePetition" style={{ 'display' : this.state.submitted ? 'none' : ''}}>
+              <div className="flex">
+                <input type="text" className="form-input" name="name" placeholder="Your Name" />
+                <input type="email" className="form-input" name="email" placeholder="Your Email" />
+              </div>
+              <div className="flex">
+                <input type="text" className="form-input" name="street" placeholder="Street Address" />
+                <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
+              </div>
+              <div className="flex">
+                <button className="btn">
+                  <span>Submit</span>
+                </button>
+              </div>
+            </div>
             <h3>Congress must stop the FCC’s plan to destroy net neutrality</h3>
             <br/><br/>
             <div style={{color: 'white', lineHeight: 1.5}}>
               <strong style={{ fontSize: "25px" }}>
-                In December, the FCC ignored the will of the public and voted to gut net neutrality protections. 
-                The FCC’s move kicks the door wide open for monopolistic internet providers like Comcast and Verizon to slow down and censor content online. 
+                In December, the FCC ignored the will of the public and voted to gut net neutrality protections. But Congress can reverse the FCC's order. 
               </strong>
                 <br/><br/>
-                <strong>However, the fight for net neutrality is far from over. </strong>
+                {/* <strong>However, the fight for net neutrality is far from over. </strong>
                 <div>Right now, there's a resolution moving in Congress that could reverse the FCC's order. And it has a chance to pass — but we’ll need all the grassroots support and energy we can generate.</div>
-                <br/><br/>
+                <br/><br/> */}
                 <div>Now’s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC’s decision.</div>
                 <br/><br/>
                 <div>Add your name to send a message (below) to Congress:</div>
-            </div>
-            <div id="signThePetition" style={{ 'display' : this.state.submitted ? 'none' : ''}}>
-              <div className="flex">
-                  <input type="text" className="form-input" name="name" placeholder="Your Name" />
-                  <input type="email" className="form-input" name="email" placeholder="Your Email" />
-              </div>
-              <div className="flex">
-                  <input type="text" className="form-input" name="street" placeholder="Street Address" />
-                  <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
-              </div>
-              <div className="flex">
-                  <button className="btn">
-                      <span>Submit</span>
-                  </button>
-              </div>
             </div>
             <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
             <div id="thanks" className="modal-wrapper-thanks modal-open-thanks" style={{ 'display' : this.state.submitted ? 'block' : 'none'}}>
@@ -56,17 +55,16 @@ class Form extends Component {
                 <article>
                   <p>
                     <p style={{fontSize: '20px', fontWeight: 'bold'}}>
-                    Now, one of the most impactful things you can do to save net neutrality is to <strong>CALL CONGRESS</strong> and tell your lawmakers to support the ‘resolution of disapproval’ to overturn the FCC vote.
+                    Now, one of the most impactful things you can do to save net neutrality is to <strong>CALL CONGRESS TODAY</strong> and tell your lawmakers to support the ‘resolution of disapproval’ to overturn the FCC vote.
                   </p>
-                  <strong>There's a narrow window to make this happen — please call your lawmakers now.</strong>
                 </p>
-                  <h4>Call: <a href="tel:8582640403">858-264-0403</a></h4>
+                  <h4 style={{color: 'black'}}>Call: <a href="tel:8582640403">858-264-0403</a></h4>
                   <p>
                     We will connect you to the offices of your lawmakers.
                     <br/><br/>
                     You can use this script when talking to them —  just introduce yourself, be polite, and say:
                     <br/><br/>
-                    <i>"As your constituent, I urge you to cosponsor the Congressional Review Act ‘resolution of disapproval’ reversing the FCC's December vote repealing net neutrality. An open internet is vital for free expression and innovation. Thank you.’</i>
+                    <i>"As your constituent, I urge you to cosponsor the Congressional Review Act ‘resolution of disapproval’ reversing the FCC's December vote repealing net neutrality. An open internet is vital for free expression and innovation. Now Please Call Congress.’</i>
                   </p>
                 </article>
               </div>
