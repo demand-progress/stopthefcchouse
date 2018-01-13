@@ -2148,8 +2148,15 @@ body.modal-open-thanks {
   color: #272F32;
 }
 
+
 @media screen and (max-width: 800px) {
   .modal-thanks {
     width: 90%;
   }
+
+.logos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; 
 }
