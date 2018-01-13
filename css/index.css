@@ -2102,7 +2102,6 @@ body.modal-open-thanks {
   text-decoration: none;
   text-shadow: 0 0 black;
   font-weight: bold;
-
 }
 
 .modal-wrapper-thanks {
@@ -2147,4 +2146,10 @@ body.modal-open-thanks {
 .modal article p {
   margin: -10px 0 25px;
   color: #272F32;
+}
+
+@media screen and (max-width: 800px) {
+  .modal-thanks {
+    width: 90%;
+  }
 }
