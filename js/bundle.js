@@ -4852,48 +4852,6 @@
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Congress must stop the FCC\u2019s plan to destroy net neutrality'
-	                ),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(
-	                    'div',
-	                    { style: { color: 'white', lineHeight: 1.5 } },
-	                    _react2.default.createElement(
-	                        'strong',
-	                        { style: { fontSize: "25px" } },
-	                        'In December, the FCC ignored the will of the public and voted to gut net neutrality protections. The FCC\u2019s move kicks the door wide open for monopolistic internet providers like Comcast and Verizon to slow down and censor content online.'
-	                    ),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement(
-	                        'strong',
-	                        null,
-	                        'However, the fight for net neutrality is far from over. '
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        'Right now, there\'s a resolution moving in Congress that could reverse the FCC\'s order. And it has a chance to pass \u2014 but we\u2019ll need all the grassroots support and energy we can generate.'
-	                    ),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        'Now\u2019s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC\u2019s decision.'
-	                    ),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        'Add your name to send a message (below) to Congress:'
-	                    )
-	                ),
-	                _react2.default.createElement(
 	                    'div',
 	                    { id: 'signThePetition', style: { 'display': this.state.submitted ? 'none' : '' } },
 	                    _react2.default.createElement(
@@ -4920,6 +4878,36 @@
 	                                'Submit'
 	                            )
 	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Congress must stop the FCC\u2019s plan to destroy net neutrality'
+	                ),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { style: { color: 'white', lineHeight: 1.5 } },
+	                    _react2.default.createElement(
+	                        'strong',
+	                        { style: { fontSize: "25px" } },
+	                        'In December, the FCC ignored the will of the public and voted to gut net neutrality protections. But Congress can reverse the FCC\'s order.'
+	                    ),
+	                    _react2.default.createElement('br', null),
+	                    _react2.default.createElement('br', null),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        'Now\u2019s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC\u2019s decision.'
+	                    ),
+	                    _react2.default.createElement('br', null),
+	                    _react2.default.createElement('br', null),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        'Add your name to send a message (below) to Congress:'
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -4964,19 +4952,14 @@
 	                                    _react2.default.createElement(
 	                                        'strong',
 	                                        null,
-	                                        'CALL CONGRESS'
+	                                        'CALL CONGRESS TODAY'
 	                                    ),
 	                                    ' and tell your lawmakers to support the \u2018resolution of disapproval\u2019 to overturn the FCC vote.'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'strong',
-	                                    null,
-	                                    'There\'s a narrow window to make this happen \u2014 please call your lawmakers now.'
 	                                )
 	                            ),
 	                            _react2.default.createElement(
 	                                'h4',
-	                                null,
+	                                { style: { color: 'black' } },
 	                                'Call: ',
 	                                _react2.default.createElement(
 	                                    'a',
@@ -4996,7 +4979,7 @@
 	                                _react2.default.createElement(
 	                                    'i',
 	                                    null,
-	                                    '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 reversing the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innovation. Thank you.\u2019'
+	                                    '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 reversing the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innovation. Now Please Call Congress.\u2019'
 	                                )
 	                            )
 	                        )
