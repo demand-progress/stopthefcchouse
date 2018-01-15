@@ -13,24 +13,8 @@ class Form extends Component {
     }
 
     render() {
-        return (<form className="bftn-form call-action-form" onSubmit={ this.onSubmit.bind(this) }>
-
-            <h4><strong>SIGN NOW:</strong></h4>
-            <div id="signThePetition" style={{ 'display' : this.state.submitted ? 'none' : ''}}>
-              <div className="flex">
-                <input type="text" className="form-input" name="name" placeholder="Your Name" />
-                <input type="email" className="form-input" name="email" placeholder="Your Email" />
-              </div>
-              <div className="flex">
-                <input type="text" className="form-input" name="street" placeholder="Street Address" />
-                <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
-              </div>
-              <div className="flex">
-                <button className="btn">
-                  <span>Submit</span>
-                </button>
-              </div>
-            </div>
+        return (
+          <form className="bftn-form call-action-form" onSubmit={ this.onSubmit.bind(this) }>
             <h3>Congress must stop the FCC’s plan to destroy net neutrality</h3>
             <br/><br/>
             <div style={{color: 'white', lineHeight: 1.5}}>
@@ -46,6 +30,21 @@ class Form extends Component {
                 <div>Add your name to send a message (below) to Congress:</div>
             </div>
             <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
+            <div id="signThePetition" style={{ 'display' : this.state.submitted ? 'none' : ''}}>
+              <div className="flex">
+                <input type="text" className="form-input" name="name" placeholder="Your Name" />
+                <input type="email" className="form-input" name="email" placeholder="Your Email" />
+              </div>
+              <div className="flex">
+                <input type="text" className="form-input" name="street" placeholder="Street Address" />
+                <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
+              </div>
+              <div className="flex">
+                <button className="btn">
+                  <span>SIGN NOW</span>
+                </button>
+              </div>
+            </div>
             <div id="thanks" className="modal-wrapper-thanks modal-open-thanks" style={{ 'display' : this.state.submitted ? 'block' : 'none'}}>
               <div className="modal-thanks">
                 <a className="close-thanks" href="#" onClick={ this.closeModal.bind(this) }>×</a>
