@@ -62,7 +62,11 @@ class Footer extends Component {
                         <a target="_blank">
                             <img alt="People For the American Way" src="images/PFAW.png" />
                         </a>
-
+                        
+                        <a target="_blank">
+                            <img alt="Presente Action" src="images/PresenteAction2016.png" />
+                        </a>
+                        
                         <a target="_blank">
                             <img alt="Progressive Congress Action Fund" src="images/IMG_8465.jpg" />
                         </a>
