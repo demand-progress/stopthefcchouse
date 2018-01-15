@@ -4979,7 +4979,7 @@
 	                                _react2.default.createElement(
 	                                    'i',
 	                                    null,
-	                                    '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 reversing the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innovation. Now Please Call Congress.\u2019'
+	                                    '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 to reverse the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innovation. Now Please Call Congress.\u2019'
 	                                )
 	                            )
 	                        )
@@ -5229,6 +5229,11 @@
 	                            "a",
 	                            { target: "_blank" },
 	                            _react2.default.createElement("img", { alt: "Climate Hawks Vote", src: "images/CHV Logo2.jpg" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "Color of Change", src: "images/COC-Full-Color.png" })
 	                        ),
 	                        _react2.default.createElement(
 	                            "a",
