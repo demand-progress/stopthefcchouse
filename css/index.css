@@ -2069,26 +2069,6 @@ template {
     text-align: center;
 }
 
-/* #thanks {
-    top: 0;
-    position: fixed;
-    padding: 10px;
-    background-color: #fff;
-    border: 2px solid;
-    margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */ */
-    /* left: 0;
-    right: 0;
-    border-radius: 5px;
-    z-index: 1000;
-    max-width: 400px;
-    bottom: 0;
-    overflow-y: scroll;
-} */
-
-/* #thanks p {
-    color: #444;
-} */
-
 body.modal-open-thanks {
   overflow: hidden;
 }
@@ -2153,10 +2133,3 @@ body.modal-open-thanks {
   .modal-thanks {
     width: 90%;
   }
-
-.logos {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center; 
-}
