@@ -4843,44 +4843,6 @@
 	                'form',
 	                { className: 'bftn-form call-action-form', onSubmit: this.onSubmit.bind(this) },
 	                _react2.default.createElement(
-	                    'h4',
-	                    null,
-	                    _react2.default.createElement(
-	                        'strong',
-	                        null,
-	                        'SIGN NOW:'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { id: 'signThePetition', style: { 'display': this.state.submitted ? 'none' : '' } },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'flex' },
-	                        _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'name', placeholder: 'Your Name' }),
-	                        _react2.default.createElement('input', { type: 'email', className: 'form-input', name: 'email', placeholder: 'Your Email' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'flex' },
-	                        _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'street', placeholder: 'Street Address' }),
-	                        _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'zip', placeholder: 'Your Zipcode' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'flex' },
-	                        _react2.default.createElement(
-	                            'button',
-	                            { className: 'btn' },
-	                            _react2.default.createElement(
-	                                'span',
-	                                null,
-	                                'Submit'
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
 	                    'h3',
 	                    null,
 	                    'Congress must stop the FCC\u2019s plan to destroy net neutrality'
@@ -4917,6 +4879,35 @@
 	                        'i',
 	                        null,
 	                        'One or more of the participating organizations (listed at bottom) may email you about their campaigns.'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { id: 'signThePetition', style: { 'display': this.state.submitted ? 'none' : '' } },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'flex' },
+	                        _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'name', placeholder: 'Your Name' }),
+	                        _react2.default.createElement('input', { type: 'email', className: 'form-input', name: 'email', placeholder: 'Your Email' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'flex' },
+	                        _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'street', placeholder: 'Street Address' }),
+	                        _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'zip', placeholder: 'Your Zipcode' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'flex' },
+	                        _react2.default.createElement(
+	                            'button',
+	                            { className: 'btn' },
+	                            _react2.default.createElement(
+	                                'span',
+	                                null,
+	                                'SIGN NOW'
+	                            )
+	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -5279,6 +5270,11 @@
 	                            "a",
 	                            { target: "_blank" },
 	                            _react2.default.createElement("img", { alt: "People For the American Way", src: "images/PFAW.png" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "Presente Action", src: "images/PresenteAction2016.png" })
 	                        ),
 	                        _react2.default.createElement(
 	                            "a",
