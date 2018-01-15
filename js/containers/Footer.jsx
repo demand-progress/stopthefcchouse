@@ -10,7 +10,7 @@ class Footer extends Component {
                         <p><br/><br/>Built by:</p> <img src="images/demand-progress.png" />
                         <p>In partnership with: </p> <img src="images/DailyKosLogo.png" />
                     </div>
-                    <div className="logos">
+                    <div className="logos" style={{display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center"}}>
                        <a target="_blank">
                           <img alt="American Family Voices (AFV)" src="images/PasAFV.png" />
                        </a>
