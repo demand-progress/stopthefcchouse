@@ -24,6 +24,10 @@ class Footer extends Component {
                         </a>
                         
                         <a target="_blank">
+                            <img alt="Color of Change" src="images/COC-Full-Color.png" />
+                        </a>
+                        
+                        <a target="_blank">
                             <img alt="Common Cause" src="images/common_cause_logo.jpg" />
                         </a>
                         
