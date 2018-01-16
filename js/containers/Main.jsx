@@ -32,9 +32,9 @@ class Main extends Component {
                         <br/><br/>
                         We still have a chance to stop the FCC, though. Net neutrality champion Senator Ed Markey is leading the charge in the Senate with a resolution that will overrule the FCC. A companion resolution from Representative Mike Doyle will be introduced in the House.                        
                         <br/><br/>
-                        As the oversight body for the FCC, Congress can overturn this massive and illegitimate giveaway to the telecom industry. Since the FCC voted to end net neutrality, over 40 senators have already pledged to reverse the FCC's order — <strong>and 30 is the magic number needed to guarantee a floor vote. </strong>
+                        As the oversight body for the FCC, Congress can overturn this massive and illegitimate giveaway to the telecom industry. Since the FCC voted to end net neutrality, 50 senators have already pledged to reverse the FCC's order!
                         <br/><br/>
-                        When the resolution goes to the floor, we need a simple majority (51 senators) to pass it. Republican Senator Susan Collins has already pledged her support for the resolution, and if a handful of remaining Democrats join, we’ll need just one more Republican to get this passed in the Senate!
+                        The resolution is now guaranteed a floor vote, at which point we need just one more senator for it to pass. With all 49 Democrats and Republican Susan Collins supporting the resolution, we need just one more Republican. As polls show an overwhelming majority of Republican voters oppose the FCC's order, and with more and more Republican lawmakers expressing skepticism about the FCC's vote, we have a very strong shot of getting this through the Senate.
                         <br/><br/>
                         If we flood Congress with petitions and calls, we have a shot at stopping the FCC order. <a className="back-to-form-link" href="#signThePetition">Sign the petition and call on Congress to pass the CRA resolution to stop the repeal of net neutrality.</a>
                         <br/><br/>
