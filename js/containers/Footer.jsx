@@ -36,6 +36,10 @@ class Footer extends Component {
                         </a>
                         
                         <a target="_blank">
+                            <img alt="Democracy for America" src="images/DFA-Logo-bottom-white-400.png" />
+                        </a>
+                        
+                        <a target="_blank">
                             <img alt="Free Press Action Fund" src="images/fp-actionfund.png" />
                         </a>
                         
