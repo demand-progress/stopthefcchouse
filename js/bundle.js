@@ -4873,15 +4873,6 @@
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    'span',
-	                    null,
-	                    _react2.default.createElement(
-	                        'i',
-	                        null,
-	                        'One or more of the participating organizations (listed at bottom) may email you about their campaigns.'
-	                    )
-	                ),
-	                _react2.default.createElement(
 	                    'div',
 	                    { id: 'signThePetition', style: { 'display': this.state.submitted ? 'none' : '' } },
 	                    _react2.default.createElement(
@@ -4908,6 +4899,15 @@
 	                                'SIGN NOW'
 	                            )
 	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'span',
+	                    null,
+	                    _react2.default.createElement(
+	                        'i',
+	                        null,
+	                        'One or more of the participating organizations (listed at bottom) may email you about their campaigns.'
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -4970,7 +4970,7 @@
 	                                _react2.default.createElement(
 	                                    'i',
 	                                    null,
-	                                    '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 to reverse the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innovation. Now Please Call Congress.\u2019'
+	                                    '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 to reverse the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innovation.\u2019'
 	                                )
 	                            )
 	                        )
@@ -5205,7 +5205,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        "div",
-	                        { className: "logos" },
+	                        { className: "logos", style: { display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center" } },
 	                        _react2.default.createElement(
 	                            "a",
 	                            { target: "_blank" },
