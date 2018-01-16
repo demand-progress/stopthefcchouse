@@ -22,14 +22,10 @@ class Form extends Component {
                 In December, the FCC ignored the will of the public and voted to gut net neutrality protections. But Congress can reverse the FCC's order. 
               </strong>
                 <br/><br/>
-                {/* <strong>However, the fight for net neutrality is far from over. </strong>
-                <div>Right now, there's a resolution moving in Congress that could reverse the FCC's order. And it has a chance to pass — but we’ll need all the grassroots support and energy we can generate.</div>
-                <br/><br/> */}
                 <div>Now’s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC’s decision.</div>
                 <br/><br/>
                 <div>Add your name to send a message (below) to Congress:</div>
             </div>
-            <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
             <div id="signThePetition" style={{ 'display' : this.state.submitted ? 'none' : ''}}>
               <div className="flex">
                 <input type="text" className="form-input" name="name" placeholder="Your Name" />
@@ -45,6 +41,7 @@ class Form extends Component {
                 </button>
               </div>
             </div>
+            <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
             <div id="thanks" className="modal-wrapper-thanks modal-open-thanks" style={{ 'display' : this.state.submitted ? 'block' : 'none'}}>
               <div className="modal-thanks">
                 <a className="close-thanks" href="#" onClick={ this.closeModal.bind(this) }>×</a>
@@ -63,7 +60,7 @@ class Form extends Component {
                     <br/><br/>
                     You can use this script when talking to them —  just introduce yourself, be polite, and say:
                     <br/><br/>
-                    <i>"As your constituent, I urge you to cosponsor the Congressional Review Act ‘resolution of disapproval’ to reverse the FCC's December vote repealing net neutrality. An open internet is vital for free expression and innovation. Now Please Call Congress.’</i>
+                    <i>"As your constituent, I urge you to cosponsor the Congressional Review Act ‘resolution of disapproval’ to reverse the FCC's December vote repealing net neutrality. An open internet is vital for free expression and innovation.’</i>
                   </p>
                 </article>
               </div>
