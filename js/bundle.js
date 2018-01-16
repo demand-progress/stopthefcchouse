@@ -5240,6 +5240,11 @@
 	                        _react2.default.createElement(
 	                            "a",
 	                            { target: "_blank" },
+	                            _react2.default.createElement("img", { alt: "Democracy for America", src: "images/DFA-Logo-bottom-white-400.png" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { target: "_blank" },
 	                            _react2.default.createElement("img", { alt: "Free Press Action Fund", src: "images/fp-actionfund.png" })
 	                        ),
 	                        _react2.default.createElement(
