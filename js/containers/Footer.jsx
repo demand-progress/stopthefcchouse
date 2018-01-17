@@ -12,7 +12,7 @@ class Footer extends Component {
                     </div>
                     <div className="logos" style={{display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center"}}>
                        <a target="_blank">
-                          <img alt="American Family Voices (AFV)" src="images/PasAFV.png" />
+                          <img alt="American Family Voices (AFV)" src="images/PasAFV.jpg" />
                        </a>
                       
                         <a target="_blank">

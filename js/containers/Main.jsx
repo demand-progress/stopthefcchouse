@@ -35,7 +35,7 @@ class Main extends Component {
                         As the oversight body for the FCC, Congress can overturn this massive and illegitimate giveaway to the telecom industry. Since the FCC voted to end net neutrality, 50 senators have already pledged to reverse the FCC's order!
                         <br/><br/>
                         The resolution is now guaranteed a floor vote, at which point we need just one more senator for it to pass. With all 49 Democrats and Republican Susan Collins supporting the resolution, <strong>we need just one more Republican</strong>. As polls show an overwhelming majority of Republican voters oppose the FCC's order, and with more and more Republican lawmakers expressing skepticism about the FCC's vote, we have a very strong shot of getting this through the Senate.
-                        <br/><br/>
+                        <br/><br/> 
                         If we flood Congress with petitions and calls, we have a shot at stopping the FCC order. <a className="back-to-form-link" href="#signThePetition">Sign the petition and call on Congress to pass the CRA resolution to stop the repeal of net neutrality.</a>
                         <br/><br/>
                         <strong>And remember what we’re fighting for:</strong> Without net neutrality, the Internet will look more like cable TV, where the content we see is controlled by corporations like Comcast and Verizon. We can’t afford to see the open internet—a revolutionary medium where the exchange of ideas, democratic participation and the ability to organize, especially among marginalized communities, has flourished—fall to the control of corporate gatekeepers.

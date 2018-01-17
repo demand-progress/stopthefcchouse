@@ -5210,7 +5210,7 @@
 	                        _react2.default.createElement(
 	                            "a",
 	                            { target: "_blank" },
-	                            _react2.default.createElement("img", { alt: "American Family Voices (AFV)", src: "images/PasAFV.png" })
+	                            _react2.default.createElement("img", { alt: "American Family Voices (AFV)", src: "images/PasAFV.jpg" })
 	                        ),
 	                        _react2.default.createElement(
 	                            "a",
