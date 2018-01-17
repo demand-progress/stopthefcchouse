@@ -36,6 +36,10 @@ class Footer extends Component {
                         </a>
                         
                         <a target="_blank">
+                            <img alt="Consumers Union" src="images/CU New Logo Hi-res (1).jpg" />
+                        </a>
+                        
+                        <a target="_blank">
                             <img alt="Democracy for America" src="images/DFA-Logo-bottom-white-400.png" />
                         </a>
                         
