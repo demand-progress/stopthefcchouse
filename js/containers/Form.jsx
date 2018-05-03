@@ -8,43 +8,20 @@ class Form extends Component {
         super(props);
 
         this.state = getQueryVariables();
-        this.state.submitted = false;
+        this.state.submitted = true;
         this.state.countDown = 5;
+        this.onSubmit = this.onSubmit.bind(this)
+        this.closeModal = this.closeModal.bind(this)
     }
 
     render() {
-        return (
-          <form className="bftn-form call-action-form" onSubmit={ this.onSubmit.bind(this) }>
-            <h3>Congress must stop the FCC’s plan to destroy net neutrality</h3>
-            <br/><br/>
-            <div style={{color: 'white', lineHeight: 1.5}}>
-              <strong style={{ fontSize: "25px" }}>
-                In December, the FCC ignored the will of the public and voted to gut net neutrality protections. But Congress can reverse the FCC's order. 
-              </strong>
-                <br/><br/>
-                <div>Now’s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC’s decision.</div>
-                <br/><br/>
-                <div>Add your name to send a message (below) to Congress:</div>
-            </div>
-            <div id="signThePetition" style={{ 'display' : this.state.submitted ? 'none' : ''}}>
-              <div className="flex">
-                <input type="text" className="form-input" name="name" placeholder="Your Name" />
-                <input type="email" className="form-input" name="email" placeholder="Your Email" />
-              </div>
-              <div className="flex">
-                <input type="text" className="form-input" name="street" placeholder="Street Address" />
-                <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
-              </div>
-              <div className="flex">
-                <button className="btn">
-                  <span>SIGN NOW</span>
-                </button>
-              </div>
-            </div>
-            <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
-            <div id="thanks" className="modal-wrapper-thanks modal-open-thanks" style={{ 'display' : this.state.submitted ? 'block' : 'none'}}>
+      let modal = null;
+
+      if(this.state.submitted) {
+        modal = 
+              <div id="thanks" className="modal-wrapper-thanks modal-open-thanks" style={{ 'display' : this.state.submitted ? 'block' : 'none'}}>
               <div className="modal-thanks">
-                <a className="close-thanks" href="#" onClick={ this.closeModal.bind(this) }>×</a>
+                <a className="close-thanks" href="#" onClick={ this.closeModal }>×</a>
                 <header>
                   <h2 id="modal-header-thanks">Thanks for signing.</h2>
                 </header>
@@ -65,16 +42,41 @@ class Form extends Component {
                 </article>
               </div>
             </div>
+      }
+      
+        return (
+          <form className="bftn-form call-action-form" onSubmit={ this.onSubmit }>
+            <h3>Congress must stop the FCC’s plan to destroy net neutrality</h3>
+            <br/><br/>
+            <div style={{color: 'white', lineHeight: 1.5}}>
+              <strong style={{ fontSize: "25px" }}>
+                In December, the FCC ignored the will of the public and voted to gut net neutrality protections. But Congress can reverse the FCC's order. 
+              </strong>
+                <br/><br/>
+                <div>Now’s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC’s decision.</div>
+                <br/><br/>
+                <div>Add your name to send a message (below) to Congress:</div>
+            </div>
+            <div id="signThePetition">
+              <div className="flex">
+                <input type="text" className="form-input" name="name" placeholder="Your Name" />
+                <input type="email" className="form-input" name="email" placeholder="Your Email" />
+              </div>
+              <div className="flex">
+                <input type="text" className="form-input" name="street" placeholder="Street Address" />
+                <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
+              </div>
+              <div className="flex">
+                <button className="btn">
+                  <span>SIGN NOW</span>
+                </button>
+              </div>
+            </div>
+            <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
+            {modal}
         </form>);
     }
 
-    countDownToRedirect() {
-        if (this.state.countDown <= 1) {
-            window.location.href = "https://battleforthenet.com";
-        }
-        this.setState( { countDown: this.state.countDown - 1 });
-    }
-    
     closeModal(evt) {
       evt.preventDefault();
       this.setState({ submitted: false });
@@ -138,7 +140,7 @@ class Form extends Component {
             'want_progress': 1
         };
 
-        this.setState({ submitted: true });
+       
         this.sendFormToActionKit(fields);
     }
 
@@ -165,7 +167,8 @@ class Form extends Component {
             form.appendChild(input);
         });
 
-        form.submit()
+        // form.submit()
+        this.setState({ submitted: true });
     }
 
 }
