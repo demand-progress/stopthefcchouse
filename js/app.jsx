@@ -1,8 +1,8 @@
 // Modules
-const React = require('react');
-const ReactDOM = require('react-dom');
-import Main from './containers/Main.jsx'
-import Footer from './containers/Footer.jsx';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './containers/App.jsx'
+
 // Checking for outdated browsers
 (() => {
     const isIE = navigator.userAgent.match(/MSIE (\d+)\./);
@@ -18,15 +18,4 @@ import Footer from './containers/Footer.jsx';
     }
 })()
 
-function render() {
-    ReactDOM.render(
-        <Main />,
-        document.querySelector('#app')
-    );
-    ReactDOM.render(
-        <Footer />,
-        document.querySelector("#footer")
-    )
-}
-
-render();
+ReactDOM.render(<App/> ,document.getElementById('root'));
