@@ -22636,7 +22636,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -22658,267 +22658,267 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var Form = function (_Component) {
-	    _inherits(Form, _Component);
+	  _inherits(Form, _Component);
 	
-	    function Form(props) {
-	        _classCallCheck(this, Form);
+	  function Form(props) {
+	    _classCallCheck(this, Form);
 	
-	        var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
 	
-	        _this.state = (0, _utils.getQueryVariables)();
-	        _this.state.submitted = false;
-	        _this.state.countDown = 5;
-	        return _this;
-	    }
+	    _this.state = (0, _utils.getQueryVariables)();
+	    _this.state.submitted = true;
+	    _this.state.countDown = 5;
+	    _this.onSubmit = _this.onSubmit.bind(_this);
+	    _this.closeModal = _this.closeModal.bind(_this);
+	    return _this;
+	  }
 	
-	    _createClass(Form, [{
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'form',
-	                { className: 'bftn-form call-action-form', onSubmit: this.onSubmit.bind(this) },
+	  _createClass(Form, [{
+	    key: 'render',
+	    value: function render() {
+	      var modal = null;
+	
+	      if (this.state.submitted) {
+	        modal = _react2.default.createElement(
+	          'div',
+	          { id: 'thanks', className: 'modal-wrapper-thanks modal-open-thanks', style: { 'display': this.state.submitted ? 'block' : 'none' } },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'modal-thanks' },
+	            _react2.default.createElement(
+	              'a',
+	              { className: 'close-thanks', href: '#', onClick: this.closeModal },
+	              '\xD7'
+	            ),
+	            _react2.default.createElement(
+	              'header',
+	              null,
+	              _react2.default.createElement(
+	                'h2',
+	                { id: 'modal-header-thanks' },
+	                'Thanks for signing.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'article',
+	              null,
+	              _react2.default.createElement(
+	                'p',
+	                null,
 	                _react2.default.createElement(
-	                    'h3',
+	                  'p',
+	                  { style: { fontSize: '20px', fontWeight: 'bold' } },
+	                  'Now, one of the most impactful things you can do to save net neutrality is to ',
+	                  _react2.default.createElement(
+	                    'strong',
 	                    null,
-	                    'Congress must stop the FCC\u2019s plan to destroy net neutrality'
-	                ),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(
-	                    'div',
-	                    { style: { color: 'white', lineHeight: 1.5 } },
-	                    _react2.default.createElement(
-	                        'strong',
-	                        { style: { fontSize: "25px" } },
-	                        'In December, the FCC ignored the will of the public and voted to gut net neutrality protections. But Congress can reverse the FCC\'s order.'
-	                    ),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        'Now\u2019s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC\u2019s decision.'
-	                    ),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        'Add your name to send a message (below) to Congress:'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { id: 'signThePetition', style: { 'display': this.state.submitted ? 'none' : '' } },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'flex' },
-	                        _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'name', placeholder: 'Your Name' }),
-	                        _react2.default.createElement('input', { type: 'email', className: 'form-input', name: 'email', placeholder: 'Your Email' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'flex' },
-	                        _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'street', placeholder: 'Street Address' }),
-	                        _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'zip', placeholder: 'Your Zipcode' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'flex' },
-	                        _react2.default.createElement(
-	                            'button',
-	                            { className: 'btn' },
-	                            _react2.default.createElement(
-	                                'span',
-	                                null,
-	                                'SIGN NOW'
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'span',
-	                    null,
-	                    _react2.default.createElement(
-	                        'i',
-	                        null,
-	                        'One or more of the participating organizations (listed at bottom) may email you about their campaigns.'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { id: 'thanks', className: 'modal-wrapper-thanks modal-open-thanks', style: { 'display': this.state.submitted ? 'block' : 'none' } },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'modal-thanks' },
-	                        _react2.default.createElement(
-	                            'a',
-	                            { className: 'close-thanks', href: '#', onClick: this.closeModal.bind(this) },
-	                            '\xD7'
-	                        ),
-	                        _react2.default.createElement(
-	                            'header',
-	                            null,
-	                            _react2.default.createElement(
-	                                'h2',
-	                                { id: 'modal-header-thanks' },
-	                                'Thanks for signing.'
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'article',
-	                            null,
-	                            _react2.default.createElement(
-	                                'p',
-	                                null,
-	                                _react2.default.createElement(
-	                                    'p',
-	                                    { style: { fontSize: '20px', fontWeight: 'bold' } },
-	                                    'Now, one of the most impactful things you can do to save net neutrality is to ',
-	                                    _react2.default.createElement(
-	                                        'strong',
-	                                        null,
-	                                        'CALL CONGRESS TODAY'
-	                                    ),
-	                                    ' and tell your lawmakers to support the \u2018resolution of disapproval\u2019 to overturn the FCC vote.'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'h4',
-	                                { style: { color: 'black' } },
-	                                'Call: ',
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: 'tel:8582640403' },
-	                                    '858-264-0403'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'p',
-	                                null,
-	                                'We will connect you to the offices of your lawmakers.',
-	                                _react2.default.createElement('br', null),
-	                                _react2.default.createElement('br', null),
-	                                'You can use this script when talking to them \u2014  just introduce yourself, be polite, and say:',
-	                                _react2.default.createElement('br', null),
-	                                _react2.default.createElement('br', null),
-	                                _react2.default.createElement(
-	                                    'i',
-	                                    null,
-	                                    '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 to reverse the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innovation.\u2019'
-	                                )
-	                            )
-	                        )
-	                    )
+	                    'CALL CONGRESS TODAY'
+	                  ),
+	                  ' and tell your lawmakers to support the \u2018resolution of disapproval\u2019 to overturn the FCC vote.'
 	                )
-	            );
-	        }
-	    }, {
-	        key: 'countDownToRedirect',
-	        value: function countDownToRedirect() {
-	            if (this.state.countDown <= 1) {
-	                window.location.href = "https://battleforthenet.com";
-	            }
-	            this.setState({ countDown: this.state.countDown - 1 });
-	        }
-	    }, {
-	        key: 'closeModal',
-	        value: function closeModal(evt) {
-	            evt.preventDefault();
-	            this.setState({ submitted: false });
-	        }
-	    }, {
-	        key: 'onSubmit',
-	        value: function onSubmit(evt) {
-	            evt.preventDefault();
+	              ),
+	              _react2.default.createElement(
+	                'h4',
+	                { style: { color: 'black' } },
+	                'Call: ',
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'tel:8582640403' },
+	                  '858-264-0403'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'We will connect you to the offices of your lawmakers.',
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement('br', null),
+	                'You can use this script when talking to them \u2014  just introduce yourself, be polite, and say:',
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                  'i',
+	                  null,
+	                  '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 to reverse the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innovation.\u2019'
+	                )
+	              )
+	            )
+	          )
+	        );
+	      }
 	
-	            var form = evt.target;
-	            var emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+	      return _react2.default.createElement(
+	        'form',
+	        { className: 'bftn-form call-action-form', onSubmit: this.onSubmit },
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Congress must stop the FCC\u2019s plan to destroy net neutrality'
+	        ),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement(
+	          'div',
+	          { style: { color: 'white', lineHeight: 1.5 } },
+	          _react2.default.createElement(
+	            'strong',
+	            { style: { fontSize: "25px" } },
+	            'In December, the FCC ignored the will of the public and voted to gut net neutrality protections. But Congress can reverse the FCC\'s order.'
+	          ),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            'Now\u2019s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC\u2019s decision.'
+	          ),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            'Add your name to send a message (below) to Congress:'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { id: 'signThePetition' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'flex' },
+	            _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'name', placeholder: 'Your Name' }),
+	            _react2.default.createElement('input', { type: 'email', className: 'form-input', name: 'email', placeholder: 'Your Email' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'flex' },
+	            _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'street', placeholder: 'Street Address' }),
+	            _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'zip', placeholder: 'Your Zipcode' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'flex' },
+	            _react2.default.createElement(
+	              'button',
+	              { className: 'btn' },
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'SIGN NOW'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          _react2.default.createElement(
+	            'i',
+	            null,
+	            'One or more of the participating organizations (listed at bottom) may email you about their campaigns.'
+	          )
+	        ),
+	        modal
+	      );
+	    }
+	  }, {
+	    key: 'closeModal',
+	    value: function closeModal(evt) {
+	      evt.preventDefault();
+	      this.setState({ submitted: false });
+	    }
+	  }, {
+	    key: 'onSubmit',
+	    value: function onSubmit(evt) {
+	      evt.preventDefault();
 	
-	            var name = form.name;
-	            if (!name.value.trim()) {
-	                name.focus();
-	                alert('Please enter your name.');
-	                return;
-	            }
+	      var form = evt.target;
+	      var emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 	
-	            var email = form.email;
-	            if (!email.value.trim()) {
-	                email.focus();
-	                alert('Please enter your email.');
-	                return;
-	            } else if (!emailRegex.test(email.value.trim())) {
-	                email.focus();
-	                alert('Please enter a valid email.');
-	                return;
-	            }
+	      var name = form.name;
+	      if (!name.value.trim()) {
+	        name.focus();
+	        alert('Please enter your name.');
+	        return;
+	      }
 	
-	            var address1 = form.street;
-	            if (!address1.value.trim()) {
-	                address1.focus();
-	                alert("Please enter your address.");
-	                return;
-	            }
+	      var email = form.email;
+	      if (!email.value.trim()) {
+	        email.focus();
+	        alert('Please enter your email.');
+	        return;
+	      } else if (!emailRegex.test(email.value.trim())) {
+	        email.focus();
+	        alert('Please enter a valid email.');
+	        return;
+	      }
 	
-	            var zip = form.zip;
-	            if (!zip.value.trim()) {
-	                zip.focus();
-	                alert('Please enter your Zipcode.');
-	                return;
-	            } else if (zip.value.length < 5 || zip.value.length > 5) {
-	                zip.focus();
-	                alert('Please enter a valid Zipcode.');
-	                return;
-	            }
+	      var address1 = form.street;
+	      if (!address1.value.trim()) {
+	        address1.focus();
+	        alert("Please enter your address.");
+	        return;
+	      }
 	
-	            var fields = {
-	                'action_user_agent': navigator.userAgent,
-	                'country': 'United States',
-	                'email': email.value.trim(),
-	                'form_name': 'act-petition',
-	                'js': 1,
-	                'name': name.value.trim(),
-	                'address1': address1.value.trim(),
-	                'zip': zip.value.trim(),
-	                'opt_in': 1,
-	                'page': _config.CONF.actionKitPageShortName,
-	                'source': this.state.source || 'website',
-	                'want_progress': 1
-	            };
+	      var zip = form.zip;
+	      if (!zip.value.trim()) {
+	        zip.focus();
+	        alert('Please enter your Zipcode.');
+	        return;
+	      } else if (zip.value.length < 5 || zip.value.length > 5) {
+	        zip.focus();
+	        alert('Please enter a valid Zipcode.');
+	        return;
+	      }
 	
-	            this.setState({ submitted: true });
-	            this.sendFormToActionKit(fields);
-	        }
-	    }, {
-	        key: 'sendFormToActionKit',
-	        value: function sendFormToActionKit(fields) {
-	            // iFrame
-	            var iframe = document.createElement('iframe');
-	            iframe.style.display = 'none';
-	            iframe.setAttribute('name', 'actionkit-iframe');
-	            document.body.appendChild(iframe);
+	      var fields = {
+	        'action_user_agent': navigator.userAgent,
+	        'country': 'United States',
+	        'email': email.value.trim(),
+	        'form_name': 'act-petition',
+	        'js': 1,
+	        'name': name.value.trim(),
+	        'address1': address1.value.trim(),
+	        'zip': zip.value.trim(),
+	        'opt_in': 1,
+	        'page': _config.CONF.actionKitPageShortName,
+	        'source': this.state.source || 'website',
+	        'want_progress': 1
+	      };
 	
-	            // Form
-	            var form = document.createElement('form');
-	            form.style.display = 'none';
-	            form.setAttribute('action', _config.URLS.actionKit);
-	            form.setAttribute('method', 'post');
-	            form.setAttribute('target', 'actionkit-iframe');
-	            document.body.appendChild(form);
+	      this.sendFormToActionKit(fields);
+	    }
+	  }, {
+	    key: 'sendFormToActionKit',
+	    value: function sendFormToActionKit(fields) {
+	      // iFrame
+	      var iframe = document.createElement('iframe');
+	      iframe.style.display = 'none';
+	      iframe.setAttribute('name', 'actionkit-iframe');
+	      document.body.appendChild(iframe);
 	
-	            Object.keys(fields).forEach(function (key) {
-	                var input = document.createElement('input');
-	                input.type = 'hidden';
-	                input.name = key;
-	                input.value = fields[key];
-	                form.appendChild(input);
-	            });
+	      // Form
+	      var form = document.createElement('form');
+	      form.style.display = 'none';
+	      form.setAttribute('action', _config.URLS.actionKit);
+	      form.setAttribute('method', 'post');
+	      form.setAttribute('target', 'actionkit-iframe');
+	      document.body.appendChild(form);
 	
-	            form.submit();
-	        }
-	    }]);
+	      Object.keys(fields).forEach(function (key) {
+	        var input = document.createElement('input');
+	        input.type = 'hidden';
+	        input.name = key;
+	        input.value = fields[key];
+	        form.appendChild(input);
+	      });
 	
-	    return Form;
+	      // form.submit()
+	      this.setState({ submitted: true });
+	    }
+	  }]);
+	
+	  return Form;
 	}(_react.Component);
 	
 	exports.default = Form;
@@ -22936,8 +22936,8 @@
 	    value: true
 	});
 	var CONF = {
-	    actionKitPageShortName: 'stop-fcc',
-	    actionKitPageId: 2160
+	    actionKitPageShortName: 'stop-fcc-netneutrality',
+	    actionKitPageId: 2316
 	};
 	var URLS = {
 	    actionKit: 'https://act.demandprogress.org/act/',
