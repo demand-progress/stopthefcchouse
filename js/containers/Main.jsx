@@ -1,29 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Form from './Form.jsx';
 
-class Main extends Component {
-
-    render() {
-        return (<div className="unit">
+function Main() {
+    return (
+    <div id="app">
+        <div className="unit">
             <div className="hero" id="bftn-action-form">
-                <div className="">
-                    <div>
+                <div>
+                    <div id="signThePetition">
                         <Form />
                     </div>
-
                 </div>
                 <div className="unit">
                     <p style={{color: 'white', textAlign: 'center'}}>
                         <h4>Here's the language that will be sent to Congress:</h4>
                     </p>
                     <p style={{color: 'white', textAlign: 'center'}}>
-                      <i>
+                    <i>
                         "As your constituent, I urge you to cosponsor the Congressional Review Act (CRA) ‘resolution of disapproval’ to reverse the FCC’s repeal of net neutrality.                       
-                         <br/><br/>
+                        <br/><br/>
                         "The FCC order allowing internet providers to slow down and block content at their choosing leaves the public without protections from corporate censorship, and leaves small businesses without the ability to compete with larger sites and services. The effects on free expression and innovation will be devastating.                       
                         <br/><br/>
                         “Unless it is stopped, the FCC’s anti-net neutrality order will go down as a historically bad decision negatively impacting millions of Americans who rely on the internet for work, education, news, entertainment, and so much more. Now is the time to stand up against this plan to destroy net neutrality. Stand with your constituents, not Comcast.
-                      </i>
+                    </i>
                     </p>
                     <hr/>
                     <h4 style={{color: 'white', textAlign: 'center'}}>More information:</h4>
@@ -40,11 +39,10 @@ class Main extends Component {
                         <br/><br/>
                         <strong>And remember what we’re fighting for:</strong> Without net neutrality, the Internet will look more like cable TV, where the content we see is controlled by corporations like Comcast and Verizon. We can’t afford to see the open internet—a revolutionary medium where the exchange of ideas, democratic participation and the ability to organize, especially among marginalized communities, has flourished—fall to the control of corporate gatekeepers.
                     </p>
-
                 </div>
             </div>
-        </div>);
-    }
+        </div>
+    </div>);
 }
 
 export default Main;
