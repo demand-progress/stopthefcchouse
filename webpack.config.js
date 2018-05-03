@@ -3,7 +3,7 @@ module.exports = [{
         inline:true,
         port: 8008
     },
-    entry: "./js/call.jsx",
+    entry: "./js/app.jsx",
     output: {
         path: __dirname + '/js',
         filename: "bundle.js"
