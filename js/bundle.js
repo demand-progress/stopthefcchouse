@@ -22567,43 +22567,42 @@
 	                        _react2.default.createElement(
 	                            'i',
 	                            null,
-	                            '"As your constituent, I urge you to cosponsor the Congressional Review Act (CRA) \u2018resolution of disapproval\u2019 to reverse the FCC\u2019s repeal of net neutrality.',
+	                            'The FCC vote to destroy the Net Neutrality protections cannot stand.  Please co-sponsor, sign the discharge petition, and vote for the Resolution of Disapproval to overturn the FCC\'s "Restoring Internet Freedom" vote.',
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
-	                            '"The FCC order allowing internet providers to slow down and block content at their choosing leaves the public without protections from corporate censorship, and leaves small businesses without the ability to compete with larger sites and services. The effects on free expression and innovation will be devastating.',
-	                            _react2.default.createElement('br', null),
-	                            _react2.default.createElement('br', null),
-	                            '\u201CUnless it is stopped, the FCC\u2019s anti-net neutrality order will go down as a historically bad decision negatively impacting millions of Americans who rely on the internet for work, education, news, entertainment, and so much more. Now is the time to stand up against this plan to destroy net neutrality. Stand with your constituents, not Comcast.'
+	                            'The FCC\'s decision willfully ignored the outcry from tens of millions of people, and it abdicated the FCC\'s responsibility to protect the internet from ISP blocking and discrimination. Please overturn it to restore net neutrality and ensure that the internet continues to enable speech, commerce, and democracy.'
 	                        )
 	                    ),
 	                    _react2.default.createElement('hr', null),
 	                    _react2.default.createElement(
 	                        'h4',
 	                        { style: { color: 'white', textAlign: 'center' } },
-	                        'More information:'
+	                        'More information:',
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('br', null),
+	                        'The Senate is about to vote on whether to save net neutrality or let it die.'
 	                    ),
 	                    _react2.default.createElement(
 	                        'p',
 	                        { style: { textAlign: 'center' } },
-	                        'On December 14th, three FCC commissioners ignored the will of the public and voted to gut net neutrality protections \u2014 despite polling showing that 83% of Americans opposed the repeal.',
+	                        'The US Senate is headed for a vote in mid-May on a Congressional Review Act (CRA) resolution to block the FCC\u2019s repeal of net neutrality.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'We still have a chance to stop the FCC, though. Net neutrality champion Senator Ed Markey is leading the charge in the Senate with a resolution that will overrule the FCC. A companion resolution from Representative Mike Doyle will be introduced in the House.',
+	                        'In December, Trump appointee and FCC Chairman Ajit Pai\u2014a former top lawyer for Verizon\u2014pushed through a measure to end net neutrality and let big cable companies control which websites and apps you use, where you get your news, how you listen to music and watch videos \u2014 everything you do on the Internet.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'As the oversight body for the FCC, Congress can overturn this massive and illegitimate giveaway to the telecom industry. Since the FCC voted to end net neutrality, 50 senators have already pledged to reverse the FCC\'s order!',
+	                        'But the US Senate will vote in mid-May on a resolution to block the FCC\'s repeal of net neutrality and keep the web free and open.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'The resolution is now guaranteed a floor vote, at which point we need just one more senator for it to pass. With all 49 Democrats and Republican Susan Collins supporting the resolution, ',
-	                        _react2.default.createElement(
-	                            'strong',
-	                            null,
-	                            'we need just one more Republican'
-	                        ),
-	                        '. As polls show an overwhelming majority of Republican voters oppose the FCC\'s order, and with more and more Republican lawmakers expressing skepticism about the FCC\'s vote, we have a very strong shot of getting this through the Senate.',
+	                        'With all 49 Senators in the Democratic Caucus and and Republican Susan Collins supporting the resolution, we already have 50 votes, and we need just a simple majority to win. One more vote and we are guaranteed victory.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'If we flood Congress with petitions and calls, we have a shot at stopping the FCC order. ',
+	                        'As polls show 86% Americans, including an overwhelming majority of Republican voters, oppose the FCC\'s order, and with more and more Republican lawmakers expressing skepticism about the FCC\'s vote, we have a strong shot of getting this through the Senate.',
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('br', null),
+	                        'If we flood Congress with petitions and calls, we can save net neutrality.',
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
 	                            'a',
 	                            { className: 'back-to-form-link', href: '#signThePetition' },
@@ -22611,12 +22610,7 @@
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement(
-	                            'strong',
-	                            null,
-	                            'And remember what we\u2019re fighting for:'
-	                        ),
-	                        ' Without net neutrality, the Internet will look more like cable TV, where the content we see is controlled by corporations like Comcast and Verizon. We can\u2019t afford to see the open internet\u2014a revolutionary medium where the exchange of ideas, democratic participation and the ability to organize, especially among marginalized communities, has flourished\u2014fall to the control of corporate gatekeepers.'
+	                        'And remember what we\u2019re fighting for: Without net neutrality, the Internet will look more like cable TV, where the content we see is controlled by corporations like Comcast and Verizon. We can\u2019t afford to see the open internet\u2014a revolutionary medium where the exchange of ideas, democratic participation and the ability to organize, especially among marginalized communities, has flourished\u2014fall to the control of corporate gatekeepers.'
 	                    )
 	                )
 	            )
@@ -22666,7 +22660,7 @@
 	    var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
 	
 	    _this.state = (0, _utils.getQueryVariables)();
-	    _this.state.submitted = true;
+	    _this.state.submitted = false;
 	    _this.state.countDown = 5;
 	    _this.onSubmit = _this.onSubmit.bind(_this);
 	    _this.closeModal = _this.closeModal.bind(_this);
@@ -22748,12 +22742,12 @@
 	      }
 	
 	      return _react2.default.createElement(
-	        'form',
+	        'div',
 	        { className: 'bftn-form call-action-form', onSubmit: this.onSubmit },
 	        _react2.default.createElement(
 	          'h3',
 	          null,
-	          'Congress must stop the FCC\u2019s plan to destroy net neutrality'
+	          'Demand the Senate Vote to Overturn the FCC and Restore Net Neutrality!'
 	        ),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement('br', null),
@@ -22763,25 +22757,25 @@
 	          _react2.default.createElement(
 	            'strong',
 	            { style: { fontSize: "25px" } },
-	            'In December, the FCC ignored the will of the public and voted to gut net neutrality protections. But Congress can reverse the FCC\'s order.'
+	            'The FCC voted to let Big Cable ruin the Internet. But next week the Senate is expected to vote to on a resolution to overturn the FCC and restore net neutrality.'
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
 	            'div',
 	            null,
-	            'Now\u2019s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC\u2019s decision.'
+	            'As of now, 50 senators have said they will vote \u2018yes,\u2019 and we need just 51 to guarantee victory. '
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
 	            'div',
 	            null,
-	            'Add your name to send a message (below) to Congress:'
+	            'It\u2019s go time! Contact Congress today.'
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
+	          'form',
 	          { id: 'signThePetition' },
 	          _react2.default.createElement(
 	            'div',
@@ -22913,7 +22907,7 @@
 	        form.appendChild(input);
 	      });
 	
-	      // form.submit()
+	      form.submit();
 	      this.setState({ submitted: true });
 	    }
 	  }]);
