@@ -8,7 +8,7 @@ class Form extends Component {
         super(props);
 
         this.state = getQueryVariables();
-        this.state.submitted = true;
+        this.state.submitted = false;
         this.state.countDown = 5;
         this.onSubmit = this.onSubmit.bind(this)
         this.closeModal = this.closeModal.bind(this)
@@ -45,19 +45,19 @@ class Form extends Component {
       }
       
         return (
-          <form className="bftn-form call-action-form" onSubmit={ this.onSubmit }>
-            <h3>Congress must stop the FCC’s plan to destroy net neutrality</h3>
+          <div className="bftn-form call-action-form" onSubmit={ this.onSubmit }>
+            <h3>Demand the Senate Vote to Overturn the FCC and Restore Net Neutrality!</h3>
             <br/><br/>
             <div style={{color: 'white', lineHeight: 1.5}}>
               <strong style={{ fontSize: "25px" }}>
-                In December, the FCC ignored the will of the public and voted to gut net neutrality protections. But Congress can reverse the FCC's order. 
+              The FCC voted to let Big Cable ruin the Internet. But next week the Senate is expected to vote to on a resolution to overturn the FCC and restore net neutrality.  
               </strong>
                 <br/><br/>
-                <div>Now’s your opportunity to let members of Congress know they must stand with their constituents, not Comcast. They must protect net neutrality by cosponsoring the resolution to overturn the FCC’s decision.</div>
+                <div>As of now, 50 senators have said they will vote ‘yes,’ and we need just 51 to guarantee victory. </div>
                 <br/><br/>
-                <div>Add your name to send a message (below) to Congress:</div>
+                <div>It’s go time! Contact Congress today.</div>
             </div>
-            <div id="signThePetition">
+            <form id="signThePetition">
               <div className="flex">
                 <input type="text" className="form-input" name="name" placeholder="Your Name" />
                 <input type="email" className="form-input" name="email" placeholder="Your Email" />
@@ -71,10 +71,10 @@ class Form extends Component {
                   <span>SIGN NOW</span>
                 </button>
               </div>
-            </div>
+            </form>
             <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
             {modal}
-        </form>);
+        </div>);
     }
 
     closeModal(evt) {
@@ -167,7 +167,7 @@ class Form extends Component {
             form.appendChild(input);
         });
 
-        // form.submit()
+        form.submit()
         this.setState({ submitted: true });
     }
 
