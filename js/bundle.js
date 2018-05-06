@@ -22567,7 +22567,7 @@
 	                        _react2.default.createElement(
 	                            'i',
 	                            null,
-	                            'The FCC vote to destroy the Net Neutrality protections cannot stand.  Please co-sponsor, sign the discharge petition, and vote for the Resolution of Disapproval to overturn the FCC\'s "Restoring Internet Freedom" vote.',
+	                            'The FCC vote to destroy net neutrality protections cannot stand. Please co-sponsor, sign the discharge petition, and vote for the Congressional Review Act resolution to overturn the FCC\'s repeal of net neutrality.',
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
 	                            'The FCC\'s decision willfully ignored the outcry from tens of millions of people, and it abdicated the FCC\'s responsibility to protect the internet from ISP blocking and discrimination. Please overturn it to restore net neutrality and ensure that the internet continues to enable speech, commerce, and democracy.'
@@ -22733,7 +22733,17 @@
 	                _react2.default.createElement(
 	                  'i',
 	                  null,
-	                  '"As your constituent, I urge you to cosponsor the Congressional Review Act \u2018resolution of disapproval\u2019 to reverse the FCC\'s December vote repealing net neutrality. An open internet is vital for free expression and innovation.\u2019'
+	                  '"I support Title Two net neutrality and I urge you to use the Congressional Review Act to pass a \u2018resolution of disapproval\u2019 reversing the FCC\'s December vote to repeal the Open Internet Order."'
+	                ),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement('br', null),
+	                'Finally, please join other activists across the country for gatherings outside in-district Congressional offices in support of net neutrality on May 14th. You can find an event near your\u2014or sign up to help coordinate one\u2014at:',
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                  'a',
+	                  { id: 'modal-battle-link', href: 'https://events.battleforthenet.com', target: '_blank' },
+	                  'https://events.battleforthenet.com'
 	                )
 	              )
 	            )
@@ -22747,7 +22757,7 @@
 	        _react2.default.createElement(
 	          'h3',
 	          null,
-	          'Demand the Senate Vote to Overturn the FCC and Restore Net Neutrality!'
+	          'Demand the Senate Vote to Restore Net Neutrality!'
 	        ),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement('br', null),
@@ -23031,17 +23041,12 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "18 Million Rising", src: "images/18mr_logo_short.png" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "American Family Voices (AFV)", src: "images/PasAFV.jpg" })
-	                    ),
-	                    _react2.default.createElement(
-	                        "a",
-	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "Center for Media Justice", src: "images/CMJ logo hi-res.jpg" })
-	                    ),
-	                    _react2.default.createElement(
-	                        "a",
-	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "Climate Hawks Vote", src: "images/CHV Logo2.jpg" })
 	                    ),
 	                    _react2.default.createElement(
 	                        "a",
@@ -23071,36 +23076,6 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "Free Press Action Fund", src: "images/fp-actionfund.png" })
-	                    ),
-	                    _react2.default.createElement(
-	                        "a",
-	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "LoveArmy", src: "images/LoveArmy.png" })
-	                    ),
-	                    _react2.default.createElement(
-	                        "a",
-	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "The Nation", src: "images/Nation.jpg" })
-	                    ),
-	                    _react2.default.createElement(
-	                        "a",
-	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "OpenMedia", src: "images/IMG_9304.jpg" })
-	                    ),
-	                    _react2.default.createElement(
-	                        "a",
-	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "PEN America", src: "images/Pen_Box_lrg (1).jpg" })
-	                    ),
-	                    _react2.default.createElement(
-	                        "a",
-	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "People Demanding Action", src: "images/Logo-PeopleDemandingAction.jpg" })
-	                    ),
-	                    _react2.default.createElement(
-	                        "a",
-	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "People For the American Way", src: "images/PFAW.png" })
 	                    ),
 	                    _react2.default.createElement(
@@ -23116,17 +23091,17 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "Public Citizen", src: "images/PC logo-high resolution.jpg" })
-	                    ),
-	                    _react2.default.createElement(
-	                        "a",
-	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "RootsAction.org", src: "images/RootsAction.png" })
 	                    ),
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "SumOfUs", src: "images/SumOfUs_lg_color.png" })
+	                        _react2.default.createElement("img", { alt: "The Nation", src: "images/Nation.jpg" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Win Without War", src: "images/winwithoutwar.jpg" })
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -23171,7 +23146,7 @@
 	                        { className: "social-media" },
 	                        _react2.default.createElement(
 	                            "a",
-	                            { className: "twitter", href: "https://twitter.com/intent/tweet?text=Call%20Congress%21%20Tell%20them%20they%20must%20stop%20the%20FCC%E2%80%99s%20plan%20to%20destroy%20the%20open%20internet%20by%20supporting%20legislation%20to%20restore%20%23NetNeutrality%20https%3A%2F%2Fstopthefcc.net%2F", target: "_blank" },
+	                            { className: "twitter", href: "https://twitter.com/intent/tweet?text=Call%20Congress%21%20Tell%20them%20they%20must%20vote%20%E2%80%98yes%E2%80%99%20on%20the%20CRA%20resolution%20to%20save%20the%20open%20internet%20and%20restore%20%23NetNeutrality%20https%3A%2F%2Fstopthefcc.net%2F", target: "_blank" },
 	                            _react2.default.createElement("img", { src: "images/twitter_white.svg" }),
 	                            _react2.default.createElement(
 	                                "span",
