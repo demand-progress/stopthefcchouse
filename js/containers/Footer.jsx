@@ -10,16 +10,13 @@ function Footer(){
                             <p>In partnership with: </p> <img src="images/DailyKosLogo.png" />
                         </div>
                         <div className="logos" style={{display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center"}}>
-                        <a target="_blank">
-                            <img alt="American Family Voices (AFV)" src="images/PasAFV.jpg" />
-                        </a>
                         
                             <a target="_blank">
-                                <img alt="Center for Media Justice" src="images/CMJ logo hi-res.jpg" />
+                                <img alt="18 Million Rising" src="images/18mr_logo_short.png" />
                             </a>
-                        
+                            
                             <a target="_blank">
-                                <img alt="Climate Hawks Vote" src="images/CHV Logo2.jpg" />
+                                <img alt="American Family Voices (AFV)" src="images/PasAFV.jpg" />
                             </a>
                             
                             <a target="_blank">
@@ -41,30 +38,6 @@ function Footer(){
                             <a target="_blank">
                                 <img alt="Democracy for America" src="images/DFA-Logo-bottom-white-400.png" />
                             </a>
-                            
-                            <a target="_blank">
-                                <img alt="Free Press Action Fund" src="images/fp-actionfund.png" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="LoveArmy" src="images/LoveArmy.png" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="The Nation" src="images/Nation.jpg" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="OpenMedia" src="images/IMG_9304.jpg" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="PEN America" src="images/Pen_Box_lrg (1).jpg" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="People Demanding Action" src="images/Logo-PeopleDemandingAction.jpg" />
-                            </a>
 
                             <a target="_blank">
                                 <img alt="People For the American Way" src="images/PFAW.png" />
@@ -79,16 +52,16 @@ function Footer(){
                             </a>
 
                             <a target="_blank">
-                                <img alt="Public Citizen" src="images/PC logo-high resolution.jpg" />
+                                <img alt="RootsAction.org" src="images/RootsAction.png" />
+                            </a>  
+
+                            <a target="_blank">
+                                <img alt="The Nation" src="images/Nation.jpg" />
                             </a>
 
                             <a target="_blank">
-                                <img alt="RootsAction.org" src="images/RootsAction.png" />
+                                <img alt="Win Without War" src="images/winwithoutwar.jpg" />
                             </a>
-                            
-                            <a target="_blank">
-                                <img alt="SumOfUs" src="images/SumOfUs_lg_color.png" />
-                            </a>      
                             
                         </div>
                         <div>
