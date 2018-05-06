@@ -27,7 +27,7 @@ class Form extends Component {
                 </header>
                 <article>
                   <p>
-                    <p style={{fontSize: '20px', fontWeight: 'bold'}}>
+                    <p className="header-thanks">
                     Now, one of the most impactful things you can do to save net neutrality is to <strong>CALL CONGRESS TODAY</strong> and tell your lawmakers to support the ‘resolution of disapproval’ to overturn the FCC vote.
                   </p>
                 </p>
@@ -58,7 +58,7 @@ class Form extends Component {
               </strong>
                 <br/><br/>
                 <div>As of now, 50 senators have said they will vote ‘yes,’ and we need just 51 to guarantee victory. </div>
-                <br/><br/>
+                <br/>
                 <div>It’s go time! Contact Congress today.</div>
             </div>
             <form id="signThePetition">
