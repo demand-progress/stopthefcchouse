@@ -8,7 +8,7 @@ class Form extends Component {
         super(props);
 
         this.state = getQueryVariables();
-        this.state.submitted = true;
+        this.state.submitted = false;
         this.state.countDown = 5;
         this.onSubmit = this.onSubmit.bind(this)
         this.closeModal = this.closeModal.bind(this)
@@ -41,7 +41,7 @@ class Form extends Component {
                     <br/><br/>
                     Finally, please join other activists across the country for gatherings outside in-district Congressional offices in support of net neutrality on May 14th. You can find an event near your—or sign up to help coordinate one—at: 
                     <br/><br/>
-                    <p style={{fontSize: '25px', fontWeight: 'bold'}}><a style={{color: 'black'}}href="https://events.battleforthenet.com" target="_blank">https://events.battleforthenet.com</a></p>
+                    <a id="modal-battle-link" href="https://events.battleforthenet.com" target="_blank">https://events.battleforthenet.com</a>
                   </p>
                 </article>
               </div>
