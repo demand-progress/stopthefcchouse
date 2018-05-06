@@ -17,7 +17,7 @@ function Main() {
                     </p>
                     <p style={{color: 'white', textAlign: 'center'}}>
                         <i>
-                            The FCC vote to destroy the Net Neutrality protections cannot stand.  Please co-sponsor, sign the discharge petition, and vote for the Resolution of Disapproval to overturn the FCC's "Restoring Internet Freedom" vote.                       
+                            The FCC vote to destroy net neutrality protections cannot stand. Please co-sponsor, sign the discharge petition, and vote for the Congressional Review Act resolution to overturn the FCC's repeal of net neutrality.                       
                             <br/><br/>
                             The FCC's decision willfully ignored the outcry from tens of millions of people, and it abdicated the FCC's responsibility to protect the internet from ISP blocking and discrimination. Please overturn it to restore net neutrality and ensure that the internet continues to enable speech, commerce, and democracy.
                         </i>
