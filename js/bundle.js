@@ -22701,7 +22701,7 @@
 	                null,
 	                _react2.default.createElement(
 	                  'p',
-	                  { style: { fontSize: '20px', fontWeight: 'bold' } },
+	                  { className: 'header-thanks' },
 	                  'Now, one of the most impactful things you can do to save net neutrality is to ',
 	                  _react2.default.createElement(
 	                    'strong',
@@ -22776,7 +22776,6 @@
 	            null,
 	            'As of now, 50 senators have said they will vote \u2018yes,\u2019 and we need just 51 to guarantee victory. '
 	          ),
-	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
 	            'div',
