@@ -2322,7 +2322,6 @@ body.modal-open-thanks {
 .close-thanks {
   position: absolute;
   right: 6px;
-  top: 81px;
   color: #fff;
   font-size: 36px;
   text-decoration: none;
@@ -2346,7 +2345,7 @@ body.modal-open-thanks {
   width: 700px;
   margin: auto;
   position: relative;
-  padding: 80px 0px;
+  padding: 20px 0px;
 }
 
 .modal-thanks header {
@@ -2379,6 +2378,12 @@ body.modal-open-thanks {
     margin: 0; 
 }
 
+#modal-battle-link {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 800px) {
     .modal-thanks {
         width: 90%;
@@ -2401,5 +2406,9 @@ body.modal-open-thanks {
 
         -webkit-transition: box-shadow 0.3s;
                 transition: box-shadow 0.3s;
+    }
+
+    #modal-battle-link {
+        font-size: 14px;
     }
 }
