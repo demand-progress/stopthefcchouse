@@ -46,7 +46,7 @@ class Form extends Component {
       
         return (
           <div className="bftn-form call-action-form" onSubmit={ this.onSubmit }>
-            <h3>Demand the Senate Vote to Overturn the FCC and Restore Net Neutrality!</h3>
+            <h3>Demand the Senate Vote to Restore Net Neutrality!</h3>
             <br/><br/>
             <div style={{color: 'white', lineHeight: 1.5}}>
               <strong style={{ fontSize: "25px" }}>
