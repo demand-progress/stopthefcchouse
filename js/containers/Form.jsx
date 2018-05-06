@@ -8,7 +8,7 @@ class Form extends Component {
         super(props);
 
         this.state = getQueryVariables();
-        this.state.submitted = false;
+        this.state.submitted = true;
         this.state.countDown = 5;
         this.onSubmit = this.onSubmit.bind(this)
         this.closeModal = this.closeModal.bind(this)
@@ -37,7 +37,11 @@ class Form extends Component {
                     <br/><br/>
                     You can use this script when talking to them —  just introduce yourself, be polite, and say:
                     <br/><br/>
-                    <i>"As your constituent, I urge you to cosponsor the Congressional Review Act ‘resolution of disapproval’ to reverse the FCC's December vote repealing net neutrality. An open internet is vital for free expression and innovation.’</i>
+                    <i>"I support Title Two net neutrality and I urge you to use the Congressional Review Act to pass a ‘resolution of disapproval’ reversing the FCC's December vote to repeal the Open Internet Order."</i>
+                    <br/><br/>
+                    Finally, please join other activists across the country for gatherings outside in-district Congressional offices in support of net neutrality on May 14th. You can find an event near your—or sign up to help coordinate one—at: 
+                    <br/><br/>
+                    <p style={{fontSize: '25px', fontWeight: 'bold'}}><a style={{color: 'black'}}href="https://events.battleforthenet.com" target="_blank">https://events.battleforthenet.com</a></p>
                   </p>
                 </article>
               </div>
