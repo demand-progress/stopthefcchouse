@@ -39,7 +39,7 @@ class Form extends Component {
                     <br/><br/>
                     <i>"I support Title Two net neutrality and I urge you to use the Congressional Review Act to pass a ‘resolution of disapproval’ reversing the FCC's December vote to repeal the Open Internet Order."</i>
                     <br/><br/>
-                    Finally, please join other activists across the country for gatherings outside in-district Congressional offices in support of net neutrality on May 14th. You can find an event near your—or sign up to help coordinate one—at: 
+                    Finally, please join other activists across the country for gatherings outside in-district Congressional offices in support of net neutrality on May 14th. You can find an event near you—or sign up to help coordinate one—at: 
                     <br/><br/>
                     <a id="modal-battle-link" href="https://events.battleforthenet.com" target="_blank">https://events.battleforthenet.com</a>
                   </p>
@@ -50,7 +50,8 @@ class Form extends Component {
       
         return (
           <div className="bftn-form call-action-form" onSubmit={ this.onSubmit }>
-            <h3>Demand the Senate Vote to Restore Net Neutrality!</h3>
+            <h3>Red Alert:</h3>
+            <h3>Tell the Senate to Restore Net Neutrality!</h3>
             <br/><br/>
             <div style={{color: 'white', lineHeight: 1.5}}>
               <strong style={{ fontSize: "25px" }}>
