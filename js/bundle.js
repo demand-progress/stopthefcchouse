@@ -22464,7 +22464,7 @@
 	
 	var _Main2 = _interopRequireDefault(_Main);
 	
-	var _Footer = __webpack_require__(/*! ./Footer.jsx */ 189);
+	var _Footer = __webpack_require__(/*! ./Footer.jsx */ 198);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
@@ -22641,6 +22641,10 @@
 	
 	var _utils = __webpack_require__(/*! ../utils */ 188);
 	
+	var _reactResponsiveDecorator = __webpack_require__(/*! react-responsive-decorator */ 189);
+	
+	var _reactResponsiveDecorator2 = _interopRequireDefault(_reactResponsiveDecorator);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22660,15 +22664,114 @@
 	    _this.state = (0, _utils.getQueryVariables)();
 	    _this.state.submitted = false;
 	    _this.state.countDown = 5;
+	    _this.state.isMobile = false;
 	    _this.onSubmit = _this.onSubmit.bind(_this);
 	    _this.closeModal = _this.closeModal.bind(_this);
 	    return _this;
 	  }
 	
 	  _createClass(Form, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this2 = this;
+	
+	      this.props.media({ minWidth: 768 }, function () {
+	        _this2.setState({
+	          isMobile: false
+	        });
+	      });
+	      this.props.media({ maxWidth: 768 }, function () {
+	        _this2.setState({
+	          isMobile: true
+	        });
+	      });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var modal = null;
+	      var topOfPage = null;
+	      var middle = null;
+	
+	      var header = _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'div',
+	          { style: { color: 'white', lineHeight: 1.5 } },
+	          _react2.default.createElement(
+	            'strong',
+	            { style: { fontSize: "25px" } },
+	            'The FCC voted to let Big Cable ruin the Internet. But next week the Senate is expected to vote to on a resolution to overturn the FCC and restore net neutrality.'
+	          ),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            'As of now, 50 senators have said they will vote \u2018yes,\u2019 and we need just 51 to guarantee victory. '
+	          ),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            'It\u2019s go time! Contact Congress today.'
+	          )
+	        )
+	      );
+	
+	      var form = _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'form',
+	          { id: 'signThePetition' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'flex' },
+	            _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'name', placeholder: 'Your Name' }),
+	            _react2.default.createElement('input', { type: 'email', className: 'form-input', name: 'email', placeholder: 'Your Email' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'flex' },
+	            _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'street', placeholder: 'Street Address' }),
+	            _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'zip', placeholder: 'Your Zipcode' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'flex' },
+	            _react2.default.createElement(
+	              'button',
+	              { className: 'btn' },
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'SIGN NOW'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          _react2.default.createElement(
+	            'i',
+	            null,
+	            'One or more of the participating organizations (listed at bottom) may email you about their campaigns.'
+	          )
+	        ),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement('br', null)
+	      );
+	
+	      if (this.state.isMobile) {
+	        topOfPage = form;
+	        middle = header;
+	      } else {
+	        topOfPage = header;
+	        middle = form;
+	      }
 	
 	      if (this.state.submitted) {
 	        modal = _react2.default.createElement(
@@ -22749,6 +22852,8 @@
 	        );
 	      }
 	
+	      if (this.state.mobile) {}
+	
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'bftn-form call-action-form', onSubmit: this.onSubmit },
@@ -22764,66 +22869,8 @@
 	        ),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	          'div',
-	          { style: { color: 'white', lineHeight: 1.5 } },
-	          _react2.default.createElement(
-	            'strong',
-	            { style: { fontSize: "25px" } },
-	            'The FCC voted to let Big Cable ruin the Internet. But next week the Senate is expected to vote to on a resolution to overturn the FCC and restore net neutrality.'
-	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(
-	            'div',
-	            null,
-	            'As of now, 50 senators have said they will vote \u2018yes,\u2019 and we need just 51 to guarantee victory. '
-	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(
-	            'div',
-	            null,
-	            'It\u2019s go time! Contact Congress today.'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'form',
-	          { id: 'signThePetition' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'flex' },
-	            _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'name', placeholder: 'Your Name' }),
-	            _react2.default.createElement('input', { type: 'email', className: 'form-input', name: 'email', placeholder: 'Your Email' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'flex' },
-	            _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'street', placeholder: 'Street Address' }),
-	            _react2.default.createElement('input', { type: 'text', className: 'form-input', name: 'zip', placeholder: 'Your Zipcode' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'flex' },
-	            _react2.default.createElement(
-	              'button',
-	              { className: 'btn' },
-	              _react2.default.createElement(
-	                'span',
-	                null,
-	                'SIGN NOW'
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'span',
-	          null,
-	          _react2.default.createElement(
-	            'i',
-	            null,
-	            'One or more of the participating organizations (listed at bottom) may email you about their campaigns.'
-	          )
-	        ),
+	        topOfPage,
+	        middle,
 	        modal
 	      );
 	    }
@@ -22927,7 +22974,7 @@
 	  return Form;
 	}(_react.Component);
 	
-	exports.default = Form;
+	exports.default = (0, _reactResponsiveDecorator2.default)(Form);
 
 /***/ }),
 /* 187 */
@@ -22990,6 +23037,538 @@
 
 /***/ }),
 /* 189 */
+/*!***************************************************!*\
+  !*** ./~/react-responsive-decorator/lib/index.js ***!
+  \***************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	
+	var _interopRequireDefault = function (obj) { return obj && obj.__esModule ? obj : { 'default': obj }; };
+	
+	var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
+	
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	
+	var _inherits = function (subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; };
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _React = __webpack_require__(/*! react */ 1);
+	
+	var _React2 = _interopRequireDefault(_React);
+	
+	var _enquire = __webpack_require__(/*! enquire.js */ 190);
+	
+	var _enquire2 = _interopRequireDefault(_enquire);
+	
+	var _canUseDOM = __webpack_require__(/*! can-use-dom */ 195);
+	
+	var _canUseDOM2 = _interopRequireDefault(_canUseDOM);
+	
+	var _json2mq = __webpack_require__(/*! json2mq */ 196);
+	
+	var _json2mq2 = _interopRequireDefault(_json2mq);
+	
+	var ResponsiveDecorator = function ResponsiveDecorator(ComposedComponent) {
+	  return (function (_React$Component) {
+	    var _class = function () {
+	      _classCallCheck(this, _class);
+	
+	      if (_React$Component != null) {
+	        _React$Component.apply(this, arguments);
+	      }
+	
+	      this._responsiveMediaHandlers = [];
+	    };
+	
+	    _inherits(_class, _React$Component);
+	
+	    _createClass(_class, [{
+	      key: 'media',
+	      value: function media(query, handler) {
+	        query = _json2mq2['default'](query);
+	
+	        if (typeof handler === 'function') {
+	          handler = {
+	            match: handler
+	          };
+	        }
+	
+	        _enquire2['default'].register(query, handler);
+	
+	        this._responsiveMediaHandlers.push({
+	          query: query,
+	          handler: handler
+	        });
+	      }
+	    }, {
+	      key: 'componentWillUnmount',
+	      value: function componentWillUnmount() {
+	        this._responsiveMediaHandlers.forEach(function (obj) {
+	          _enquire2['default'].unregister(obj.query, obj.handler);
+	        });
+	      }
+	    }, {
+	      key: 'render',
+	      value: function render() {
+	        return _React2['default'].createElement(ComposedComponent, _extends({}, this.props, {
+	          media: this.media.bind(this)
+	        }));
+	      }
+	    }], [{
+	      key: 'displayName',
+	      value: 'ResponsiveDecorator',
+	      enumerable: true
+	    }]);
+	
+	    return _class;
+	  })(_React2['default'].Component);
+	};
+	
+	exports['default'] = ResponsiveDecorator;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 190 */
+/*!***********************************!*\
+  !*** ./~/enquire.js/src/index.js ***!
+  \***********************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	var MediaQueryDispatch = __webpack_require__(/*! ./MediaQueryDispatch */ 191);
+	module.exports = new MediaQueryDispatch();
+
+
+/***/ }),
+/* 191 */
+/*!************************************************!*\
+  !*** ./~/enquire.js/src/MediaQueryDispatch.js ***!
+  \************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	var MediaQuery = __webpack_require__(/*! ./MediaQuery */ 192);
+	var Util = __webpack_require__(/*! ./Util */ 194);
+	var each = Util.each;
+	var isFunction = Util.isFunction;
+	var isArray = Util.isArray;
+	
+	/**
+	 * Allows for registration of query handlers.
+	 * Manages the query handler's state and is responsible for wiring up browser events
+	 *
+	 * @constructor
+	 */
+	function MediaQueryDispatch () {
+	    if(!window.matchMedia) {
+	        throw new Error('matchMedia not present, legacy browsers require a polyfill');
+	    }
+	
+	    this.queries = {};
+	    this.browserIsIncapable = !window.matchMedia('only all').matches;
+	}
+	
+	MediaQueryDispatch.prototype = {
+	
+	    constructor : MediaQueryDispatch,
+	
+	    /**
+	     * Registers a handler for the given media query
+	     *
+	     * @param {string} q the media query
+	     * @param {object || Array || Function} options either a single query handler object, a function, or an array of query handlers
+	     * @param {function} options.match fired when query matched
+	     * @param {function} [options.unmatch] fired when a query is no longer matched
+	     * @param {function} [options.setup] fired when handler first triggered
+	     * @param {boolean} [options.deferSetup=false] whether setup should be run immediately or deferred until query is first matched
+	     * @param {boolean} [shouldDegrade=false] whether this particular media query should always run on incapable browsers
+	     */
+	    register : function(q, options, shouldDegrade) {
+	        var queries         = this.queries,
+	            isUnconditional = shouldDegrade && this.browserIsIncapable;
+	
+	        if(!queries[q]) {
+	            queries[q] = new MediaQuery(q, isUnconditional);
+	        }
+	
+	        //normalise to object in an array
+	        if(isFunction(options)) {
+	            options = { match : options };
+	        }
+	        if(!isArray(options)) {
+	            options = [options];
+	        }
+	        each(options, function(handler) {
+	            if (isFunction(handler)) {
+	                handler = { match : handler };
+	            }
+	            queries[q].addHandler(handler);
+	        });
+	
+	        return this;
+	    },
+	
+	    /**
+	     * unregisters a query and all it's handlers, or a specific handler for a query
+	     *
+	     * @param {string} q the media query to target
+	     * @param {object || function} [handler] specific handler to unregister
+	     */
+	    unregister : function(q, handler) {
+	        var query = this.queries[q];
+	
+	        if(query) {
+	            if(handler) {
+	                query.removeHandler(handler);
+	            }
+	            else {
+	                query.clear();
+	                delete this.queries[q];
+	            }
+	        }
+	
+	        return this;
+	    }
+	};
+	
+	module.exports = MediaQueryDispatch;
+
+
+/***/ }),
+/* 192 */
+/*!****************************************!*\
+  !*** ./~/enquire.js/src/MediaQuery.js ***!
+  \****************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	var QueryHandler = __webpack_require__(/*! ./QueryHandler */ 193);
+	var each = __webpack_require__(/*! ./Util */ 194).each;
+	
+	/**
+	 * Represents a single media query, manages it's state and registered handlers for this query
+	 *
+	 * @constructor
+	 * @param {string} query the media query string
+	 * @param {boolean} [isUnconditional=false] whether the media query should run regardless of whether the conditions are met. Primarily for helping older browsers deal with mobile-first design
+	 */
+	function MediaQuery(query, isUnconditional) {
+	    this.query = query;
+	    this.isUnconditional = isUnconditional;
+	    this.handlers = [];
+	    this.mql = window.matchMedia(query);
+	
+	    var self = this;
+	    this.listener = function(mql) {
+	        // Chrome passes an MediaQueryListEvent object, while other browsers pass MediaQueryList directly
+	        self.mql = mql.currentTarget || mql;
+	        self.assess();
+	    };
+	    this.mql.addListener(this.listener);
+	}
+	
+	MediaQuery.prototype = {
+	
+	    constuctor : MediaQuery,
+	
+	    /**
+	     * add a handler for this query, triggering if already active
+	     *
+	     * @param {object} handler
+	     * @param {function} handler.match callback for when query is activated
+	     * @param {function} [handler.unmatch] callback for when query is deactivated
+	     * @param {function} [handler.setup] callback for immediate execution when a query handler is registered
+	     * @param {boolean} [handler.deferSetup=false] should the setup callback be deferred until the first time the handler is matched?
+	     */
+	    addHandler : function(handler) {
+	        var qh = new QueryHandler(handler);
+	        this.handlers.push(qh);
+	
+	        this.matches() && qh.on();
+	    },
+	
+	    /**
+	     * removes the given handler from the collection, and calls it's destroy methods
+	     *
+	     * @param {object || function} handler the handler to remove
+	     */
+	    removeHandler : function(handler) {
+	        var handlers = this.handlers;
+	        each(handlers, function(h, i) {
+	            if(h.equals(handler)) {
+	                h.destroy();
+	                return !handlers.splice(i,1); //remove from array and exit each early
+	            }
+	        });
+	    },
+	
+	    /**
+	     * Determine whether the media query should be considered a match
+	     *
+	     * @return {Boolean} true if media query can be considered a match, false otherwise
+	     */
+	    matches : function() {
+	        return this.mql.matches || this.isUnconditional;
+	    },
+	
+	    /**
+	     * Clears all handlers and unbinds events
+	     */
+	    clear : function() {
+	        each(this.handlers, function(handler) {
+	            handler.destroy();
+	        });
+	        this.mql.removeListener(this.listener);
+	        this.handlers.length = 0; //clear array
+	    },
+	
+	    /*
+	        * Assesses the query, turning on all handlers if it matches, turning them off if it doesn't match
+	        */
+	    assess : function() {
+	        var action = this.matches() ? 'on' : 'off';
+	
+	        each(this.handlers, function(handler) {
+	            handler[action]();
+	        });
+	    }
+	};
+	
+	module.exports = MediaQuery;
+
+
+/***/ }),
+/* 193 */
+/*!******************************************!*\
+  !*** ./~/enquire.js/src/QueryHandler.js ***!
+  \******************************************/
+/***/ (function(module, exports) {
+
+	/**
+	 * Delegate to handle a media query being matched and unmatched.
+	 *
+	 * @param {object} options
+	 * @param {function} options.match callback for when the media query is matched
+	 * @param {function} [options.unmatch] callback for when the media query is unmatched
+	 * @param {function} [options.setup] one-time callback triggered the first time a query is matched
+	 * @param {boolean} [options.deferSetup=false] should the setup callback be run immediately, rather than first time query is matched?
+	 * @constructor
+	 */
+	function QueryHandler(options) {
+	    this.options = options;
+	    !options.deferSetup && this.setup();
+	}
+	
+	QueryHandler.prototype = {
+	
+	    constructor : QueryHandler,
+	
+	    /**
+	     * coordinates setup of the handler
+	     *
+	     * @function
+	     */
+	    setup : function() {
+	        if(this.options.setup) {
+	            this.options.setup();
+	        }
+	        this.initialised = true;
+	    },
+	
+	    /**
+	     * coordinates setup and triggering of the handler
+	     *
+	     * @function
+	     */
+	    on : function() {
+	        !this.initialised && this.setup();
+	        this.options.match && this.options.match();
+	    },
+	
+	    /**
+	     * coordinates the unmatch event for the handler
+	     *
+	     * @function
+	     */
+	    off : function() {
+	        this.options.unmatch && this.options.unmatch();
+	    },
+	
+	    /**
+	     * called when a handler is to be destroyed.
+	     * delegates to the destroy or unmatch callbacks, depending on availability.
+	     *
+	     * @function
+	     */
+	    destroy : function() {
+	        this.options.destroy ? this.options.destroy() : this.off();
+	    },
+	
+	    /**
+	     * determines equality by reference.
+	     * if object is supplied compare options, if function, compare match callback
+	     *
+	     * @function
+	     * @param {object || function} [target] the target for comparison
+	     */
+	    equals : function(target) {
+	        return this.options === target || this.options.match === target;
+	    }
+	
+	};
+	
+	module.exports = QueryHandler;
+
+
+/***/ }),
+/* 194 */
+/*!**********************************!*\
+  !*** ./~/enquire.js/src/Util.js ***!
+  \**********************************/
+/***/ (function(module, exports) {
+
+	/**
+	 * Helper function for iterating over a collection
+	 *
+	 * @param collection
+	 * @param fn
+	 */
+	function each(collection, fn) {
+	    var i      = 0,
+	        length = collection.length,
+	        cont;
+	
+	    for(i; i < length; i++) {
+	        cont = fn(collection[i], i);
+	        if(cont === false) {
+	            break; //allow early exit
+	        }
+	    }
+	}
+	
+	/**
+	 * Helper function for determining whether target object is an array
+	 *
+	 * @param target the object under test
+	 * @return {Boolean} true if array, false otherwise
+	 */
+	function isArray(target) {
+	    return Object.prototype.toString.apply(target) === '[object Array]';
+	}
+	
+	/**
+	 * Helper function for determining whether target object is a function
+	 *
+	 * @param target the object under test
+	 * @return {Boolean} true if function, false otherwise
+	 */
+	function isFunction(target) {
+	    return typeof target === 'function';
+	}
+	
+	module.exports = {
+	    isFunction : isFunction,
+	    isArray : isArray,
+	    each : each
+	};
+
+
+/***/ }),
+/* 195 */
+/*!********************************!*\
+  !*** ./~/can-use-dom/index.js ***!
+  \********************************/
+/***/ (function(module, exports) {
+
+	var canUseDOM = !!(
+	  typeof window !== 'undefined' &&
+	  window.document &&
+	  window.document.createElement
+	);
+	
+	module.exports = canUseDOM;
+
+/***/ }),
+/* 196 */
+/*!****************************!*\
+  !*** ./~/json2mq/index.js ***!
+  \****************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	var camel2hyphen = __webpack_require__(/*! string-convert/camel2hyphen */ 197);
+	
+	var isDimension = function (feature) {
+	  var re = /[height|width]$/;
+	  return re.test(feature);
+	};
+	
+	var obj2mq = function (obj) {
+	  var mq = '';
+	  var features = Object.keys(obj);
+	  features.forEach(function (feature, index) {
+	    var value = obj[feature];
+	    feature = camel2hyphen(feature);
+	    // Add px to dimension features
+	    if (isDimension(feature) && typeof value === 'number') {
+	      value = value + 'px';
+	    }
+	    if (value === true) {
+	      mq += feature;
+	    } else if (value === false) {
+	      mq += 'not ' + feature;
+	    } else {
+	      mq += '(' + feature + ': ' + value + ')';
+	    }
+	    if (index < features.length-1) {
+	      mq += ' and '
+	    }
+	  });
+	  return mq;
+	};
+	
+	var json2mq = function (query) {
+	  var mq = '';
+	  if (typeof query === 'string') {
+	    return query;
+	  }
+	  // Handling array of media queries
+	  if (query instanceof Array) {
+	    query.forEach(function (q, index) {
+	      mq += obj2mq(q);
+	      if (index < query.length-1) {
+	        mq += ', '
+	      }
+	    });
+	    return mq;
+	  }
+	  // Handling single media query
+	  return obj2mq(query);
+	};
+	
+	module.exports = json2mq;
+
+/***/ }),
+/* 197 */
+/*!******************************************!*\
+  !*** ./~/string-convert/camel2hyphen.js ***!
+  \******************************************/
+/***/ (function(module, exports) {
+
+	var camel2hyphen = function (str) {
+	  return str
+	          .replace(/[A-Z]/g, function (match) {
+	            return '-' + match.toLowerCase();
+	          })
+	          .toLowerCase();
+	};
+	
+	module.exports = camel2hyphen;
+
+/***/ }),
+/* 198 */
 /*!**********************************!*\
   !*** ./js/containers/Footer.jsx ***!
   \**********************************/
