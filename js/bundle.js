@@ -22567,28 +22567,26 @@
 	                        _react2.default.createElement(
 	                            'i',
 	                            null,
-	                            'The FCC vote to destroy net neutrality protections cannot stand. Please co-sponsor, sign the discharge petition, and vote for the Congressional Review Act resolution to overturn the FCC\'s repeal of net neutrality.',
+	                            '"The FCC\'s vote to destroy net neutrality protections cannot stand. Please co-sponsor, sign the discharge petition for, and vote for the Congressional Review Act resolution to overturn the FCC\'s repeal of net neutrality."',
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
-	                            'The FCC\'s decision willfully ignored the outcry from tens of millions of people, and it abdicated the FCC\'s responsibility to protect the internet from ISP blocking and discrimination. Please overturn it to restore net neutrality and ensure that the internet continues to enable speech, commerce, and democracy.'
+	                            '\u201CThe FCC\'s decision willfully ignored the outcry of tens of millions of people, and it abdicated the FCC\'s responsibility to protect the internet from ISP blocking and discrimination. Please overturn it to restore net neutrality and ensure that the internet continues to enable speech, commerce, and democracy."'
 	                        )
 	                    ),
 	                    _react2.default.createElement('hr', null),
 	                    _react2.default.createElement(
 	                        'h4',
-	                        { style: { color: 'white', textAlign: 'center' } },
-	                        'More information:',
-	                        _react2.default.createElement('br', null),
+	                        { style: { color: 'white' } },
 	                        _react2.default.createElement('br', null),
 	                        'The Senate is about to vote on whether to save net neutrality or let it die.'
 	                    ),
 	                    _react2.default.createElement(
 	                        'p',
-	                        { style: { textAlign: 'center' } },
+	                        null,
 	                        'The US Senate is headed for a vote in mid-May on a Congressional Review Act (CRA) resolution to block the FCC\u2019s repeal of net neutrality.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'In December, Trump appointee and FCC Chairman Ajit Pai\u2014a former top lawyer for Verizon\u2014pushed through a measure to end net neutrality and let big cable companies control which websites and apps you use, where you get your news, how you listen to music and watch videos \u2014 everything you do on the Internet.',
+	                        'In December, Trump FCC Chairman Ajit Pai a former top lawyer for Verizon\u2014pushed through a measure to end net neutrality and let big cable companies control which websites and apps you use, where you get your news, how you listen to music and watch videos \u2014 everything you do on the internet.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
 	                        'But the US Senate will vote in mid-May on a resolution to block the FCC\'s repeal of net neutrality and keep the web free and open.',
@@ -22737,7 +22735,7 @@
 	                ),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement('br', null),
-	                'Finally, please join other activists across the country for gatherings outside in-district Congressional offices in support of net neutrality on May 14th. You can find an event near your\u2014or sign up to help coordinate one\u2014at:',
+	                'Finally, please join other activists across the country for gatherings outside in-district Congressional offices in support of net neutrality on May 14th. You can find an event near you\u2014or sign up to help coordinate one\u2014at:',
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
@@ -22757,7 +22755,12 @@
 	        _react2.default.createElement(
 	          'h3',
 	          null,
-	          'Demand the Senate Vote to Restore Net Neutrality!'
+	          'Red Alert:'
+	        ),
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Tell the Senate to Restore Net Neutrality!'
 	        ),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement('br', null),
