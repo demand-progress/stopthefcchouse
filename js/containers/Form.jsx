@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { CONF, URLS } from '../config';
 import { getQueryVariables } from '../utils';
+import Responsive from 'react-responsive-decorator';
+
 
 class Form extends Component {
 
@@ -10,15 +12,75 @@ class Form extends Component {
         this.state = getQueryVariables();
         this.state.submitted = false;
         this.state.countDown = 5;
+        this.state.isMobile = false;
         this.onSubmit = this.onSubmit.bind(this)
         this.closeModal = this.closeModal.bind(this)
     }
 
+    componentDidMount(){
+      this.props.media({ minWidth: 768 }, () => {
+        this.setState({
+          isMobile: false
+        })
+      })
+      this.props.media({ maxWidth: 768 }, () => {
+        this.setState({
+          isMobile: true
+        })
+      })
+    }
+
     render() {
       let modal = null;
+      let topOfPage = null;
+      let middle = null; 
+
+      const header = (
+        <div>   
+          <div style={{color: 'white', lineHeight: 1.5}}>
+            <strong style={{ fontSize: "25px" }}>
+            The FCC voted to let Big Cable ruin the Internet. But next week the Senate is expected to vote to on a resolution to overturn the FCC and restore net neutrality.  
+            </strong>
+              <br/><br/>
+              <div>As of now, 50 senators have said they will vote ‘yes,’ and we need just 51 to guarantee victory. </div>
+              <br/>
+              <div>It’s go time! Contact Congress today.</div>
+          </div>
+        </div>
+      )
+
+      const form = (
+        <div>
+        <form id="signThePetition">
+        <div className="flex">
+          <input type="text" className="form-input" name="name" placeholder="Your Name" />
+          <input type="email" className="form-input" name="email" placeholder="Your Email" />
+        </div>
+        <div className="flex">
+          <input type="text" className="form-input" name="street" placeholder="Street Address" />
+          <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
+        </div>
+        <div className="flex">
+          <button className="btn">
+            <span>SIGN NOW</span>
+          </button>
+        </div>
+      </form>
+      <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
+      <br/><br/>
+      </div>
+      )
+      
+      if(this.state.isMobile){
+        topOfPage = form
+        middle = header
+        } else {
+        topOfPage = header
+        middle = form
+      }
 
       if(this.state.submitted) {
-        modal = 
+        modal = (
               <div id="thanks" className="modal-wrapper-thanks modal-open-thanks" style={{ 'display' : this.state.submitted ? 'block' : 'none'}}>
               <div className="modal-thanks">
                 <a className="close-thanks" href="#" onClick={ this.closeModal }>×</a>
@@ -46,6 +108,11 @@ class Form extends Component {
                 </article>
               </div>
             </div>
+        )
+      }
+
+      if(this.state.mobile){
+
       }
       
         return (
@@ -53,31 +120,8 @@ class Form extends Component {
             <h3>Red Alert:</h3>
             <h3>Tell the Senate to Restore Net Neutrality!</h3>
             <br/><br/>
-            <div style={{color: 'white', lineHeight: 1.5}}>
-              <strong style={{ fontSize: "25px" }}>
-              The FCC voted to let Big Cable ruin the Internet. But next week the Senate is expected to vote to on a resolution to overturn the FCC and restore net neutrality.  
-              </strong>
-                <br/><br/>
-                <div>As of now, 50 senators have said they will vote ‘yes,’ and we need just 51 to guarantee victory. </div>
-                <br/>
-                <div>It’s go time! Contact Congress today.</div>
-            </div>
-            <form id="signThePetition">
-              <div className="flex">
-                <input type="text" className="form-input" name="name" placeholder="Your Name" />
-                <input type="email" className="form-input" name="email" placeholder="Your Email" />
-              </div>
-              <div className="flex">
-                <input type="text" className="form-input" name="street" placeholder="Street Address" />
-                <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
-              </div>
-              <div className="flex">
-                <button className="btn">
-                  <span>SIGN NOW</span>
-                </button>
-              </div>
-            </form>
-            <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
+            {topOfPage}
+            {middle}
             {modal}
         </div>);
     }
@@ -178,4 +222,4 @@ class Form extends Component {
 
 }
 
-export default Form;
+export default Responsive(Form);
