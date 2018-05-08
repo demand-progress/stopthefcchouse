@@ -89,7 +89,7 @@ class Form extends Component {
                 </header>
                 <article style={{}}>
                   <p>
-                    <p className="header-thanks" style={{ fontFamily: 'Montserrat, sans-serif'}}>
+                    <p className="header-thanks" style={{ fontFamily: 'Montserrat, sans-serif', textDecorationLine: "underline"}}>
                     Please call Congress and tell your lawmakers to overturn the FCC and restore net neutrality:  
                   </p>
                 </p>
@@ -98,7 +98,7 @@ class Form extends Component {
                     <br/>
                     <p style={{fontSize: '14px', fontFamily: 'Montserrat, sans-serif'}}>We’ll connect you to your lawmakers.  You can use this script — just introduce yourself, be polite, and say: <i>"I support Title Two net neutrality and I urge you to vote for the ‘resolution of disapproval’ to restore net neutrality."</i></p>
                     <br/>
-                    <p className="header-thanks" style={{ fontFamily: 'Montserrat, sans-serif'}}>
+                    <p className="header-thanks" style={{ fontFamily: 'Montserrat, sans-serif', textDecorationLine: "underline"}}>
                     Attend an event on Monday: 
                     </p>
                     <br/>
@@ -217,7 +217,7 @@ class Form extends Component {
             form.appendChild(input);
         });
 
-        form.submit()
+        // form.submit()
         this.setState({ submitted: true });
     }
 
