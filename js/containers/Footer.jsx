@@ -48,7 +48,7 @@ function Footer(){
                             </a>
 
                             <a target="_blank">
-                                <img alt="Progress America" src="images/progress-america-logo-1" />
+                                <img alt="Progress America" src="images/progress-america-logo-1.png" />
                             </a>
                             
                             <a target="_blank">
