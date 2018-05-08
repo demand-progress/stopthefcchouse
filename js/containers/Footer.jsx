@@ -30,7 +30,7 @@ function Footer(){
                              <a target="_blank">
                                 <img alt="Climate Hawks Vote" src="images/CHV Logo2.jpg" />
                             </a>
-                                                
+                                     
                             <a target="_blank">
                                 <img alt="Color of Change" src="images/COC-Full-Color.png" />
                             </a>
@@ -45,6 +45,10 @@ function Footer(){
                             
                             <a target="_blank">
                                 <img alt="Consumer Reports" src="images/consumer-reports.png" />
+                            </a>
+
+                            <a target="_blank">
+                                <img alt="Corporate Accountability" src="images/CA_LogoTag_Large.png" />
                             </a>
 
                             <a target="_blank">
@@ -89,6 +93,10 @@ function Footer(){
 
                             <a target="_blank">
                                 <img alt="The Zero Hour" src="images/TZH Logo.jpg" />
+                            </a>
+                            
+                            <a target="_blank">
+                                <img alt="Watchdog" src="images/LOGO_Watchdog-v04.png" />
                             </a>
 
                             <a target="_blank">
