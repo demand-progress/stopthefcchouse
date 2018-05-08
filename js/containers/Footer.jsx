@@ -32,7 +32,7 @@ function Footer(){
                             </a>
                             
                             <a target="_blank">
-                                <img alt="Consumers Union" src="images/CU New Logo Hi-res (1).jpg" />
+                                <img alt="Consumer Reports" src="images/consumer-reports.png" />
                             </a>
                             
                             <a target="_blank">
