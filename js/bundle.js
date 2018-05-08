@@ -23651,7 +23651,7 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "Consumers Union", src: "images/CU New Logo Hi-res (1).jpg" })
+	                        _react2.default.createElement("img", { alt: "Consumer Reports", src: "images/consumer-reports.png" })
 	                    ),
 	                    _react2.default.createElement(
 	                        "a",
