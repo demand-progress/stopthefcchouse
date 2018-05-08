@@ -23669,6 +23669,11 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Corporate Accountability", src: "images/CA_LogoTag_Large.png" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "Courage Campaign", src: "images/Courage-Logo-Color-High-Rez.jpg" })
 	                    ),
 	                    _react2.default.createElement(
@@ -23720,6 +23725,11 @@
 	                        "a",
 	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "The Zero Hour", src: "images/TZH Logo.jpg" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Watchdog", src: "images/LOGO_Watchdog-v04.png" })
 	                    ),
 	                    _react2.default.createElement(
 	                        "a",
