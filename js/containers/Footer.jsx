@@ -24,7 +24,7 @@ function Footer(){
                             </a>
                             
                             <a target="_blank">
-                                <img alt="Common Cause" src="images/common_cause_logo.jpg" />
+                                <img alt="Common Cause" src="images/CCLogo_Stacked_NoTagline.jpg" />
                             </a>
                             
                             <a target="_blank">
