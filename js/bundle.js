@@ -23639,6 +23639,11 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Center for Popular Democracy Action", src: "images/cpd-action-logo.png" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "Climate Hawks Vote", src: "images/CHV Logo2.jpg" })
 	                    ),
 	                    _react2.default.createElement(
@@ -23664,7 +23669,17 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Courage Campaign", src: "images/Courage-Logo-Color-High-Rez.jpg" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "Democracy for America", src: "images/DFA-Logo-bottom-white-400.png" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Friend of the Earth", src: "images/FOE_logo_color.jpg" })
 	                    ),
 	                    _react2.default.createElement(
 	                        "a",
@@ -23710,6 +23725,11 @@
 	                        "a",
 	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "Win Without War", src: "images/winwithoutwar.jpg" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Workign Families Party", src: "images/wfp.jpg" })
 	                    )
 	                ),
 	                _react2.default.createElement(
