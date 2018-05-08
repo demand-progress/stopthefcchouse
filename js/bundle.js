@@ -22662,7 +22662,7 @@
 	    var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
 	
 	    _this.state = (0, _utils.getQueryVariables)();
-	    _this.state.submitted = true;
+	    _this.state.submitted = false;
 	    _this.state.countDown = 5;
 	    _this.state.isMobile = false;
 	    _this.onSubmit = _this.onSubmit.bind(_this);
@@ -23641,7 +23641,7 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "Common Cause", src: "images/common_cause_logo.jpg" })
+	                        _react2.default.createElement("img", { alt: "Common Cause", src: "images/CCLogo_Stacked_NoTagline.jpg" })
 	                    ),
 	                    _react2.default.createElement(
 	                        "a",
