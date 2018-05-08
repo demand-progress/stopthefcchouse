@@ -10,7 +10,7 @@ class Form extends Component {
         super(props);
 
         this.state = getQueryVariables();
-        this.state.submitted = false;
+        this.state.submitted = true;
         this.state.countDown = 5;
         this.state.isMobile = false;
         this.onSubmit = this.onSubmit.bind(this)
@@ -90,19 +90,22 @@ class Form extends Component {
                 <article>
                   <p>
                     <p className="header-thanks">
-                    Now, one of the most impactful things you can do to save net neutrality is to <strong>CALL CONGRESS TODAY</strong> and tell your lawmakers to support the ‘resolution of disapproval’ to overturn the FCC vote.
+                    Please call Congress and tell your lawmakers to overturn the FCC and restore net neutrality.  
                   </p>
                 </p>
-                  <h4 style={{color: 'black'}}>Call: <a href="tel:8582640403">858-264-0403</a></h4>
+                  <p id="call" style={{ marginTop: '0.5em', fontWeight: 'bold',fontFamily: 'Montserrat, sans-serif'}}>Call: <a style={{color: 'black'}}href="tel:8582640403">858-264-0403</a></p>
                   <p>
-                    We will connect you to the offices of your lawmakers.
+                    <br/>
+                    <p style={{fontSize: '14px'}}>We’ll connect you to your lawmakers.  You can use this script — just introduce yourself, be polite, and say:</p>
+                    <br/>
+                    <i>"I support Title Two net neutrality and I urge you to vote for the ‘resolution of disapproval’ to restore net neutrality."</i>
                     <br/><br/>
-                    You can use this script when talking to them —  just introduce yourself, be polite, and say:
-                    <br/><br/>
-                    <i>"I support Title Two net neutrality and I urge you to use the Congressional Review Act to pass a ‘resolution of disapproval’ reversing the FCC's December vote to repeal the Open Internet Order."</i>
-                    <br/><br/>
-                    Finally, please join other activists across the country for gatherings outside in-district Congressional offices in support of net neutrality on May 14th. You can find an event near you—or sign up to help coordinate one—at: 
-                    <br/><br/>
+                    <p className="header-thanks">
+                    Attend an event on Monday: 
+                    </p>
+                    <br/>
+                    <p>On May 14th, activists across the country will be gathering outside of the offices of key lawmakers.  Please sign up for an event near you here (or consider hosting one if there isn't one near you yet):</p>
+                    <br/>
                     <a id="modal-battle-link" href="https://events.battleforthenet.com" target="_blank">https://events.battleforthenet.com</a>
                   </p>
                 </article>
