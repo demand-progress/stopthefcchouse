@@ -23667,7 +23667,7 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
-	                        _react2.default.createElement("img", { alt: "Progress America", src: "images/progress-america-logo-1" })
+	                        _react2.default.createElement("img", { alt: "Progress America", src: "images/progress-america-logo-1.png" })
 	                    ),
 	                    _react2.default.createElement(
 	                        "a",
