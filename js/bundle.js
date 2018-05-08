@@ -22407,7 +22407,7 @@
 	        form.appendChild(input);
 	      });
 
-	      // form.submit()
+	      form.submit();
 	      this.setState({ submitted: true });
 	    }
 	  }]);
