@@ -22802,7 +22802,7 @@
 	                null,
 	                _react2.default.createElement(
 	                  'p',
-	                  { className: 'header-thanks', style: { fontFamily: 'Montserrat, sans-serif' } },
+	                  { className: 'header-thanks', style: { fontFamily: 'Montserrat, sans-serif', textDecorationLine: "underline" } },
 	                  'Please call Congress and tell your lawmakers to overturn the FCC and restore net neutrality:'
 	                )
 	              ),
@@ -22833,7 +22833,7 @@
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                  'p',
-	                  { className: 'header-thanks', style: { fontFamily: 'Montserrat, sans-serif' } },
+	                  { className: 'header-thanks', style: { fontFamily: 'Montserrat, sans-serif', textDecorationLine: "underline" } },
 	                  'Attend an event on Monday:'
 	                ),
 	                _react2.default.createElement('br', null),
@@ -22968,7 +22968,7 @@
 	        form.appendChild(input);
 	      });
 	
-	      form.submit();
+	      // form.submit()
 	      this.setState({ submitted: true });
 	    }
 	  }]);
