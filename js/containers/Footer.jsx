@@ -18,7 +18,15 @@ function Footer(){
                             <a target="_blank">
                                 <img alt="American Family Voices (AFV)" src="images/PasAFV.jpg" />
                             </a>
-                            
+
+                            <a target="_blank">
+                                <img alt="Center for Media Justice" src="images/CMJ logo hi-res.jpg" />
+                            </a>
+
+                             <a target="_blank">
+                                <img alt="Climate Hawks Vote" src="images/CHV Logo2.jpg" />
+                            </a>
+                                                
                             <a target="_blank">
                                 <img alt="Color of Change" src="images/COC-Full-Color.png" />
                             </a>
@@ -34,9 +42,13 @@ function Footer(){
                             <a target="_blank">
                                 <img alt="Consumer Reports" src="images/consumer-reports.png" />
                             </a>
-                            
+
                             <a target="_blank">
                                 <img alt="Democracy for America" src="images/DFA-Logo-bottom-white-400.png" />
+                            </a>
+                            
+                            <a target="_blank">
+                                <img alt="Open Media" src="images/open-media.jpg" />
                             </a>
 
                             <a target="_blank">
@@ -61,6 +73,10 @@ function Footer(){
 
                             <a target="_blank">
                                 <img alt="The Nation" src="images/Nation.jpg" />
+                            </a>
+                            
+                            <a target="_blank">
+                                <img alt="The Zero Hour" src="images/TZH Logo.jpg" />
                             </a>
 
                             <a target="_blank">
