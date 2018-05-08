@@ -23,6 +23,10 @@ function Footer(){
                                 <img alt="Center for Media Justice" src="images/CMJ logo hi-res.jpg" />
                             </a>
 
+                            <a target="_blank">
+                                <img alt="Center for Popular Democracy Action" src="images/cpd-action-logo.png" />
+                            </a>
+                            
                              <a target="_blank">
                                 <img alt="Climate Hawks Vote" src="images/CHV Logo2.jpg" />
                             </a>
@@ -44,9 +48,17 @@ function Footer(){
                             </a>
 
                             <a target="_blank">
+                                <img alt="Courage Campaign" src="images/Courage-Logo-Color-High-Rez.jpg" />
+                            </a>
+
+                            <a target="_blank">
                                 <img alt="Democracy for America" src="images/DFA-Logo-bottom-white-400.png" />
                             </a>
                             
+                            <a target="_blank">
+                                <img alt="Friend of the Earth" src="images/FOE_logo_color.jpg" />
+                            </a>
+
                             <a target="_blank">
                                 <img alt="Open Media" src="images/open-media.jpg" />
                             </a>
@@ -74,7 +86,7 @@ function Footer(){
                             <a target="_blank">
                                 <img alt="The Nation" src="images/Nation.jpg" />
                             </a>
-                            
+
                             <a target="_blank">
                                 <img alt="The Zero Hour" src="images/TZH Logo.jpg" />
                             </a>
@@ -83,6 +95,10 @@ function Footer(){
                                 <img alt="Win Without War" src="images/winwithoutwar.jpg" />
                             </a>
                             
+                            <a target="_blank">
+                                <img alt="Workign Families Party" src="images/wfp.jpg" />
+                            </a>
+                           
                         </div>
                         <div>
                             <div className="press-inquiries">
