@@ -22662,7 +22662,7 @@
 	    var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
 	
 	    _this.state = (0, _utils.getQueryVariables)();
-	    _this.state.submitted = false;
+	    _this.state.submitted = true;
 	    _this.state.countDown = 5;
 	    _this.state.isMobile = false;
 	    _this.onSubmit = _this.onSubmit.bind(_this);
@@ -22790,26 +22790,26 @@
 	              null,
 	              _react2.default.createElement(
 	                'h2',
-	                { id: 'modal-header-thanks' },
+	                { id: 'modal-header-thanks', style: { fontFamily: 'Montserrat, sans-serif' } },
 	                'Thanks for signing.'
 	              )
 	            ),
 	            _react2.default.createElement(
 	              'article',
-	              null,
+	              { style: {} },
 	              _react2.default.createElement(
 	                'p',
 	                null,
 	                _react2.default.createElement(
 	                  'p',
-	                  { className: 'header-thanks' },
-	                  'Please call Congress and tell your lawmakers to overturn the FCC and restore net neutrality.'
+	                  { className: 'header-thanks', style: { fontFamily: 'Montserrat, sans-serif' } },
+	                  'Please call Congress and tell your lawmakers to overturn the FCC and restore net neutrality:'
 	                )
 	              ),
 	              _react2.default.createElement(
 	                'p',
 	                { id: 'call', style: { marginTop: '0.5em', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif' } },
-	                'Call: ',
+	                'Call Now: ',
 	                _react2.default.createElement(
 	                  'a',
 	                  { style: { color: 'black' }, href: 'tel:8582640403' },
@@ -22822,32 +22822,30 @@
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                  'p',
-	                  { style: { fontSize: '14px' } },
-	                  'We\u2019ll connect you to your lawmakers.  You can use this script \u2014 just introduce yourself, be polite, and say:'
+	                  { style: { fontSize: '14px', fontFamily: 'Montserrat, sans-serif' } },
+	                  'We\u2019ll connect you to your lawmakers.  You can use this script \u2014 just introduce yourself, be polite, and say: ',
+	                  _react2.default.createElement(
+	                    'i',
+	                    null,
+	                    '"I support Title Two net neutrality and I urge you to vote for the \u2018resolution of disapproval\u2019 to restore net neutrality."'
+	                  )
 	                ),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(
-	                  'i',
-	                  null,
-	                  '"I support Title Two net neutrality and I urge you to vote for the \u2018resolution of disapproval\u2019 to restore net neutrality."'
-	                ),
-	                _react2.default.createElement('br', null),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                  'p',
-	                  { className: 'header-thanks' },
+	                  { className: 'header-thanks', style: { fontFamily: 'Montserrat, sans-serif' } },
 	                  'Attend an event on Monday:'
 	                ),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                  'p',
-	                  null,
+	                  { style: { fontSize: '14px', fontFamily: 'Montserrat, sans-serif' } },
 	                  'On May 14th, activists across the country will be gathering outside of the offices of key lawmakers.  Please sign up for an event near you here (or consider hosting one if there isn\'t one near you yet):'
 	                ),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                  'a',
-	                  { id: 'modal-battle-link', href: 'https://events.battleforthenet.com', target: '_blank' },
+	                  { style: { fontFamily: 'Montserrat, sans-serif' }, id: 'modal-battle-link', href: 'https://events.battleforthenet.com', target: '_blank' },
 	                  'https://events.battleforthenet.com'
 	                )
 	              )
