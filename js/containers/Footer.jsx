@@ -46,6 +46,10 @@ function Footer(){
                             <a target="_blank">
                                 <img alt="Presente Action" src="images/PresenteAction2016.png" />
                             </a>
+
+                            <a target="_blank">
+                                <img alt="Progress America" src="images/progress-america-logo-1" />
+                            </a>
                             
                             <a target="_blank">
                                 <img alt="Progressive Congress Action Fund" src="images/IMG_8465.jpg" />
