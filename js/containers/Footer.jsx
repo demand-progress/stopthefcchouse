@@ -62,6 +62,10 @@ function Footer(){
                             <a target="_blank">
                                 <img alt="Friend of the Earth" src="images/FOE_logo_color.jpg" />
                             </a>
+                            
+                            <a target="_blank">
+                                <img alt="Just Foreign Policy" src="images/just-foreign-policy.jpg" />
+                            </a>
 
                             <a target="_blank">
                                 <img alt="Open Media" src="images/open-media.jpg" />
