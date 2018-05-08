@@ -23667,6 +23667,11 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Progress America", src: "images/progress-america-logo-1" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "Progressive Congress Action Fund", src: "images/IMG_8465.jpg" })
 	                    ),
 	                    _react2.default.createElement(
