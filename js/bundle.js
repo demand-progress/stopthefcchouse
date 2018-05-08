@@ -23689,6 +23689,11 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Just Foreign Policy", src: "images/just-foreign-policy.jpg" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "Open Media", src: "images/open-media.jpg" })
 	                    ),
 	                    _react2.default.createElement(
