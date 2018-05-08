@@ -22662,7 +22662,7 @@
 	    var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
 	
 	    _this.state = (0, _utils.getQueryVariables)();
-	    _this.state.submitted = true;
+	    _this.state.submitted = false;
 	    _this.state.countDown = 5;
 	    _this.state.isMobile = false;
 	    _this.onSubmit = _this.onSubmit.bind(_this);
