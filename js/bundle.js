@@ -23634,6 +23634,16 @@
 	                    _react2.default.createElement(
 	                        "a",
 	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Center for Media Justice", src: "images/CMJ logo hi-res.jpg" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Climate Hawks Vote", src: "images/CHV Logo2.jpg" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "Color of Change", src: "images/COC-Full-Color.png" })
 	                    ),
 	                    _react2.default.createElement(
@@ -23655,6 +23665,11 @@
 	                        "a",
 	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "Democracy for America", src: "images/DFA-Logo-bottom-white-400.png" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "Open Media", src: "images/open-media.jpg" })
 	                    ),
 	                    _react2.default.createElement(
 	                        "a",
@@ -23685,6 +23700,11 @@
 	                        "a",
 	                        { target: "_blank" },
 	                        _react2.default.createElement("img", { alt: "The Nation", src: "images/Nation.jpg" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { target: "_blank" },
+	                        _react2.default.createElement("img", { alt: "The Zero Hour", src: "images/TZH Logo.jpg" })
 	                    ),
 	                    _react2.default.createElement(
 	                        "a",
