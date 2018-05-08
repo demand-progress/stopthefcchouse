@@ -22662,7 +22662,7 @@
 	    var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
 	
 	    _this.state = (0, _utils.getQueryVariables)();
-	    _this.state.submitted = false;
+	    _this.state.submitted = true;
 	    _this.state.countDown = 5;
 	    _this.state.isMobile = false;
 	    _this.onSubmit = _this.onSubmit.bind(_this);
@@ -22803,43 +22803,47 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { className: 'header-thanks' },
-	                  'Now, one of the most impactful things you can do to save net neutrality is to ',
-	                  _react2.default.createElement(
-	                    'strong',
-	                    null,
-	                    'CALL CONGRESS TODAY'
-	                  ),
-	                  ' and tell your lawmakers to support the \u2018resolution of disapproval\u2019 to overturn the FCC vote.'
+	                  'Please call Congress and tell your lawmakers to overturn the FCC and restore net neutrality.'
 	                )
 	              ),
 	              _react2.default.createElement(
-	                'h4',
-	                { style: { color: 'black' } },
+	                'p',
+	                { id: 'call', style: { marginTop: '0.5em', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif' } },
 	                'Call: ',
 	                _react2.default.createElement(
 	                  'a',
-	                  { href: 'tel:8582640403' },
+	                  { style: { color: 'black' }, href: 'tel:8582640403' },
 	                  '858-264-0403'
 	                )
 	              ),
 	              _react2.default.createElement(
 	                'p',
 	                null,
-	                'We will connect you to the offices of your lawmakers.',
 	                _react2.default.createElement('br', null),
-	                _react2.default.createElement('br', null),
-	                'You can use this script when talking to them \u2014  just introduce yourself, be polite, and say:',
-	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: { fontSize: '14px' } },
+	                  'We\u2019ll connect you to your lawmakers.  You can use this script \u2014 just introduce yourself, be polite, and say:'
+	                ),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                  'i',
 	                  null,
-	                  '"I support Title Two net neutrality and I urge you to use the Congressional Review Act to pass a \u2018resolution of disapproval\u2019 reversing the FCC\'s December vote to repeal the Open Internet Order."'
+	                  '"I support Title Two net neutrality and I urge you to vote for the \u2018resolution of disapproval\u2019 to restore net neutrality."'
 	                ),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement('br', null),
-	                'Finally, please join other activists across the country for gatherings outside in-district Congressional offices in support of net neutrality on May 14th. You can find an event near you\u2014or sign up to help coordinate one\u2014at:',
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'header-thanks' },
+	                  'Attend an event on Monday:'
+	                ),
 	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'On May 14th, activists across the country will be gathering outside of the offices of key lawmakers.  Please sign up for an event near you here (or consider hosting one if there isn\'t one near you yet):'
+	                ),
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                  'a',
