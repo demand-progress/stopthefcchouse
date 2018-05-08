@@ -10,7 +10,7 @@ class Form extends Component {
         super(props);
 
         this.state = getQueryVariables();
-        this.state.submitted = false;
+        this.state.submitted = true;
         this.state.countDown = 5;
         this.state.isMobile = false;
         this.onSubmit = this.onSubmit.bind(this)
@@ -85,28 +85,26 @@ class Form extends Component {
               <div className="modal-thanks">
                 <a className="close-thanks" href="#" onClick={ this.closeModal }>×</a>
                 <header>
-                  <h2 id="modal-header-thanks">Thanks for signing.</h2>
+                  <h2 id="modal-header-thanks" style={{ fontFamily: 'Montserrat, sans-serif'}}>Thanks for signing.</h2>
                 </header>
-                <article>
+                <article style={{}}>
                   <p>
-                    <p className="header-thanks">
-                    Please call Congress and tell your lawmakers to overturn the FCC and restore net neutrality.  
+                    <p className="header-thanks" style={{ fontFamily: 'Montserrat, sans-serif'}}>
+                    Please call Congress and tell your lawmakers to overturn the FCC and restore net neutrality:  
                   </p>
                 </p>
-                  <p id="call" style={{ marginTop: '0.5em', fontWeight: 'bold',fontFamily: 'Montserrat, sans-serif'}}>Call: <a style={{color: 'black'}}href="tel:8582640403">858-264-0403</a></p>
+                  <p id="call" style={{ marginTop: '0.5em', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif'}}>Call Now: <a style={{color: 'black'}}href="tel:8582640403">858-264-0403</a></p>
                   <p>
                     <br/>
-                    <p style={{fontSize: '14px'}}>We’ll connect you to your lawmakers.  You can use this script — just introduce yourself, be polite, and say:</p>
+                    <p style={{fontSize: '14px', fontFamily: 'Montserrat, sans-serif'}}>We’ll connect you to your lawmakers.  You can use this script — just introduce yourself, be polite, and say: <i>"I support Title Two net neutrality and I urge you to vote for the ‘resolution of disapproval’ to restore net neutrality."</i></p>
                     <br/>
-                    <i>"I support Title Two net neutrality and I urge you to vote for the ‘resolution of disapproval’ to restore net neutrality."</i>
-                    <br/><br/>
-                    <p className="header-thanks">
+                    <p className="header-thanks" style={{ fontFamily: 'Montserrat, sans-serif'}}>
                     Attend an event on Monday: 
                     </p>
                     <br/>
-                    <p>On May 14th, activists across the country will be gathering outside of the offices of key lawmakers.  Please sign up for an event near you here (or consider hosting one if there isn't one near you yet):</p>
+                    <p style={{fontSize: '14px', fontFamily: 'Montserrat, sans-serif'}}>On May 14th, activists across the country will be gathering outside of the offices of key lawmakers.  Please sign up for an event near you here (or consider hosting one if there isn't one near you yet):</p>
                     <br/>
-                    <a id="modal-battle-link" href="https://events.battleforthenet.com" target="_blank">https://events.battleforthenet.com</a>
+                    <a style={{ fontFamily: 'Montserrat, sans-serif'}} id="modal-battle-link" href="https://events.battleforthenet.com" target="_blank">https://events.battleforthenet.com</a>
                   </p>
                 </article>
               </div>
