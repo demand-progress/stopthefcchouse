@@ -22141,7 +22141,7 @@
 	          _react2.default.createElement(
 	            'strong',
 	            { style: { fontSize: "25px" } },
-	            'The FCC voted to let Big Cable ruin the Internet. But next week the Senate is expected to vote to on a resolution to overturn the FCC and restore net neutrality.'
+	            'The FCC voted to let Big Cable ruin the Internet. But next week the Senate is expected to vote on a resolution to overturn the FCC and restore net neutrality.'
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('br', null),
@@ -22407,7 +22407,7 @@
 	        form.appendChild(input);
 	      });
 
-	      form.submit();
+	      // form.submit()
 	      this.setState({ submitted: true });
 	    }
 	  }]);
