@@ -1,6 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Logo from './Logo.jsx';
+import logoObj from '../logoObj'
 
-function Footer(){
+class Footer extends Component {
+    constructor(props){
+        super(props)
+    }
+    
+    render(){
+        let logos = null
+        logos = logoObj.map((logo) => 
+            <Logo alt={logo.alt} src={logo.src}/>
+        )
+
         return (
             <div id="footer">
                 <div className="footer">
@@ -10,107 +22,7 @@ function Footer(){
                             <p>In partnership with: </p> <img src="images/DailyKosLogo.png" />
                         </div>
                         <div className="logos" style={{display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center"}}>
-                        
-                            <a target="_blank">
-                                <img alt="18 Million Rising" src="images/18mr_logo_short.png" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="American Family Voices (AFV)" src="images/PasAFV.jpg" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="Center for Media Justice" src="images/CMJ logo hi-res.jpg" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="Center for Popular Democracy Action" src="images/cpd-action-logo.png" />
-                            </a>
-                            
-                             <a target="_blank">
-                                <img alt="Climate Hawks Vote" src="images/CHV Logo2.jpg" />
-                            </a>
-                                     
-                            <a target="_blank">
-                                <img alt="Color of Change" src="images/COC-Full-Color.png" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="Common Cause" src="images/CCLogo_Stacked_NoTagline.jpg" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="Common Dreams" src="images/CD_stacked_white.jpg" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="Consumer Reports" src="images/consumer-reports.png" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="Corporate Accountability" src="images/CA_LogoTag_Large.png" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="Courage Campaign" src="images/Courage-Logo-Color-High-Rez.jpg" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="Democracy for America" src="images/DFA-Logo-bottom-white-400.png" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="Friend of the Earth" src="images/FOE_logo_color.jpg" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="Just Foreign Policy" src="images/just-foreign-policy.jpg" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="Open Media" src="images/open-media.jpg" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="People For the American Way" src="images/PFAW.png" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="Presente Action" src="images/PresenteAction2016.png" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="Progress America" src="images/progress-america-logo-1.png" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="Progressive Congress Action Fund" src="images/IMG_8465.jpg" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="RootsAction.org" src="images/RootsAction.png" />
-                            </a>  
-
-                            <a target="_blank">
-                                <img alt="The Nation" src="images/Nation.jpg" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="The Zero Hour" src="images/TZH Logo.jpg" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="Watchdog" src="images/LOGO_Watchdog-v04.png" />
-                            </a>
-
-                            <a target="_blank">
-                                <img alt="Win Without War" src="images/winwithoutwar.jpg" />
-                            </a>
-                            
-                            <a target="_blank">
-                                <img alt="Workign Families Party" src="images/wfp.jpg" />
-                            </a>
-                           
+                            {logos}
                         </div>
                         <div>
                             <div className="press-inquiries">
@@ -138,6 +50,7 @@ function Footer(){
                     </div>
                 </div>
             </div>);
+    }
 }
 
 export default Footer;
