@@ -22642,7 +22642,7 @@
 	                        'The US Senate is headed for a vote next week on a Congressional Review Act (CRA) resolution to block the FCC\u2019s repeal of net neutrality.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'In December, Trump FCC Chairman Ajit Pai-a former top lawyer for Verizon\u2014pushed through a measure to end net neutrality and let big cable companies control which websites and apps you use, where you get your news, how you listen to music and watch videos \u2014 everything you do on the internet.',
+	                        'In December, Trump FCC Chairman Ajit Pai\u2014a former top lawyer for Verizon\u2014pushed through a measure to end net neutrality and let big cable companies control which websites and apps you use, where you get your news, how you listen to music and watch videos \u2014 everything you do on the internet.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
 	                        'But the Senate will vote next week on a resolution to block the FCC\'s repeal of net neutrality and keep the web free and open.',
