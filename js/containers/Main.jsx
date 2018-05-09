@@ -30,8 +30,8 @@ function Main() {
                     <p> 
                         The US Senate is headed for a vote next week on a Congressional Review Act (CRA) resolution to block the FCC’s repeal of net neutrality. 
                         <br/><br/>
-                        In December, Trump FCC Chairman Ajit Pai-a
-                        former top lawyer for Verizon—pushed through a measure to end net neutrality and let big cable companies control which websites and apps you use, where you get your news, how you listen to music and watch videos — everything you do on the internet. 
+                        In December, Trump FCC Chairman Ajit Pai&mdash;a
+                        former top lawyer for Verizon&mdash;pushed through a measure to end net neutrality and let big cable companies control which websites and apps you use, where you get your news, how you listen to music and watch videos — everything you do on the internet. 
                         <br/><br/>
                         But the Senate will vote next week on a resolution to block the FCC's repeal of net neutrality and keep the web free and open.
                         <br/><br/> 
