@@ -22025,19 +22025,19 @@
 	                    _react2.default.createElement(
 	                        'p',
 	                        null,
-	                        'The US Senate is headed for a vote in mid-May on a Congressional Review Act (CRA) resolution to block the FCC\u2019s repeal of net neutrality.',
+	                        'The US Senate is headed for a vote next week on a Congressional Review Act (CRA) resolution to block the FCC\u2019s repeal of net neutrality.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'In December, Trump FCC Chairman Ajit Pai a former top lawyer for Verizon\u2014pushed through a measure to end net neutrality and let big cable companies control which websites and apps you use, where you get your news, how you listen to music and watch videos \u2014 everything you do on the internet.',
+	                        'In December, Trump FCC Chairman Ajit Pai-a former top lawyer for Verizon\u2014pushed through a measure to end net neutrality and let big cable companies control which websites and apps you use, where you get your news, how you listen to music and watch videos \u2014 everything you do on the internet.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'But the US Senate will vote in mid-May on a resolution to block the FCC\'s repeal of net neutrality and keep the web free and open.',
+	                        'But the Senate will vote next week on a resolution to block the FCC\'s repeal of net neutrality and keep the web free and open.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'With all 49 Senators in the Democratic Caucus and and Republican Susan Collins supporting the resolution, we already have 50 votes, and we need just a simple majority to win. One more vote and we are guaranteed victory.',
+	                        'With all 49 Senators in the Democratic Caucus and Republican Susan Collins supporting the resolution, we already have 50 votes, and we need just a simple majority to win. One more vote and we are guaranteed victory.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'As polls show 86% Americans, including an overwhelming majority of Republican voters, oppose the FCC\'s order, and with more and more Republican lawmakers expressing skepticism about the FCC\'s vote, we have a strong shot of getting this through the Senate.',
+	                        'As polls show 86% of Americans, including an overwhelming majority of Republican voters, oppose the FCC\'s order, and with more and more Republican lawmakers expressing skepticism about the FCC\'s vote, we have a strong shot of getting this through the Senate.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
 	                        'If we flood Congress with petitions and calls, we can save net neutrality.',
@@ -22050,7 +22050,7 @@
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement('br', null),
-	                        'And remember what we\u2019re fighting for: Without net neutrality, the Internet will look more like cable TV, where the content we see is controlled by corporations like Comcast and Verizon. We can\u2019t afford to see the open internet\u2014a revolutionary medium where the exchange of ideas, democratic participation and the ability to organize, especially among marginalized communities, has flourished\u2014fall to the control of corporate gatekeepers.'
+	                        'And remember what we\u2019re fighting for: Without net neutrality, the internet will look more like cable TV, where the content we see is controlled by corporations like Comcast and Verizon. We can\u2019t afford to see the open internet\u2014a revolutionary medium where the exchange of ideas, democratic participation and the ability to organize, especially among marginalized communities, has flourished\u2014fall to the control of corporate gatekeepers.'
 	                    )
 	                )
 	            )
@@ -22141,7 +22141,7 @@
 	          _react2.default.createElement(
 	            'strong',
 	            { style: { fontSize: "25px" } },
-	            'The FCC voted to let Big Cable ruin the Internet. But next week the Senate is expected to vote on a resolution to overturn the FCC and restore net neutrality.'
+	            'The FCC voted to let Big Cable ruin the internet. But next week the Senate is expected to vote on a resolution to overturn the FCC and restore net neutrality.'
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('br', null),
