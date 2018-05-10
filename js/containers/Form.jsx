@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { CONF, URLS } from '../config';
 import { getQueryVariables } from '../utils';
+import Markdown from 'react-markdown'
 import Responsive from 'react-responsive-decorator';
 
 
@@ -9,7 +10,7 @@ class Form extends Component {
     constructor(props) {
         super(props);
 
-        this.state = getQueryVariables();
+        this.state = getQueryVariables()
         this.state.submitted = false;
         this.state.countDown = 5;
         this.state.isMobile = false;
@@ -30,22 +31,17 @@ class Form extends Component {
       })
     }
 
+    
+
     render() {
       let modal = null;
       let topOfPage = null;
       let middle = null; 
+      let headerContent = null;
 
-      const header = (
-        <div>   
-          <div style={{color: 'white', lineHeight: 1.5}}>
-            <strong style={{ fontSize: "25px" }}>
-            The FCC voted to let Big Cable ruin the internet. But next week the Senate is expected to vote on a resolution to overturn the FCC and restore net neutrality.  
-            </strong>
-              <br/><br/>
-              <div>As of now, 50 senators have said they will vote ‘yes,’ and we need just 51 to guarantee victory. </div>
-              <br/>
-              <div>It’s go time! Contact Congress today.</div>
-          </div>
+      const subHeader = (
+        <div id="subHeader">          
+          <Markdown source={this.props.subHeader} />
         </div>
       )
 
@@ -73,9 +69,9 @@ class Form extends Component {
       
       if(this.state.isMobile){
         topOfPage = form
-        middle = header
+        middle = subHeader
         } else {
-        topOfPage = header
+        topOfPage = subHeader
         middle = form
       }
 
@@ -111,16 +107,10 @@ class Form extends Component {
             </div>
         )
       }
-
-      if(this.state.mobile){
-
-      }
       
         return (
           <div className="bftn-form call-action-form" onSubmit={ this.onSubmit }>
-            <h3>Red Alert:</h3>
-            <h3>Tell the Senate to Restore Net Neutrality!</h3>
-            <br/><br/>
+          <Markdown source={this.props.header} />
             {topOfPage}
             {middle}
             {modal}
@@ -174,7 +164,7 @@ class Form extends Component {
             alert('Please enter a valid Zipcode.');
             return;
         }
-
+        console.log(this.state)
         const fields = {
             'action_user_agent': navigator.userAgent,
             'country': 'United States',
@@ -217,7 +207,7 @@ class Form extends Component {
             form.appendChild(input);
         });
 
-        form.submit()
+        // form.submit()
         this.setState({ submitted: true });
     }
 
