@@ -2445,3 +2445,44 @@ body.modal-open-thanks {
         line-height: 1.2;
     }
 }
+
+
+#header {
+    color: white;
+    font-family: 'open sans,sans-serif';
+   
+}
+
+.bftn-homepage h4 {
+    font-family: 'open sans',sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+#congress {
+    text-align: center;
+    color: white;
+}
+
+#congress h4 {
+    font-family: 'open sans', sans-serif;
+    font-weight: 700;
+    color: #279cff;
+    font-size: 24px;
+}
+
+.bftn-homepage .unit p em {
+    font-style: italic;
+    color: #FFF;
+    font-weight: normal;
+}
+
+.bftn-homepage .unit p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff1a09 !important;
+    font-size: 19px;
+    text-align: center;
+}
