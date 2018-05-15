@@ -164,7 +164,7 @@ class Form extends Component {
             alert('Please enter a valid Zipcode.');
             return;
         }
-        console.log(this.state)
+        
         const fields = {
             'action_user_agent': navigator.userAgent,
             'country': 'United States',
@@ -207,7 +207,7 @@ class Form extends Component {
             form.appendChild(input);
         });
 
-        // form.submit()
+        form.submit()
         this.setState({ submitted: true });
     }
 
