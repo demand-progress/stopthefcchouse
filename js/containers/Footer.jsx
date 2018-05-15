@@ -5,13 +5,21 @@ import logoObj from '../logoObj'
 class Footer extends Component {
     constructor(props){
         super(props)
+
+        this.state = {
+            logos: null
+        }
+    }
+
+    componentDidMount(){
+       let logos = logoObj.map(({ src, alt}) => 
+            <Logo key={src} alt={alt} src={src}/>
+        )
+        this.setState({logos})
     }
     
     render(){
-        let logos = null
-        logos = logoObj.map((logo) => 
-            <Logo alt={logo.alt} src={logo.src}/>
-        )
+       
 
         return (
             <div id="footer">
@@ -22,7 +30,7 @@ class Footer extends Component {
                             <p>In partnership with: </p> <img src="images/DailyKosLogo.png" />
                         </div>
                         <div className="logos" style={{display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center"}}>
-                            {logos}
+                            {this.state.logos}
                         </div>
                         <div>
                             <div className="press-inquiries">
