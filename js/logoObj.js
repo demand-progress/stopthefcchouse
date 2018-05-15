@@ -14,7 +14,6 @@ const logoObj = [
     { alt: "Friend of the Earth", src: "images/FOE_logo_color.jpg"},
     { alt: "Just Foreign Policy", src: "images/just-foreign-policy.jpg"},
     { alt: "Open Media", src: "images/open-media.jpg"},
-    { alt: "Democracy for America", src: "images/DFA-Logo-bottom-white-400.png"},
     { alt: "People For the American Way", src: "images/PFAW.png"},
     { alt: "Presente Action", src: "images/PresenteAction2016.png"},
     { alt: "Progress America", src: "images/progress-america-logo-1.png"},
