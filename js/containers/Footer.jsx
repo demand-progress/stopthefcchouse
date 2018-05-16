@@ -35,8 +35,13 @@ class Footer extends Component {
         let logos = null
 
         if(this.state.allLogos){
-            logos = this.state.allLogos.map(({ name, value}) => 
-               <Logo key={name} alt={name} src={value.url}/>
+           let orderedLogos = this.state.allLogos.sort(function(a, b) {
+                return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
+            })
+            
+            logos = orderedLogos.map(({ key, name, value}) => {
+              return <Logo key={value.key} alt={name} src={value.url}/>
+                }   
             )
         }
 
