@@ -9,7 +9,14 @@ const Main = (props) =>  {
             <div className="hero" id="bftn-action-form">
                 <div>
                     <div id="signThePetition">
-                        <Form subHeader={props.subHeader} header={ props.header } main={props.main}/>
+                        <Form 
+                        subHeader={props.subHeader} 
+                        header={ props.header } 
+                        main={props.main} 
+                        disclaimer={props.disclaimer} 
+                        formButton = {props.formButton} 
+                        modalHeader = {props.modalHeader}
+                        modalText = {props.modalText}/>
                     </div>
                 </div>
                 <div className="unit" >
