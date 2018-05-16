@@ -10,7 +10,7 @@ class Form extends Component {
     constructor(props) {
         super(props);
         this.state = getQueryVariables()
-        this.state.submitted = false;
+        this.state.submitted = true;
         this.state.countDown = 5;
         this.state.isMobile = false;
         this.onSubmit = this.onSubmit.bind(this)
@@ -81,12 +81,7 @@ class Form extends Component {
                 <header>
                   <h2 id="modal-header-thanks" style={{ fontFamily: 'Montserrat, sans-serif'}}>{this.props.modalHeader}</h2>
                 </header>
-                <article style={{}}>
-                  <p>
-                    <p className="header-thanks" style={{ fontFamily: 'Montserrat, sans-serif', textDecorationLine: "underline"}}>
-                    Please call Congress and tell your lawmakers to overturn the FCC and restore net neutrality:  
-                  </p>
-                </p>
+                <article >
                 <Markdown source= {this.props.modalText} />
                   {/* <p id="call" style={{ marginTop: '0.5em', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif'}}>Call Now: <a style={{color: 'black'}}href="tel:8582640403">858-264-0403</a></p>
                   <p>
