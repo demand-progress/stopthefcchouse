@@ -12,7 +12,11 @@ class App extends Component {
                 header: null,
                 subHeader: null,
                 congressLanguage: null,
-                main: null
+                main: null,
+                disclaimer: null,
+                formButton: null,
+                modalHeader: null,
+                modalText: null
             }
         }  
     }
@@ -29,25 +33,40 @@ class App extends Component {
             'Tipe-Id': 'NWFlOWYyYTQzMjNmYzkwMDEzY2I0ZGZh'
           }
         })
-          .then(response => {
-              console.log(response)
-            this.setState({
-              textContent:{
-                header: response.data.blocks[0].value,
-                subHeader: response.data.blocks[1].value,
-                congressLanguage: response.data.blocks[2].value,
-                main: response.data.blocks[3].value
-              }
-            })
+        .then(response => {
+          const data = response.data
+          this.setState({
+            textContent:{
+              header: data.blocks[0].value,
+              subHeader: data.blocks[1].value,
+              congressLanguage: data.blocks[2].value,
+              main: data.blocks[3].value,
+              disclaimer: data.blocks[4].value,
+              formButton: data.blocks[5].value,
+              modalHeader: data.blocks[6].value,
+              modalText: data.blocks[7].value
+            }
           })
-          .catch(console.error);
+        })
+        .catch(console.error);
+
       }
 
     render() {
-        const { header, subHeader, main, congressLanguage } = this.state.textContent
+        const { header, subHeader, main, congressLanguage, disclaimer, formButton, modalHeader, modalText } = this.state.textContent
+               
         return(
             <div>
-                <Main header={ header } subHeader= {subHeader} main={ main } congressLanguage={ congressLanguage }/>
+                <Main 
+                header={ header } 
+                subHeader={ subHeader} 
+                main={ main } 
+                congressLanguage={ congressLanguage } 
+                disclaimer={ disclaimer }
+                formButton={ formButton }
+                modalHeader={ modalHeader }
+                modalText = { modalText }
+                />
                 <Footer />
             </div>
         )
