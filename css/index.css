@@ -245,7 +245,7 @@ template {
 .bftn-homepage h4 {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
-    color: #279cff;
+    color: white;
     font-size: 24px;
 }
 
@@ -331,11 +331,6 @@ template {
     font-weight: bold;
     font-style: normal;
     color: #FFF;
-}
-
-.bftn-homepage .unit p a {
-    text-decoration: underline;
-    color: #6388ed;
 }
 
 .bftn-homepage .unit dl dt {
@@ -2127,6 +2122,10 @@ template {
     justify-content: space-around;
 } 
 
+div#signThePetition h3 {
+    font-family: Montserrat, sans-serif;
+}
+
 @media screen and (max-width: 930px) {
     .bftn-homepage .hero {
         margin-bottom: 20px;
@@ -2477,11 +2476,12 @@ body.modal-open-thanks {
    
 }
 
-.bftn-homepage h4 {
-    font-family: 'open sans',sans-serif;
-    font-weight: bolder;
-    color: white;
+#subHeader h4 {
     font-size: 25px;
+}
+
+#subHeader h4, #subHeader p{
+    color: white;
     line-height: 1.5;
 }
 
@@ -2497,6 +2497,10 @@ body.modal-open-thanks {
     font-size: 24px;
 }
 
+.bftn-homepage .unit p{
+    color: #cccaea;
+}
+
 .bftn-homepage .unit p em {
     font-style: italic;
     color: #FFF;
@@ -2504,9 +2508,9 @@ body.modal-open-thanks {
 }
 
 .bftn-homepage .unit p a {
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
-    color: #ff1a09 !important;
+    color: #ff1a09;
     font-size: 19px;
     text-align: center;
 }
