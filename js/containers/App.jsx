@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Main from './Main.jsx'
 import Footer from './Footer.jsx'
 import Spinner from './Spinner.jsx'
@@ -18,7 +18,8 @@ class App extends Component {
                 formButton: null,
                 modalHeader: null,
                 modalText: null
-            }
+            },
+            loading: true
         }  
     }
 
@@ -46,7 +47,8 @@ class App extends Component {
               formButton: data.blocks[5].value,
               modalHeader: data.blocks[6].value,
               modalText: data.blocks[7].value
-            }
+            },
+            loading: false
           })
         })
         .catch(console.error);
@@ -58,18 +60,24 @@ class App extends Component {
        
         return(
             <div>
-                <Spinner />
-                <Main 
-                header={ header } 
-                subHeader={ subHeader} 
-                main={ main } 
-                congressLanguage={ congressLanguage } 
-                disclaimer={ disclaimer }
-                formButton={ formButton }
-                modalHeader={ modalHeader }
-                modalText = { modalText }
-                />
-                <Footer />
+                {
+                    this.state.loading ? 
+                    <div id="spinner" >
+                        <Spinner/> 
+                    </div>
+                    :
+                    <Main 
+                    header={ header } 
+                    subHeader={ subHeader} 
+                    main={ main } 
+                    congressLanguage={ congressLanguage } 
+                    disclaimer={ disclaimer }
+                    formButton={ formButton }
+                    modalHeader={ modalHeader }
+                    modalText = { modalText }
+                    />
+                }
+                  <Footer />
             </div>
         )
     }
