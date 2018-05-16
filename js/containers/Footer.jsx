@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import Logo from './Logo.jsx'
-import logoObj from '../logoObj'
 import axios from 'axios'
 
 class Footer extends Component {
