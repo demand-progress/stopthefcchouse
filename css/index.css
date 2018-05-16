@@ -105,6 +105,12 @@ sup {
     top: -0.5em;
 }
 
+#spinner {
+    position: fixed;
+    top: 0px;
+    left: 47%;
+}
+
 audio, video {
     display: inline-block;
 }
@@ -2137,6 +2143,12 @@ template {
 
     .bftn-homepage .hero .call-action-form h3 {
         font-size: 40px;
+    }
+
+    #spinner {
+        position: fixed;
+        top: 6px;
+        left: 37%;
     }
 }
 
