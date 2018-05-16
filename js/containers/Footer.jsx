@@ -1,25 +1,44 @@
-import React, {Component} from 'react';
-import Logo from './Logo.jsx';
+import React, {Component} from 'react'
+import Logo from './Logo.jsx'
 import logoObj from '../logoObj'
+import axios from 'axios'
 
 class Footer extends Component {
     constructor(props){
         super(props)
 
         this.state = {
-            logos: null
+            allLogos: null
         }
     }
 
     componentDidMount(){
-       let logos = logoObj.map(({ src, alt}) => 
-            <Logo key={src} alt={alt} src={src}/>
-        )
-        this.setState({logos})
+        axios({
+            method: "get",
+            url: 'https://api.tipe.io/api/v1/document/5afb470430f8070013b794a6',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'DC37ZIL72X4BNJ6A3SPO6KF5N',
+              'Tipe-Id': 'NWFlOWYyYTQzMjNmYzkwMDEzY2I0ZGZh'
+            }
+          })
+          .then(response => {
+            const logos = response.data.blocks
+            this.setState({
+              allLogos: logos
+            })
+          })
+          .catch(console.error);  
     }
     
     render(){
-       
+        let logos = null
+
+        if(this.state.allLogos){
+            logos = this.state.allLogos.map(({ name, value}) => 
+               <Logo key={name} alt={name} src={value.url}/>
+            )
+        }
 
         return (
             <div id="footer">
@@ -30,7 +49,7 @@ class Footer extends Component {
                             <p>In partnership with: </p> <img src="images/DailyKosLogo.png" />
                         </div>
                         <div className="logos" style={{display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center"}}>
-                            {this.state.logos}
+                            {logos}
                         </div>
                         <div>
                             <div className="press-inquiries">
