@@ -9,7 +9,6 @@ class Form extends Component {
 
     constructor(props) {
         super(props);
-
         this.state = getQueryVariables()
         this.state.submitted = false;
         this.state.countDown = 5;
@@ -29,16 +28,15 @@ class Form extends Component {
           isMobile: true
         })
       })
+      
     }
-
-    
 
     render() {
       let modal = null;
       let topOfPage = null;
       let middle = null; 
       let headerContent = null;
-
+      
       const subHeader = (
         <div id="subHeader">          
           <Markdown source={this.props.subHeader} />
@@ -58,11 +56,11 @@ class Form extends Component {
         </div>
         <div className="flex">
           <button className="btn">
-            <span>SIGN NOW</span>
+            <span>{this.props.formButton}</span>
           </button>
         </div>
       </form>
-      <span><i>One or more of the participating organizations (listed at bottom) may email you about their campaigns.</i></span>
+      <span><i>{this.props.disclaimer}</i></span>
       <br/><br/>
       </div>
       )
@@ -81,7 +79,7 @@ class Form extends Component {
               <div className="modal-thanks">
                 <a className="close-thanks" href="#" onClick={ this.closeModal }>×</a>
                 <header>
-                  <h2 id="modal-header-thanks" style={{ fontFamily: 'Montserrat, sans-serif'}}>Thanks for signing.</h2>
+                  <h2 id="modal-header-thanks" style={{ fontFamily: 'Montserrat, sans-serif'}}>{this.props.modalHeader}</h2>
                 </header>
                 <article style={{}}>
                   <p>
@@ -89,7 +87,8 @@ class Form extends Component {
                     Please call Congress and tell your lawmakers to overturn the FCC and restore net neutrality:  
                   </p>
                 </p>
-                  <p id="call" style={{ marginTop: '0.5em', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif'}}>Call Now: <a style={{color: 'black'}}href="tel:8582640403">858-264-0403</a></p>
+                <Markdown source= {this.props.modalText} />
+                  {/* <p id="call" style={{ marginTop: '0.5em', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif'}}>Call Now: <a style={{color: 'black'}}href="tel:8582640403">858-264-0403</a></p>
                   <p>
                     <br/>
                     <p style={{fontSize: '14px', fontFamily: 'Montserrat, sans-serif'}}>We’ll connect you to your lawmakers.  You can use this script — just introduce yourself, be polite, and say: <i>"I support Title Two net neutrality and I urge you to vote for the ‘resolution of disapproval’ to restore net neutrality."</i></p>
@@ -101,7 +100,7 @@ class Form extends Component {
                     <p style={{fontSize: '14px', fontFamily: 'Montserrat, sans-serif'}}>On May 14th, activists across the country will be gathering outside of the offices of key lawmakers.  Please sign up for an event near you here (or consider hosting one if there isn't one near you yet):</p>
                     <br/>
                     <a style={{ fontFamily: 'Montserrat, sans-serif'}} id="modal-battle-link" href="https://events.battleforthenet.com" target="_blank">https://events.battleforthenet.com</a>
-                  </p>
+                  </p> */}
                 </article>
               </div>
             </div>
