@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import Main from './Main.jsx';
-import Footer from './Footer.jsx';
-import axios from 'axios';
+import React, { Component } from 'react'
+import Main from './Main.jsx'
+import Footer from './Footer.jsx'
+import Spinner from './Spinner.jsx'
+import axios from 'axios'
 
 class App extends Component {
     constructor(props) {
@@ -54,9 +55,10 @@ class App extends Component {
 
     render() {
         const { header, subHeader, main, congressLanguage, disclaimer, formButton, modalHeader, modalText } = this.state.textContent
-               
+       
         return(
             <div>
+                <Spinner />
                 <Main 
                 header={ header } 
                 subHeader={ subHeader} 
