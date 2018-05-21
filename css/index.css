@@ -2122,9 +2122,6 @@ template {
     justify-content: space-around;
 } 
 
-div#signThePetition h3 {
-    font-family: Montserrat, sans-serif;
-}
 
 @media screen and (max-width: 930px) {
     .bftn-homepage .hero {
@@ -2518,6 +2515,7 @@ body.modal-open-thanks {
 
 div.modal-thanks-text > *, div.modal-thanks > * {
     font-family: Montserrat, sans-serif;
+    text-align: center;
 }
 
 .modal-thanks-text h5 {
@@ -2530,5 +2528,30 @@ div.modal-thanks-text > *, div.modal-thanks > * {
 .modal-thanks-text h3 , .modal-thanks-text a {
     -webkit-text-fill-color: unset; 
     color: black;
-    margin-bottom: 5px;
+}
+
+.modal-thanks-text h3{
+    padding-bottom: 30px;
+}
+
+div.modal-thanks-text p{
+    padding-bottom: 10px;
+}
+
+div.modal-thanks-text p:nth-of-type(1) em{
+    color: black;
+}
+
+div.modal-thanks-text p:nth-of-type(2){
+    text-decoration-line: underline;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.modal-thanks-text p:nth-of-type(3) a{
+    background-color: green;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
 }
