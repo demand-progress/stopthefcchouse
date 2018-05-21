@@ -2333,7 +2333,7 @@ div#signThePetition h3 {
 
 .back-to-form-link {
     font-weight: bold;
-    color: #ff1a09 !important;
+    color: #ff1a09;
     font-size: 19px;
     text-align: center;
 }
@@ -2399,6 +2399,7 @@ body.modal-open-thanks {
 }
 #thanks .modal-thanks article p {
     margin: 0; 
+    color: black;
 }
 
 #modal-battle-link {
@@ -2513,4 +2514,21 @@ body.modal-open-thanks {
     color: #ff1a09;
     font-size: 19px;
     text-align: center;
+}
+
+div.modal-thanks-text > *, div.modal-thanks > * {
+    font-family: Montserrat, sans-serif;
+}
+
+.modal-thanks-text h5 {
+    font-size: 20px;
+    text-decoration-line: underline;
+    font-weight: bolder;
+    margin: 5px 0 30px 0;
+}
+
+.modal-thanks-text h3 , .modal-thanks-text a {
+    -webkit-text-fill-color: unset; 
+    color: black;
+    margin-bottom: 5px;
 }
