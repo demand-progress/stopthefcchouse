@@ -79,23 +79,10 @@ class Form extends Component {
               <div className="modal-thanks">
                 <a className="close-thanks" href="#" onClick={ this.closeModal }>×</a>
                 <header>
-                  <h2 id="modal-header-thanks" style={{ fontFamily: 'Montserrat, sans-serif'}}>{this.props.modalHeader}</h2>
+                  <h2 id="modal-header-thanks">{this.props.modalHeader}</h2>
                 </header>
-                <article >
-                <Markdown source= {this.props.modalText} />
-                  {/* <p id="call" style={{ marginTop: '0.5em', fontWeight: 'bold', fontFamily: 'Montserrat, sans-serif'}}>Call Now: <a style={{color: 'black'}}href="tel:8582640403">858-264-0403</a></p>
-                  <p>
-                    <br/>
-                    <p style={{fontSize: '14px', fontFamily: 'Montserrat, sans-serif'}}>We’ll connect you to your lawmakers.  You can use this script — just introduce yourself, be polite, and say: <i>"I support Title Two net neutrality and I urge you to vote for the ‘resolution of disapproval’ to restore net neutrality."</i></p>
-                    <br/>
-                    <p className="header-thanks" style={{ fontFamily: 'Montserrat, sans-serif', textDecorationLine: "underline"}}>
-                    Attend an event on Monday: 
-                    </p>
-                    <br/>
-                    <p style={{fontSize: '14px', fontFamily: 'Montserrat, sans-serif'}}>On May 14th, activists across the country will be gathering outside of the offices of key lawmakers.  Please sign up for an event near you here (or consider hosting one if there isn't one near you yet):</p>
-                    <br/>
-                    <a style={{ fontFamily: 'Montserrat, sans-serif'}} id="modal-battle-link" href="https://events.battleforthenet.com" target="_blank">https://events.battleforthenet.com</a>
-                  </p> */}
+                <article>
+                <Markdown className="modal-thanks-text" source= {this.props.modalText} />
                 </article>
               </div>
             </div>
