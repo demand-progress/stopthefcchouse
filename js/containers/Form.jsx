@@ -10,7 +10,7 @@ class Form extends Component {
     constructor(props) {
         super(props);
         this.state = getQueryVariables()
-        this.state.submitted = true;
+        this.state.submitted = false;
         this.state.countDown = 5;
         this.state.isMobile = false;
         this.onSubmit = this.onSubmit.bind(this)
@@ -188,7 +188,7 @@ class Form extends Component {
             form.appendChild(input);
         });
 
-        form.submit()
+        // form.submit()
         this.setState({ submitted: true });
     }
 
