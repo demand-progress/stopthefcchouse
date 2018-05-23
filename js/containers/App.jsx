@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { CONF } from '../config/index'
 import Main from './Main.jsx'
 import Footer from './Footer.jsx'
 import Spinner from './Spinner.jsx'
 import axios from 'axios'
 
 class App extends Component {
+   
     constructor(props) {
         super(props)
 
@@ -24,6 +26,7 @@ class App extends Component {
     }
 
     componentDidMount(){
+        const { tipeAuth, tipeId } = CONF;
         window.scrollTo(0, 0);
 
         axios({
@@ -31,8 +34,8 @@ class App extends Component {
           url: 'https://api.tipe.io/api/v1/document/5af33e3968f0a10013429fdc',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'DC37ZIL72X4BNJ6A3SPO6KF5N',
-            'Tipe-Id': 'NWFlOWYyYTQzMjNmYzkwMDEzY2I0ZGZh'
+            'Authorization': tipeAuth,
+            'Tipe-Id': tipeId
           }
         })
         .then(response => {
@@ -56,6 +59,7 @@ class App extends Component {
       }
 
     render() {
+        
         const { header, subHeader, main, congressLanguage, disclaimer, formButton, modalHeader, modalText } = this.state.textContent
        
         return(
