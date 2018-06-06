@@ -7,7 +7,8 @@ class Footer extends Component {
         super(props)
 
         this.state = {
-            allLogos: null
+            allLogos: null,
+            tweet: null
         }
     }
 
@@ -24,7 +25,8 @@ class Footer extends Component {
           .then(response => {
             const logos = response.data.blocks
             this.setState({
-              allLogos: logos
+              allLogos: logos,
+              tweet: this.props.tweet
             })
           })
           .catch(console.error);  
@@ -32,7 +34,7 @@ class Footer extends Component {
     
     render(){
         let logos = null
-
+        let tweet = this.state.tweet
         if(this.state.allLogos){
            let orderedLogos = this.state.allLogos.sort(function(a, b) {
                 return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
@@ -42,6 +44,10 @@ class Footer extends Component {
               return <Logo key={value.key} alt={name} src={value.url}/>
                 }   
             )
+        }
+
+        if(tweet){
+            tweet = `https://twitter.com/intent/tweet?text=${tweet}`
         }
 
         return (
@@ -68,7 +74,7 @@ class Footer extends Component {
                                 </p>
                             </div>
                             <div className="social-media">
-                                <a className="twitter" href="https://twitter.com/intent/tweet?text=Call%20Congress%21%20Tell%20them%20they%20must%20vote%20%E2%80%98yes%E2%80%99%20on%20the%20CRA%20resolution%20to%20save%20the%20open%20internet%20and%20restore%20%23NetNeutrality%20https%3A%2F%2Fstopthefcc.net%2F" target="_blank">
+                                <a className="twitter" href={tweet} target="_blank">
                                     <img src="images/twitter_white.svg" />
                                     <span>Share on twitter</span>
                                 </a>
