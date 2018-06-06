@@ -3,9 +3,9 @@ module.exports = [{
         inline:true,
         port: 8008
     },
-    entry: "./js/app.jsx",
+    entry: "./src/app.jsx",
     output: {
-        path: __dirname + '/js',
+        path: __dirname + '/src',
         filename: "bundle.js"
     },
     module: {
