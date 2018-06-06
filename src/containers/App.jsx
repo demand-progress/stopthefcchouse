@@ -20,7 +20,8 @@ class App extends Component {
                 disclaimer: null,
                 formButton: null,
                 modalHeader: null,
-                modalText: null
+                modalText: null,
+                tweet: null
             },
             loading: true
         }  
@@ -50,7 +51,8 @@ class App extends Component {
               disclaimer: data.blocks[4].value,
               formButton: data.blocks[5].value,
               modalHeader: data.blocks[6].value,
-              modalText: data.blocks[7].value
+              modalText: data.blocks[7].value,
+              tweet: data.blocks[8].value
             },
             loading: false
           })
@@ -60,9 +62,18 @@ class App extends Component {
       }
 
     render() {
+        const { 
+            header, 
+            subHeader, 
+            main, 
+            congressLanguage, 
+            disclaimer, 
+            formButton, 
+            modalHeader, 
+            modalText, 
+            tweet 
+        } = this.state.textContent
         
-        const { header, subHeader, main, congressLanguage, disclaimer, formButton, modalHeader, modalText } = this.state.textContent
-       
         return(
             <div>
                 {
@@ -79,10 +90,10 @@ class App extends Component {
                     disclaimer={ disclaimer }
                     formButton={ formButton }
                     modalHeader={ modalHeader }
-                    modalText = { modalText }
+                    modalText= { modalText }
                     />
                 }
-                  <Footer />
+                  <Footer tweet= {tweet} />
             </div>
         )
     }
