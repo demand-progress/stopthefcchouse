@@ -1485,6 +1485,15 @@ body.modal-open-thanks {
     .bftn-homepage h4 {
         margin: 0px; 
     }
+
+    .modal-thanks-text h5 {
+        margin: 5px 0;
+    }
+
+    .modal-thanks-text h3 {
+        padding: 13px 0;
+    }
+    
 }
 
 @media screen and (max-width: 414px) {
