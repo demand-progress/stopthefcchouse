@@ -2505,7 +2505,7 @@ body.modal-open-thanks {
 
      #spinner {
         position: fixed;
-        top: 6px;
+        top: -15px;
         left: 38%;
     }
     div.modal-thanks-text p:nth-of-type(3) a{
