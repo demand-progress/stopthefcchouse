@@ -65,7 +65,7 @@ class Footer extends Component {
                             <div className="press-inquiries">
                                 <h3>For Press inquiries, please contact us at:</h3>
                                 <p>
-                                    <a className="no-em" href="tel://1-202-681-7582">202-681-7582</a> or <a href="mailto:press@demandprogress.org">press@demandprogress.org</a>
+                                    <a className="no-em" href="tel:1-202-681-7582">202-681-7582</a> or <a href="mailto:press@demandprogress.org">press@demandprogress.org</a>
                                 </p>
 
                                 <br/>
