@@ -1887,186 +1887,7 @@ template {
      font-weight: bold;
  }
 
-
-@media screen and (max-width: 600px) {
-    .bftn-homepage #leaderboard .leaderboard-day {
-        width: 100%;
-    }
-
-    .bftn-homepage #leaderboard .leaderboard-week {
-        width: 100%;
-    }
-
-    .bftn-homepage #leaderboard .leaderboard-total {
-        width: 100%;
-    }
-
-    .imageSection img {
-        max-width: 250px;
-        padding-bottom: 15px;
-    }
-    
-    .flex-item {
-        padding: 0px; 
-    }
-
-    .flex-item p {
-        padding-left: 0px;
-    }
-
-    .bftn-homepage #footer {
-        padding: 0px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .bftn-homepage .unit {
-        width: 90%;
-        display: block;
-    }
-
-    .bftn-homepage #footer .logos-unit {
-        width: 90%;
-    }
-
-    .bftn-homepage .unit p {
-        width: auto;
-    }
-
-    .bftn-homepage h1 {
-        font-size: 40px;
-        white-space: normal;
-    }
-
-    .bftn-homepage h1 span {
-        display: none;
-    }
-
-    .bftn-homepage h2 {
-        font-size: 24px;
-    }
-
-    .bftn-homepage .stats {
-        padding: 5px 0;
-        line-height: 1.2em;
-        height: auto;
-    }
-
-    .bftn-homepage .social-media-buttons {
-        display: none;
-    }
-
-    .bftn-homepage .hero .petition-copy {
-        padding-bottom: 20px;
-    }
-
-    .bftn-homepage .hero .petition-copy p {
-        width: auto;
-        font-size: 20px;
-    }
-
-    .bftn-homepage .petition-form {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    .bftn-homepage .petition-form .address {
-        width: 60%;
-    }
-
-    .bftn-homepage .petition-form .zip {
-        float: right;
-        width: 39%;
-    }
-
-    .bftn-homepage .petition-form textarea {
-        clear: left;
-    }
-
-    .bftn-homepage .petition-form .arrow {
-        display: none;
-    }
-
-    .bftn-homepage .call-action-form .flex {
-        display: block;
-    }
-
-    .bftn-homepage .call-action-form input {
-        margin: 0 0 10px 0;
-    }
-
-    .bftn-homepage .modal .modal-close {
-        right: 4px;
-        top: 4px;
-    }
-
-    .bftn-homepage .modal .call-action-form h3 {
-        font-size: 20px;
-    }
-
-    .bftn-homepage .modal .call-action-form p {
-        font-size: 12px;
-    }
-
-    .bftn-homepage .callsuccess-modal .modal-content h2 {
-        font-size: 20px;
-    }
-
-    .bftn-homepage .callsuccess-modal .modal-content h4 {
-        font-size: 16px;
-    }
-
-    .bftn-homepage .callsuccess-modal .modal-content p {
-        font-size: 14px;
-    }
-    
-    .bftn-homepage #footer .logos {
-        width: 100%;
-        border: none;
-        text-align: center;
-        margin: 0;
-        padding: 10px 0 0;
-        float: none;
-    }
-
-    .bftn-homepage #footer .logos a {
-        display: block;
-    }
-
-    .bftn-homepage #footer .logos .fftf, .bftn-homepage #footer .logos .demandprogress, .bftn-homepage #footer .logos .freepress {
-        margin: 0;
-    }
-
-
-    .bftn-homepage #footer .social-media {
-        width: 100%;
-        margin: 0;
-        border: none;
-        text-align: center;
-    }
-
-    .bftn-homepage #footer .social-media .twitter {
-        margin-top: 20px;
-    }
-
-    .bftn-homepage #footer .press-inquiries {
-        width: 100%;
-        float: right;
-    }
-
-    .bftn-homepage #footer .built-by {
-        padding-bottom: 80px;
-        width: auto;
-    }
-
-    .bftn-homepage #footer .built-by img {
-        width: 90%;
-    }
-}
-
-/* button styling under video */
+ /* button styling under video */
 
 .button-share {
     width: 45%;
@@ -2326,7 +2147,6 @@ body.modal-open-thanks {
     line-height: 1.2;
 }
 
-
 @media screen and (max-width: 930px) {
     .bftn-homepage .hero {
         margin-bottom: 20px;
@@ -2352,7 +2172,212 @@ body.modal-open-thanks {
     }
 }
 
+
+
 @media screen and (max-width: 800px) {
+    .bftn-homepage .unit {
+        width: 90%;
+        display: block;
+    }
+
+    .bftn-homepage #footer .logos-unit {
+        width: 90%;
+    }
+
+    .bftn-homepage .unit p {
+        width: auto;
+    }
+
+    .bftn-homepage h1 {
+        font-size: 40px;
+        white-space: normal;
+    }
+
+    .bftn-homepage h1 span {
+        display: none;
+    }
+
+    .bftn-homepage h2 {
+        font-size: 24px;
+    }
+
+    .bftn-homepage .stats {
+        padding: 5px 0;
+        line-height: 1.2em;
+        height: auto;
+    }
+
+    .bftn-homepage .social-media-buttons {
+        display: none;
+    }
+
+    .bftn-homepage .hero .petition-copy {
+        padding-bottom: 20px;
+    }
+
+    .bftn-homepage .hero .petition-copy p {
+        width: auto;
+        font-size: 20px;
+    }
+
+    .bftn-homepage .petition-form {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .bftn-homepage .petition-form .address {
+        width: 60%;
+    }
+
+    .bftn-homepage .petition-form .zip {
+        float: right;
+        width: 39%;
+    }
+
+    .bftn-homepage .petition-form textarea {
+        clear: left;
+    }
+
+    .bftn-homepage .petition-form .arrow {
+        display: none;
+    }
+
+    .bftn-homepage .call-action-form .flex {
+        display: block;
+    }
+
+    .bftn-homepage .call-action-form input {
+        margin: 0 0 10px 0;
+    }
+
+    .bftn-homepage .modal .modal-close {
+        right: 4px;
+        top: 4px;
+    }
+
+    .bftn-homepage .modal .call-action-form h3 {
+        font-size: 20px;
+    }
+
+    .bftn-homepage .modal .call-action-form p {
+        font-size: 12px;
+    }
+
+    .bftn-homepage .callsuccess-modal .modal-content h2 {
+        font-size: 20px;
+    }
+
+    .bftn-homepage .callsuccess-modal .modal-content h4 {
+        font-size: 16px;
+    }
+
+    .bftn-homepage .callsuccess-modal .modal-content p {
+        font-size: 14px;
+    }
+    
+    .bftn-homepage #footer .logos {
+        width: 100%;
+        border: none;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0 0;
+        float: none;
+    }
+
+    .bftn-homepage #footer .logos a {
+        display: block;
+    }
+
+    .bftn-homepage #footer .logos .fftf, .bftn-homepage #footer .logos .demandprogress, .bftn-homepage #footer .logos .freepress {
+        margin: 0;
+    }
+
+
+    .bftn-homepage #footer .social-media {
+        width: 100%;
+        margin: 0;
+        border: none;
+        text-align: center;
+    }
+
+    .bftn-homepage #footer .social-media .twitter {
+        margin-top: 20px;
+    }
+
+    .bftn-homepage #footer .press-inquiries {
+        width: 100%;
+        float: right;
+    }
+
+    .bftn-homepage #footer .built-by {
+        padding-bottom: 80px;
+        width: auto;
+    }
+
+    .bftn-homepage #footer .built-by img {
+        width: 90%;
+    }
+
+    .modal-thanks {
+        width: 90%;
+        padding-top: 0px;
+    }
+    
+    .close-thanks {
+        font-size: 20px;
+    }
+
+    .phone-form form input {
+        font-family: inherit;
+        border-top: 1px solid #bbd;
+        box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.076);
+        color: #090909;
+        font-size: 24px;
+        padding: 16px;
+        text-align: center;
+        width: 100%;
+
+        -webkit-transition: box-shadow 0.3s;
+                transition: box-shadow 0.3s;
+    }
+
+    #modal-battle-link {
+        font-size: 14px;
+    }
+
+    .modal-thanks header {
+        padding: 10px 15px;
+    }
+
+    .modal-thanks article {
+        padding: 15px; 
+    }
+
+    .bftn-homepage h4 {
+        margin: 0px; 
+        font-size: 20px;
+    }
+
+    #thanks .modal-thanks article p .header-thanks{
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    #call  {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
+    .bftn-homepage #footer {
+        margin-top: 0px;
+    }
+
+    .bftn-homepage .unit hr {
+        margin: 30px 0 35px 0;
+    }
+
     .bftn-homepage button.btn, .bftn-homepage a.btn {
         width: 100%;
     }
@@ -2366,7 +2391,6 @@ body.modal-open-thanks {
         left: 43%;
     }
 }
-
 @media screen and (max-width: 700px) {
     #share-button-container{
         width: 92%;
@@ -2374,6 +2398,34 @@ body.modal-open-thanks {
 }
 
 @media screen and (max-width: 600px) {
+    .bftn-homepage #leaderboard .leaderboard-day {
+        width: 100%;
+    }
+
+    .bftn-homepage #leaderboard .leaderboard-week {
+        width: 100%;
+    }
+
+    .bftn-homepage #leaderboard .leaderboard-total {
+        width: 100%;
+    }
+
+    .imageSection img {
+        max-width: 250px;
+        padding-bottom: 15px;
+    }
+    
+    .flex-item {
+        padding: 0px; 
+    }
+
+    .flex-item p {
+        padding-left: 0px;
+    }
+
+    .bftn-homepage #footer {
+        padding: 0px;
+    }
     .bftn-homepage .the-problem {
         width: auto;
         text-align: center;
@@ -2520,65 +2572,5 @@ body.modal-open-thanks {
 @media screen and (max-width: 320px) {
     .bftn-homepage .hero .call-action-form h3 {
         font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .modal-thanks {
-        width: 90%;
-        padding-top: 0px;
-    }
-    
-    .close-thanks {
-        font-size: 20px;
-    }
-
-    .phone-form form input {
-        font-family: inherit;
-        border-top: 1px solid #bbd;
-        box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.076);
-        color: #090909;
-        font-size: 24px;
-        padding: 16px;
-        text-align: center;
-        width: 100%;
-
-        -webkit-transition: box-shadow 0.3s;
-                transition: box-shadow 0.3s;
-    }
-
-    #modal-battle-link {
-        font-size: 14px;
-    }
-
-    .modal-thanks header {
-        padding: 10px 15px;
-    }
-
-    .modal-thanks article {
-        padding: 15px; 
-    }
-
-    .bftn-homepage h4 {
-        margin: 0px; 
-        font-size: 20px;
-    }
-
-    #thanks .modal-thanks article p .header-thanks{
-        font-size: 18px;
-        line-height: 1.3;
-    }
-
-    #call  {
-        font-size: 35px;
-        line-height: 1.2;
-    }
-
-    .bftn-homepage #footer {
-        margin-top: 0px;
-    }
-
-    .bftn-homepage .unit hr {
-        margin: 30px 0 35px 0;
     }
 }
