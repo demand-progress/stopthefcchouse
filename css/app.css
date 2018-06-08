@@ -213,7 +213,7 @@ template {
 }
 
 .bftn-homepage h4 {
-    font-family: Montserrat, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
     color: white;
     font-size: 24px;
@@ -384,7 +384,7 @@ template {
 
 .bftn-homepage .call-action-form p {
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .bftn-homepage .call-action-form h3 {
