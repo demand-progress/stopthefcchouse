@@ -7,8 +7,7 @@ class Footer extends Component {
         super(props)
 
         this.state = {
-            allLogos: null,
-            tweet: null
+            allLogos: null
         }
     }
 
@@ -25,16 +24,17 @@ class Footer extends Component {
           .then(response => {
             const logos = response.data.blocks
             this.setState({
-              allLogos: logos,
-              tweet: this.props.tweet
+              allLogos: logos
             })
           })
-          .catch(console.error);  
+          .catch(console.error);
+          
     }
     
     render(){
         let logos = null
-        let tweet = this.state.tweet
+        let tweet = "https://twitter.com/intent/tweet?text="+this.props.tweet
+
         if(this.state.allLogos){
            let orderedLogos = this.state.allLogos.sort(function(a, b) {
                 return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
@@ -45,11 +45,7 @@ class Footer extends Component {
                 }   
             )
         }
-
-        if(tweet){
-            tweet = `https://twitter.com/intent/tweet?text=${tweet}`
-        }
-
+       
         return (
             <div id="footer">
                 <div className="footer">
