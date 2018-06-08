@@ -198,7 +198,7 @@ template {
 .bftn-homepage {
     background-color: #171629;
     color: #CCCAEA;
-    background-image: url("/images/v2-bg-noise.png");
+    background-image: url("../images/v2-bg-noise.png");
     background-repeat: no-repeat;
     background-position: center top;
 }
