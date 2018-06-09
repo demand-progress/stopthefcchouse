@@ -1540,6 +1540,6 @@ body.modal-open-thanks {
 
 @media screen and (max-width: 320px) {
     .bftn-homepage .hero .call-action-form h3 {
-        font-size: 35px;
+        font-size: 28px;
     }
 }
