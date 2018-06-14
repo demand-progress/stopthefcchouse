@@ -41,7 +41,7 @@ class App extends Component {
           }
         })
         .then(response => {
-          const data = response.data
+          const { data } = response
           this.setState({
             textContent:{
               header: data.blocks[0].value,
