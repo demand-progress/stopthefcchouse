@@ -28,7 +28,6 @@ class Form extends Component {
           isMobile: true
         })
       })
-      
     }
 
     render() {
@@ -45,7 +44,7 @@ class Form extends Component {
 
       const form = (
         <div>
-        <form id="signThePetition">
+        <form id="form">
         <div className="flex">
           <input type="text" className="form-input" name="name" placeholder="Your Name" />
           <input type="email" className="form-input" name="email" placeholder="Your Email" />
@@ -190,6 +189,13 @@ class Form extends Component {
 
         form.submit()
         this.setState({ submitted: true });
+        const firstRow = document.getElementById("form").getElementsByClassName("flex")[0].getElementsByClassName("form-input")
+        const secondRow = document.getElementById("form").getElementsByClassName("flex")[1].getElementsByClassName("form-input")
+        firstRow[0].value = '';
+        firstRow[1].value = '';
+        secondRow[0].value = '';
+        secondRow[1].value = '';
+        
     }
 
 }
