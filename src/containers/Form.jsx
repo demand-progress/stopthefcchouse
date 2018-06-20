@@ -188,13 +188,17 @@ class Form extends Component {
         });
 
         form.submit()
-        this.setState({ submitted: true });
-        const firstRow = document.getElementById("form").getElementsByClassName("flex")[0].getElementsByClassName("form-input")
-        const secondRow = document.getElementById("form").getElementsByClassName("flex")[1].getElementsByClassName("form-input")
-        firstRow[0].value = '';
-        firstRow[1].value = '';
-        secondRow[0].value = '';
-        secondRow[1].value = '';
+        this.setState(
+          { submitted: true }, 
+          () => {
+          const firstRow = document.getElementById("form").getElementsByClassName("flex")[0].getElementsByClassName("form-input")
+          const secondRow = document.getElementById("form").getElementsByClassName("flex")[1].getElementsByClassName("form-input")
+          firstRow[0].value = '';
+          firstRow[1].value = '';
+          secondRow[0].value = '';
+          secondRow[1].value = '';
+        });
+        
         
     }
 
