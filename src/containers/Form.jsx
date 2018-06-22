@@ -8,13 +8,15 @@ import Responsive from 'react-responsive-decorator';
 class Form extends Component {
 
     constructor(props) {
-        super(props);
+        super(props)
         this.state = getQueryVariables()
-        this.state.submitted = false;
-        this.state.countDown = 5;
-        this.state.isMobile = false;
+        this.state.submitted = false
+        this.state.countDown = 5
+        this.state.isMobile = false
+        this.state.isBusiness = false
         this.onSubmit = this.onSubmit.bind(this)
         this.closeModal = this.closeModal.bind(this)
+        this.business = this.business.bind(this)
     }
 
     componentDidMount(){
@@ -30,17 +32,41 @@ class Form extends Component {
       })
     }
 
+    business() {
+      const checkBoxStatus = document.getElementById("business").checked ? true : false;
+      this.setState({
+        isBusiness: checkBoxStatus
+      })
+    }
+
     render() {
       let modal = null;
       let topOfPage = null;
       let middle = null; 
       let headerContent = null;
-      
+      let businessForm = null; 
+
       const subHeader = (
         <div id="subHeader">          
           <Markdown source={this.props.subHeader} />
         </div>
       )
+
+      if(this.state.isBusiness){
+        businessForm = (
+          <div>
+            <div className="flex">
+              <input type="text" className="form-input" name="company name" placeholder="Business Name*" />
+              <input type="email" className="form-input" name="company email" placeholder="Business Website*" />
+            </div>
+            <div className="flex">
+              <input type="text" className="form-input" name="street" placeholder="Business Phone Number" />
+              <input type="text" className="form-input" name="zip" placeholder="Business Zipcode*" />
+            </div>
+          </div>
+        )
+      }
+
 
       const form = (
         <div>
@@ -53,17 +79,22 @@ class Form extends Component {
           <input type="text" className="form-input" name="street" placeholder="Street Address" />
           <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
         </div>
+        { businessForm }
+        <div style={{marginLeft: '25px'}}>
+        Small businesses will be among those hurt most by the loss of net neutrality, but they can also play a key role in saving it. If you own a small business, check this box:
+        <input id="business" type="checkbox" onClick={ this.business } style={{float: 'right', marginTop: '5px'}}/>
+      </div>
+      <span><i>{this.props.disclaimer}</i></span>
         <div className="flex">
           <button className="btn">
             <span>{this.props.formButton}</span>
           </button>
         </div>
       </form>
-      <span><i>{this.props.disclaimer}</i></span>
       <br/><br/>
       </div>
       )
-      
+
       if(this.state.isMobile){
         topOfPage = form
         middle = subHeader
@@ -88,13 +119,14 @@ class Form extends Component {
         )
       }
       
-        return (
-          <div className="bftn-form call-action-form" onSubmit={ this.onSubmit }>
+      return (
+        <div className="bftn-form call-action-form" onSubmit={ this.onSubmit }>
           <Markdown source={this.props.header} />
             {topOfPage}
             {middle}
             {modal}
-        </div>);
+          </div>
+      );
     }
 
     closeModal(evt) {
@@ -114,7 +146,6 @@ class Form extends Component {
             alert('Please enter your name.');
             return;
         }
-
 
         const email = form.email;
         if (!email.value.trim()) {
