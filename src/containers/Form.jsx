@@ -56,12 +56,12 @@ class Form extends Component {
         businessForm = (
           <div>
             <div className="flex">
-              <input type="text" className="form-input" name="company name" placeholder="Business Name*" />
-              <input type="email" className="form-input" name="company email" placeholder="Business Website*" />
+              <input type="text" className="form-input" name="company_name" placeholder="Business Name*" />
+              <input type="text" className="form-input" name="company_website" placeholder="Business Website*" />
             </div>
             <div className="flex">
-              <input type="text" className="form-input" name="street" placeholder="Business Phone Number" />
-              <input type="text" className="form-input" name="zip" placeholder="Business Zipcode*" />
+              <input type="text" className="form-input" name="company_phone" placeholder="Business Phone Number" />
+              <input type="text" className="form-input" name="company_zipcode" placeholder="Business Zipcode*" />
             </div>
           </div>
         )
@@ -80,11 +80,19 @@ class Form extends Component {
           <input type="text" className="form-input" name="zip" placeholder="Your Zipcode" />
         </div>
         { businessForm }
-        <div style={{marginLeft: '25px'}}>
+        {/* <div style={{marginLeft: '25px'}}>
         Small businesses will be among those hurt most by the loss of net neutrality, but they can also play a key role in saving it. If you own a small business, check this box:
         <input id="business" type="checkbox" onClick={ this.business } style={{float: 'right', marginTop: '5px'}}/>
+        </div> */}
+      <input id='business' onClick={ this.business } name="business_checkbox" style={{padding:'0', margin:'0',verticalAlign:'bottom', position: 'relative', width: '20px', height: '20px', borderRadius: '5px', border: '2px solid #555'}} type="checkbox"/>
+
+      <label style={{display:'inline', textIndent:'-15px'}}>
+        <strong>Small businesses will be among those hurt most by the loss of net neutrality, but they can also play a key role in saving it. If you own a small business, check this box: 
+        </strong>
+      </label>
+      <div style={{ marginTop: '10px'}}>
+        <span><i>{this.props.disclaimer}</i></span>
       </div>
-      <span><i>{this.props.disclaimer}</i></span>
         <div className="flex">
           <button className="btn">
             <span>{this.props.formButton}</span>
@@ -140,6 +148,11 @@ class Form extends Component {
         const form = evt.target;
         const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
+        const compName = form.company_name.value.trim()
+        const compWebsite = form.company_website.value.trim()
+        const compZipcode = form.company_zipcode.value.trim()
+        const compPhone = form.company_phone.value.trim()
+  
         const name = form.name;
         if (!name.value.trim()) {
             name.focus();
@@ -188,7 +201,11 @@ class Form extends Component {
             'opt_in': 1,
             'page': CONF.actionKitPageShortName,
             'source': this.state.source || 'website',
-            'want_progress': 1
+            'want_progress': 1,
+            'action_company_name': compName,
+            'action_company_website': compWebsite,
+            'action_company_zipcode' : compZipcode,
+            'action_company_phone' :compPhone
         };
 
        
@@ -219,17 +236,17 @@ class Form extends Component {
         });
 
         form.submit()
-        this.setState(
-          { submitted: true }, 
-          () => {
-          const formFlex = document.getElementById("form").getElementsByClassName("flex")
-          const firstRow = formFlex[0].getElementsByClassName("form-input")
-          const secondRow = formFlex[1].getElementsByClassName("form-input")
-          firstRow[0].value = '';
-          firstRow[1].value = '';
-          secondRow[0].value = '';
-          secondRow[1].value = '';
-        });
+        // this.setState(
+        //   { submitted: true }, 
+        //   () => {
+        //   const formFlex = document.getElementById("form").getElementsByClassName("flex")
+        //   const firstRow = formFlex[0].getElementsByClassName("form-input")
+        //   const secondRow = formFlex[1].getElementsByClassName("form-input")
+        //   firstRow[0].value = '';
+        //   firstRow[1].value = '';
+        //   secondRow[0].value = '';
+        //   secondRow[1].value = '';
+        // });
         
         
     }
