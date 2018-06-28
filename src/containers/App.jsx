@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { CONF } from '../config/index'
 import Main from './Main.jsx'
 import Footer from './Footer.jsx'
-import Spinner from './Spinner.jsx'
 import axios from 'axios'
 import keys from '../config/keys'
 
@@ -75,25 +74,18 @@ class App extends Component {
         } = this.state.textContent
         
         return(
-            <div>
-                {
-                    this.state.loading ? 
-                    <div id="spinner" >
-                        <Spinner/> 
-                    </div>
-                    :
-                    <Main 
-                    header={ header } 
-                    subHeader={ subHeader} 
-                    main={ main } 
-                    congressLanguage={ congressLanguage } 
-                    disclaimer={ disclaimer }
-                    formButton={ formButton }
-                    modalHeader={ modalHeader }
-                    modalText= { modalText }
-                    />
-                }
-                  <Footer tweet= {tweet} />
+            <div style={{display: this.state.loading ? 'none': 'block'}}>
+                <Main 
+                header={ header } 
+                subHeader={ subHeader} 
+                main={ main } 
+                congressLanguage={ congressLanguage } 
+                disclaimer={ disclaimer }
+                formButton={ formButton }
+                modalHeader={ modalHeader }
+                modalText= { modalText }
+                />
+                <Footer tweet= {tweet} />
             </div>
         )
     }
