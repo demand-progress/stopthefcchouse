@@ -86,6 +86,13 @@ class Form extends Component {
             <input type="text" className="form-input" name="company_phone" placeholder="Phone Number" />
           </div>
         </div>
+        <div style={{display: this.state.includeBusinessBox ? 'block' : 'none', marginBottom: '10px'}}>
+          <input id='veteran' name="veteran_checkbox" style={{padding:'0', margin:'0',verticalAlign:'bottom', position: 'relative', width: '20px', height: '20px', borderRadius: '5px', border: '2px solid #555'}} type="checkbox"/>
+            <label style={{display:'inline', textIndent:'15px'}}>
+              <strong>Check this box if you have served in the military and support net neutrality. Veterans and service members can play an important role in helping to save the open internet.
+              </strong>
+            </label>
+        </div>
         <div style={{display: this.state.includeBusinessBox ? 'block' : 'none'}}>
           <input id='business' onClick={ this.business } name="business_checkbox" style={{padding:'0', margin:'0',verticalAlign:'bottom', position: 'relative', width: '20px', height: '20px', borderRadius: '5px', border: '2px solid #555'}} type="checkbox"/>
           <label style={{display:'inline', textIndent:'-15px'}}>
@@ -200,6 +207,10 @@ class Form extends Component {
             'want_progress': 1,
         };
 
+        if(document.getElementById("veteran").checked){
+          fields['action_veteran'] = CONF.actionKitPageId
+        }
+
         if(document.getElementById("business").checked){
           const compName = form.company_name
           if (!compName.value.trim()) {
@@ -297,6 +308,10 @@ class Form extends Component {
             this.clearUserForm()
             if(document.getElementById("business").checked){
               this.clearBusinessForm()
+            }
+
+            if(document.getElementById("veteran").checked){
+              document.getElementById("veteran").checked = false
             }
            });   
     }
