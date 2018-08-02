@@ -4,4 +4,4 @@ To install packages
 'npm start'
 
 To run in dev 
-'npm dev:start'
+'npm run dev:start'
